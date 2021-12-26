@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2021-12-26T10:26:01.237Z</updated>
+    <updated>2021-12-26T10:27:05.306Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -16,20 +16,20 @@
         <link href="https://waoap.github.io/post/vim/">
         </link>
         <updated>2021-12-26T02:14:11.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="center介绍center"><center>介绍🎉</center></h2>
-<p><em><center>VIM，程序员的入门良师，一种丢掉鼠标的生活方式💕。</center></em></p>
+        <summary type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
+<p><em>VIM，程序员的入门良师，一种丢掉鼠标的生活方式💕。</em></p>
 ]]></summary>
-        <content type="html"><![CDATA[<h2 id="center介绍center"><center>介绍🎉</center></h2>
-<p><em><center>VIM，程序员的入门良师，一种丢掉鼠标的生活方式💕。</center></em></p>
+        <content type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
+<p><em>VIM，程序员的入门良师，一种丢掉鼠标的生活方式💕。</em></p>
 <!-- more -->
-<p></br><center>这里贴一段维基里百科里对VIM的介绍：</center></p>
+<p></br>这里贴一段维基里百科里对VIM的介绍：</p>
 <blockquote>
 <p>Vim (/vɪm/; a contraction of Vi IMproved) is a free and open-source, screen-based text editor program for Unix. It is an improved clone of Bill Joy's vi.</p>
 </blockquote>
-<p></br><center>这里是VIM的<a href="https://www.vim.org/"><strong>官网链接</strong></a>以及<a href="https://github.com/vim/vim"><strong>GitHub仓库主页</strong></a>。</center></p>
-<h2 id="brcenter使用及建议center"></br><center>使用及建议👻</center></h2>
-<center><strong>使用：</strong>在<strong>VSCode、Visual Studio、Idea</strong>等IDE中安装Vim插件。
-</br><strong>建议：</strong>将以下快捷键交由IDE控制。<strong>（注：这部分内容将在我摸索使用VIM的过程中随之变更。）</strong></center>
+<p></br>这里是VIM的<a href="https://www.vim.org/"><strong>官网链接</strong></a>以及<a href="https://github.com/vim/vim"><strong>GitHub仓库主页</strong></a>。</p>
+<h2 id="br使用及建议"></br>使用及建议👻</h2>
+<p><strong>使用：</strong>在<strong>VSCode、Visual Studio、Idea</strong>等IDE中安装Vim插件。<br>
+</br><strong>建议：</strong>将以下快捷键交由IDE控制。<strong>（注：这部分内容将在我摸索使用VIM的过程中随之变更。）</strong></p>
 <table>
 <thead>
 <tr>
@@ -72,7 +72,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="brcenter学习计划center"></br><center>学习计划📚</center></h2>
+<h2 id="br学习计划"></br>学习计划📚</h2>
 <ol>
 <li>
 <p>通过观看<a href="https://www.bilibili.com/video/BV1z541177Jy">VIM的相关教程</a>和<a href="vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">VIM的官方文档</a>来了解、学习VIM的快捷键，并做好笔记。</p>
