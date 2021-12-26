@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Gridea</title>
-    <updated>2021-12-25T07:18:36.625Z</updated>
+    <updated>2021-12-26T03:47:06.344Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -10,6 +10,76 @@
     <logo>https://waoap.github.io/images/avatar.png</logo>
     <icon>https://waoap.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[VIM]]></title>
+        <id>https://waoap.github.io/post/vim/</id>
+        <link href="https://waoap.github.io/post/vim/">
+        </link>
+        <updated>2021-12-26T02:14:11.000Z</updated>
+        <content type="html"><![CDATA[<img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/96px-Vimlogo.svg.png" />
+<h2 id="brcenter介绍center"></br><center>介绍🎉</center></h2>
+<p><em><center>VIM，程序员的入门良师，一种丢掉鼠标的生活方式💕。</center></em></p>
+<p></br><center>这里贴一段维基里百科里对VIM的介绍：</center></p>
+<blockquote>
+<p>Vim (/vɪm/; a contraction of Vi IMproved) is a free and open-source, screen-based text editor program for Unix. It is an improved clone of Bill Joy's vi.</p>
+</blockquote>
+<p></br><center>这里是VIM的<a href="https://www.vim.org/"><strong>官网链接</strong></a>以及<a href="https://github.com/vim/vim"><strong>GitHub仓库主页</strong></a>。</center></p>
+<h2 id="brcenter使用及建议center"></br><center>使用及建议👻</center></h2>
+<center><strong>使用：</strong>在<strong>VSCode、Visual Studio、Idea</strong>等IDE中安装Vim插件。
+</br><strong>建议：</strong>将以下快捷键交由IDE控制。<strong>（注：这部分内容将在我摸索使用VIM的过程中随之变更。）</strong></center>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">快捷键</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ctrl-a</td>
+<td style="text-align:center">全选</td>
+</tr>
+<tr>
+<td style="text-align:center">ctrl-c</td>
+<td style="text-align:center">复制</td>
+</tr>
+<tr>
+<td style="text-align:center">ctrl-x</td>
+<td style="text-align:center">剪切</td>
+</tr>
+<tr>
+<td style="text-align:center">ctrl-v</td>
+<td style="text-align:center">粘贴</td>
+</tr>
+<tr>
+<td style="text-align:center">ctrl-n</td>
+<td style="text-align:center">新建文件</td>
+</tr>
+<tr>
+<td style="text-align:center">ctrl-o</td>
+<td style="text-align:center">打开文件</td>
+</tr>
+<tr>
+<td style="text-align:center">ctrl-f</td>
+<td style="text-align:center">查找</td>
+</tr>
+<tr>
+<td style="text-align:center">ctrl-r / ctrl-h</td>
+<td style="text-align:center">替换</td>
+</tr>
+</tbody>
+</table>
+<h2 id="brcenter学习计划center"></br><center>学习计划📚</center></h2>
+<ol>
+<li>
+<p>通过观看<a href="https://www.bilibili.com/video/BV1z541177Jy">VIM的相关教程</a>和<a href="vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">VIM的官方文档</a>来了解、学习VIM的快捷键，并做好笔记。</p>
+</li>
+<li>
+<p>在任何时候都尝试使用VIM来操作，提升自己操作的熟练度。（多敲代码，不仅能提升编程的实操能力，还能熟悉VIM，岂不美哉！😍😘）</p>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://waoap.github.io/post/hello-gridea/</id>
