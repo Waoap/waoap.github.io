@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2021-12-26T11:14:41.495Z</updated>
+    <updated>2021-12-26T11:25:16.409Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -25,25 +25,25 @@
 🎉计算机语言的历史主要分为<strong>机器语言</strong>、<strong>汇编语言</strong>、<strong>高级语言</strong>三个时期。</p>
 <!-- more -->
 <h2 id="发展历史">发展历史📔</h2>
-<p><img src="https://waoap.github.io/post-images/1640515364632.png" alt="computer-language-history" loading="lazy"><br>
+<p><img src="https://waoap.github.io/post-images/1640515364632.png" alt="computer-language-history" loading="lazy"></br><br>
 计算机语言的发展经历了如上三代，其中：</p>
 <ul>
 <li>机器语言时期：<br>
-只使用二进制0和1来编写程序， 及其复杂且容易出错，并且出错后不易排查出问题所在。<br>
-<img src="https://waoap.github.io/post-images/1640516027011.png" alt="machine-langauge" loading="lazy"></li>
+只使用二进制0和1来编写程序， 及其复杂且容易出错，并且出错后不易排查出问题所在。</br><br>
+<img src="https://waoap.github.io/post-images/1640516027011.png" alt="machine-langauge" loading="lazy"></br></li>
 <li>汇编语言时期：<br>
-出现了<strong>助记符（帮助记忆的符号）</strong>， 使得编程变得容易，足以胜任简单的任务。<br>
-<img src="https://waoap.github.io/post-images/1640515829589.png" alt="assembly-language" loading="lazy"></li>
+出现了<strong>助记符（帮助记忆的符号）</strong>， 使得编程变得容易，足以胜任简单的任务。</br><br>
+<img src="https://waoap.github.io/post-images/1640515829589.png" alt="assembly-language" loading="lazy"></br></li>
 <li>高级语言时期：<br>
-随着计算机发展，计算机领域出现了越来越多的复杂需求，仍然不算简洁易上手的汇编语言逐渐跟不上需求，于是集成汇编语言功能的更加简洁、可读性更高的高级语言应运而生。<br>
-<img src="https://waoap.github.io/post-images/1640516580203.png" alt="high-level-language" loading="lazy"></li>
+随着计算机发展，计算机领域出现了越来越多的复杂需求，仍然不算简洁易上手的汇编语言逐渐跟不上需求，于是集成汇编语言功能的更加简洁、可读性更高的高级语言应运而生。</br><br>
+<img src="https://waoap.github.io/post-images/1640516580203.png" alt="high-level-language" loading="lazy"></br></li>
 </ul>
 <h2 id="当下的主流语言高级语言">当下的主流语言——高级语言🌟</h2>
-<p>如今的高级语言主要分为**“面向过程”<strong>以及</strong>“面向对象”**两类。详细见<a href="https://waoap.github.io/404.html">“面向过程”与“面向对象”</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<p>如今的高级语言主要分为 <strong>“面向过程”</strong> 以及 <strong>“面向对象”</strong> 两类。详细见<a href="https://waoap.github.io/404.html">“面向过程”与“面向对象的区别”</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>暂时还未学习到。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+<li id="fn1" class="footnote-item"><p>暂时还未发布本文。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
@@ -56,10 +56,10 @@
         </link>
         <updated>2021-12-26T02:14:11.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
-<p><em>VIM，程序员的入门良师，一种丢掉鼠标的生活方式💕。</em></p>
+<p><em>VIM，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</em></p>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
-<p><em>VIM，程序员的入门良师，一种丢掉鼠标的生活方式💕。</em></p>
+<p><em>VIM，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</em></p>
 <!-- more -->
 <p></br>这里贴一段维基里百科里对VIM的介绍：</p>
 <blockquote>
@@ -67,8 +67,8 @@
 </blockquote>
 <p></br>这里是VIM的<a href="https://www.vim.org/"><strong>官网链接</strong></a>以及<a href="https://github.com/vim/vim"><strong>GitHub仓库主页</strong></a>。</p>
 <h2 id="br使用及建议"></br>使用及建议👻</h2>
-<p><strong>使用：</strong>在<strong>VSCode、Visual Studio、Idea</strong>等IDE中安装Vim插件。<br>
-</br><strong>建议：</strong>将以下快捷键交由IDE控制。<strong>（注：这部分内容将在我摸索使用VIM的过程中随之变更。）</strong></p>
+<p><strong>使用：<strong>在</strong>VSCode、Visual Studio、Idea</strong>等IDE中安装Vim插件。<br>
+</br><strong>建议：<strong>将以下快捷键交由IDE控制。</strong>（注：这部分内容将在我摸索使用VIM的过程中随之变更。）</strong></p>
 <table>
 <thead>
 <tr>
