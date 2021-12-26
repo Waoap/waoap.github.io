@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2021-12-26T11:25:16.409Z</updated>
+    <updated>2021-12-26T11:33:07.662Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -39,7 +39,7 @@
 <img src="https://waoap.github.io/post-images/1640516580203.png" alt="high-level-language" loading="lazy"></br></li>
 </ul>
 <h2 id="当下的主流语言高级语言">当下的主流语言——高级语言🌟</h2>
-<p>如今的高级语言主要分为 <strong>“面向过程”</strong> 以及 <strong>“面向对象”</strong> 两类。详细见<a href="https://waoap.github.io/404.html">“面向过程”与“面向对象的区别”</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<p>如今的高级语言主要分为<strong>面向过程</strong>以及<strong>面向对象</strong>两类，详细见<a href="https://waoap.github.io/404.html"><strong>面向过程</strong>与<strong>面向对象</strong>的区别</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。其中，我们将学习<strong>JAVA</strong>语言 。</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -61,14 +61,14 @@
         <content type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
 <p><em>VIM，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</em></p>
 <!-- more -->
-<p></br>这里贴一段维基里百科里对VIM的介绍：</p>
+<p>这里贴一段维基里百科里对VIM的介绍：</p>
 <blockquote>
 <p>Vim (/vɪm/; a contraction of Vi IMproved) is a free and open-source, screen-based text editor program for Unix. It is an improved clone of Bill Joy's vi.</p>
 </blockquote>
-<p></br>这里是VIM的<a href="https://www.vim.org/"><strong>官网链接</strong></a>以及<a href="https://github.com/vim/vim"><strong>GitHub仓库主页</strong></a>。</p>
-<h2 id="br使用及建议"></br>使用及建议👻</h2>
+<p>这里是VIM的<a href="https://www.vim.org/"><strong>官网链接</strong></a>以及<a href="https://github.com/vim/vim"><strong>GitHub仓库主页</strong></a>。</p>
+<h2 id="使用及建议">使用及建议👻</h2>
 <p><strong>使用：<strong>在</strong>VSCode、Visual Studio、Idea</strong>等IDE中安装Vim插件。<br>
-</br><strong>建议：<strong>将以下快捷键交由IDE控制。</strong>（注：这部分内容将在我摸索使用VIM的过程中随之变更。）</strong></p>
+<strong>建议：<strong>将以下快捷键交由IDE控制。</strong>（注：这部分内容将在我摸索使用VIM的过程中随之变更。）</strong></p>
 <table>
 <thead>
 <tr>
@@ -111,14 +111,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="br学习计划"></br>学习计划📚</h2>
+<h2 id="学习计划">学习计划📚</h2>
 <ol>
-<li>
-<p>通过观看<a href="https://www.bilibili.com/video/BV1z541177Jy">VIM的相关教程</a>和<a href="vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">VIM的官方文档</a>来了解、学习VIM的快捷键，并做好笔记。</p>
-</li>
-<li>
-<p>在任何时候都尝试使用VIM来操作，提升自己操作的熟练度。（多敲代码，不仅能提升编程的实操能力，还能熟悉VIM，岂不美哉！😍😘）</p>
-</li>
+<li>通过观看<a href="https://www.bilibili.com/video/BV1z541177Jy">VIM的相关教程</a>和<a href="vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">VIM的官方文档</a>来了解、学习VIM的快捷键，并做好笔记。</li>
+<li>在任何时候都尝试使用VIM来操作，提升自己操作的熟练度。（多敲代码，不仅能提升编程的实操能力，还能熟悉VIM，岂不美哉！😍😘）</li>
 </ol>
 ]]></content>
     </entry>
