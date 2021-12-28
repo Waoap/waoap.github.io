@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2021-12-28T09:04:33.220Z</updated>
+    <updated>2021-12-28T09:10:19.826Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -28,9 +28,9 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
 <h2 id="java-的体系结构">💎 Java 的体系结构</h2>
 <p>Java 分为 <strong>JavaSE(Java Standard Edition)</strong> 、 <strong>JavaEE(Java Enterprise Edition)</strong> 、 <strong>JavaME(Java Micro Edition)</strong> 三个版本。</p>
 <ul>
-<li>JavaSE：标准版，定位于个人计算机上的应用；</li>
-<li>JavaEE：企业版，定位于服务端的应用；</li>
-<li>JavaME：微型版，定位于消费性电子产品的应用。</li>
+<li>JavaSE：标准版，定位于个人计算机上的应用（基础）；</li>
+<li>JavaEE：企业版，定位于服务端的应用（是 SE 在数据库等方面的拓展）；</li>
+<li>JavaME：微型版，定位于消费性电子产品的应用（基本不接触）。</li>
 </ul>
 <h2 id="java-的特性与优势">🧩 Java 的特性与优势</h2>
 ]]></content>
