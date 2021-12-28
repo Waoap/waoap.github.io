@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2021-12-28T09:10:19.826Z</updated>
+    <updated>2021-12-28T13:24:45.518Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -17,10 +17,10 @@
         </link>
         <updated>2021-12-26T12:04:59.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="摘要">💥 摘要</h2>
-<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong> 。</p>
+<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong>、<strong>Java 的核心机制</strong> 。</p>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="摘要">💥 摘要</h2>
-<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong> 。</p>
+<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong>、<strong>Java 的核心机制</strong> 。</p>
 <!-- more -->
 <h2 id="️-java-的发展简史">🖇️ Java 的发展简史</h2>
 <p>一些资料见 <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">👉Java-Wikipedia</a> 以及 <a href="https://www.jetbrains.com/lp/devecosystem-2021/Java/">👉Jetbrains 对开发者生态系统的调研报告</a><br>
@@ -33,6 +33,26 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
 <li>JavaME：微型版，定位于消费性电子产品的应用（基本不接触）。</li>
 </ul>
 <h2 id="java-的特性与优势">🧩 Java 的特性与优势</h2>
+<ul>
+<li>跨平台、可移植性 <strong>（核心优势）</strong>：如 Java 的 int 永远是 32 位，不同于 C++ 等可能因编译器不同而产生软件移植时的困难；</li>
+<li>安全性：Java 适合于网络/分布式环境，在安全方面投入很多，安全性好于很容易实现操作底层系统的 C/C++ 等；</li>
+<li>面向对象：适合大型软件的设计、开发；</li>
+<li>简单性：因 Java 最初是基于 C/C++ 的语法进行的设计，并且去除了 C++ 里头文件、指针运算、结构、联合等等的内容，使得 Java 相对不难上手；</li>
+<li>性能不错：虽然由于使用虚拟机，Java 的性能比不上 C/C++，但经过对虚拟机的优化，如 JIT 技术等，如今在某些情况下，Java 性能不输 C/C++；</li>
+<li>分布式：Java 是为 Internet 的分布式环境设计的，因为它能够处理TCP/IP协议，Java 还支持远程方法调用（RMI），使程序能够通过网络调用方法；</li>
+<li>多线程：Java 多线程的简单性是使之成为主流的服务器端开发语言的原因之一；</li>
+<li>健壮新：Java 吸收了 C/C++ 的优点，去除了内存的申请、释放等等可能影响健壮性的机制，并使用异常处理机制来增强这一特性。</li>
+</ul>
+<h2 id="java-的核心机制核心优势">☕ Java 的核心机制（核心优势）</h2>
+<ol>
+<li>垃圾回收机制：<br>
+垃圾（内存）回收的目的在于主动清除不再使用的对象等，释放内存，减少了因程序设计时没有释放空间而造成内存泄漏的情况的发生。<br>
+<a href="https://www.jianshu.com/p/5261a62e4d29">👉浅谈 Java 的垃圾回收机制</a><br>
+<strong>TODO：Java GC 机制的学习🚩（占坑链接：https://waoap.github.io/post/java-gc-mechanism）</strong></li>
+<li>跨平台实现：<br>
+Java 中，由<strong>编译器</strong>将 <strong>.java 源文件</strong>编译为 <strong>.class 字节码文件</strong>，并由适合各个平台的 <strong>JVM 虚拟机</strong>翻译成机器码而后执行。其中，正是由 <strong>JVM 虚拟机</strong>充当着翻译官的角色，将字节码文件翻译成各平台对应的可执行文件，以此实现跨平台。<br>
+在执行 java 程序时，表面上我们使用的是 <code>java.exe</code> 命令来调用 java.exe 程序，但实际上会在此过程中动态调用 JVM，由 JVM 将字节码一行一行地解释成当前平台适合的可执行文件的格式，因此我们认为，Java是一种 <strong>“解释型语言”</strong>。</li>
+</ol>
 ]]></content>
     </entry>
     <entry>
@@ -138,8 +158,12 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
 </table>
 <h2 id="学习计划">学习计划📚</h2>
 <ol>
-<li>通过观看 <a href="https://www.bilibili.com/video/BV1z541177Jy">Vim 的相关教程</a> 和 <a href="http://vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">Vim 的官方文档</a> 来了解、学习 Vim 的快捷键，并做好笔记。</li>
-<li>在任何时候都尝试使用 Vim 来操作，提升自己操作的熟练度。（多敲代码，不仅能提升编程的实操能力，还能熟悉 Vim，岂不美哉！😍😘）</li>
+<li>
+<p>通过观看 <a href="https://www.bilibili.com/video/BV1z541177Jy">Vim 的相关教程</a> 和 <a href="http://vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">Vim 的官方文档</a> 来了解、学习 Vim 的快捷键，并做好笔记。</p>
+</li>
+<li>
+<p>在任何时候都尝试使用 Vim 来操作，提升自己操作的熟练度。（多敲代码，不仅能提升编程的实操能力，还能熟悉 Vim，岂不美哉！😍😘）</p>
+</li>
 </ol>
 ]]></content>
     </entry>
@@ -159,22 +183,52 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
 <!-- more -->
 <p>这里是 Gridea 的链接：</p>
 <ol>
-<li><a href="https://github.com/getgridea/gridea">Github</a></li>
-<li><a href="https://gridea.dev/">Gridea 主页</a></li>
-<li><a href="http://fehey.com/">示例网站</a></li>
+<li>
+<p><a href="https://github.com/getgridea/gridea">Github</a></p>
+</li>
+<li>
+<p><a href="https://gridea.dev/">Gridea 主页</a></p>
+</li>
+<li>
+<p><a href="http://fehey.com/">示例网站</a></p>
+</li>
 </ol>
 <h2 id="特性">特性👇</h2>
+<ul>
+<li>
 <p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+</li>
+<li>
 <p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
+</li>
+<li>
+<p>🏷️ 你可以对文章进行标签分组</p>
+</li>
+<li>
 <p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+</li>
+<li>
 <p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+</li>
+<li>
 <p>🌎  你可以使用 <strong>Github Pages</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+</li>
+<li>
 <p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+</li>
+<li>
 <p>🇬🇧  你可以使用 <strong>中文简体</strong> 或 <strong>英语</strong></p>
+</li>
+<li>
 <p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+</li>
+<li>
 <p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+</li>
+<li>
 <p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+</li>
+</ul>
 <p>未来，它一定会成为你我离不开的伙伴</p>
 <p>尽情发挥你的才华吧！</p>
 <p>😘 Enjoy~</p>
