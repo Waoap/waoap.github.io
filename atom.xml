@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2021-12-26T15:48:16.771Z</updated>
+    <updated>2021-12-28T09:04:33.220Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -11,20 +11,28 @@
     <icon>https://waoap.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Waoap&apos;s Blog</rights>
     <entry>
-        <title type="html"><![CDATA[JAVA简介]]></title>
+        <title type="html"><![CDATA[Java 简介]]></title>
         <id>https://waoap.github.io/post/java-introduction/</id>
         <link href="https://waoap.github.io/post/java-introduction/">
         </link>
         <updated>2021-12-26T12:04:59.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="摘要">摘要💥</h2>
-<p>本文的内容包括：<strong>JAVA的发展简史</strong>、<strong>JAVA的体系结构</strong>、<strong>JAVA的特性与优势</strong>。</p>
+        <summary type="html"><![CDATA[<h2 id="摘要">💥 摘要</h2>
+<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong> 。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h2 id="摘要">摘要💥</h2>
-<p>本文的内容包括：<strong>JAVA的发展简史</strong>、<strong>JAVA的体系结构</strong>、<strong>JAVA的特性与优势</strong>。</p>
+        <content type="html"><![CDATA[<h2 id="摘要">💥 摘要</h2>
+<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong> 。</p>
 <!-- more -->
-<h2 id="️java的发展简史">🖇️JAVA的发展简史</h2>
-<h2 id="java的体系结构">💎JAVA的体系结构</h2>
-<h2 id="java的特性与优势">🧩JAVA的特性与优势</h2>
+<h2 id="️-java-的发展简史">🖇️ Java 的发展简史</h2>
+<p>一些资料见 <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">👉Java-Wikipedia</a> 以及 <a href="https://www.jetbrains.com/lp/devecosystem-2021/Java/">👉Jetbrains 对开发者生态系统的调研报告</a><br>
+Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公司收购，如今我们使用的便是 Oracle Java。</p>
+<h2 id="java-的体系结构">💎 Java 的体系结构</h2>
+<p>Java 分为 <strong>JavaSE(Java Standard Edition)</strong> 、 <strong>JavaEE(Java Enterprise Edition)</strong> 、 <strong>JavaME(Java Micro Edition)</strong> 三个版本。</p>
+<ul>
+<li>JavaSE：标准版，定位于个人计算机上的应用；</li>
+<li>JavaEE：企业版，定位于服务端的应用；</li>
+<li>JavaME：微型版，定位于消费性电子产品的应用。</li>
+</ul>
+<h2 id="java-的特性与优势">🧩 Java 的特性与优势</h2>
 ]]></content>
     </entry>
     <entry>
@@ -33,20 +41,20 @@
         <link href="https://waoap.github.io/post/computer-language-history/">
         </link>
         <updated>2021-12-26T10:28:49.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="介绍">介绍🔖</h2>
-<p>💧饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
-🎉计算机语言的历史主要分为<strong>机器语言</strong>、<strong>汇编语言</strong>、<strong>高级语言</strong>三个时期。</p>
+        <summary type="html"><![CDATA[<h2 id="介绍">🔖 介绍</h2>
+<p>💧 饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
+🎉 计算机语言的历史主要分为<strong>机器语言</strong>、<strong>汇编语言</strong>、<strong>高级语言</strong>三个时期。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h2 id="介绍">介绍🔖</h2>
-<p>💧饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
-🎉计算机语言的历史主要分为<strong>机器语言</strong>、<strong>汇编语言</strong>、<strong>高级语言</strong>三个时期。</p>
+        <content type="html"><![CDATA[<h2 id="介绍">🔖 介绍</h2>
+<p>💧 饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
+🎉 计算机语言的历史主要分为<strong>机器语言</strong>、<strong>汇编语言</strong>、<strong>高级语言</strong>三个时期。</p>
 <!-- more -->
-<h2 id="发展历史">发展历史📔</h2>
+<h2 id="发展历史">📔 发展历史</h2>
 <p><img src="https://waoap.github.io/post-images/1640515364632.png" alt="computer-language-history" loading="lazy"></br><br>
 计算机语言的发展经历了如上三代，其中：</p>
 <ul>
 <li>机器语言时期：<br>
-只使用二进制0和1来编写程序， 及其复杂且容易出错，并且出错后不易排查出问题所在。</br><br>
+只使用二进制 0 和 1 来编写程序， 及其复杂且容易出错，并且出错后不易排查出问题所在。</br><br>
 <img src="https://waoap.github.io/post-images/1640516027011.png" alt="machine-langauge" loading="lazy"></br></li>
 <li>汇编语言时期：<br>
 出现了<strong>助记符（帮助记忆的符号）</strong>， 使得编程变得容易，足以胜任简单的任务。</br><br>
@@ -55,8 +63,8 @@
 随着计算机发展，计算机领域出现了越来越多的复杂需求，仍然不算简洁易上手的汇编语言逐渐跟不上需求，于是集成汇编语言功能的更加简洁、可读性更高的高级语言应运而生。</br><br>
 <img src="https://waoap.github.io/post-images/1640516580203.png" alt="high-level-language" loading="lazy"></br></li>
 </ul>
-<h2 id="现时期高级语言时期">现时期——高级语言时期🌟</h2>
-<p>如今，编程语言的主流是高级语言，其主要分为<strong>面向过程</strong>以及<strong>面向对象</strong>两种类型（详细见<a href="https://waoap.github.io/post/process-and-object-oriented/"><strong>面向过程</strong>与<strong>面向对象</strong>的区别</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>）。从现在起，我们将开始学习当下主流高级语言之一的<strong>JAVA</strong>语言 <a href="https://waoap.github.io/post/java-introduction/">🎓点我开始JAVA之旅🎓</a>。</p>
+<h2 id="现时期高级语言时期">🌟 现时期——高级语言时期</h2>
+<p>如今，编程语言的主流是高级语言，其主要分为<strong>面向过程</strong>以及<strong>面向对象</strong>两种类型（详细见 <a href="https://waoap.github.io/post/process-and-object-oriented/">面向过程与面向对象的区别</a> <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> ）。从现在起，我们将开始学习当下主流高级语言之一的 <strong>Java</strong> 语言 <a href="https://waoap.github.io/post/java-introduction/">🎓点我开始 Java 之旅🎓</a>。</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -67,25 +75,25 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[VIM]]></title>
+        <title type="html"><![CDATA[Vim]]></title>
         <id>https://waoap.github.io/post/vim/</id>
         <link href="https://waoap.github.io/post/vim/">
         </link>
         <updated>2021-12-26T02:14:11.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
-<p><em>VIM，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</em></p>
+<p>Vim，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</p>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
-<p><em>VIM，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</em></p>
+<p>Vim，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</p>
 <!-- more -->
-<p>这里贴一段维基里百科里对VIM的介绍：</p>
+<p>这里贴一段维基里百科里对 Vim 的介绍：</p>
 <blockquote>
 <p>Vim (/vɪm/; a contraction of Vi IMproved) is a free and open-source, screen-based text editor program for Unix. It is an improved clone of Bill Joy's vi.</p>
 </blockquote>
-<p>这里是VIM的<a href="https://www.vim.org/"><strong>官网链接</strong></a>以及<a href="https://github.com/vim/vim"><strong>GitHub仓库主页</strong></a>。</p>
+<p>这里是 Vim 的 <a href="https://www.vim.org/">官网</a> 以及 <a href="https://github.com/vim/vim"> GitHub 仓库主页</a> 。</p>
 <h2 id="使用及建议">使用及建议👻</h2>
-<p><strong>使用：<strong>在</strong>VSCode、Visual Studio、Idea</strong>等IDE中安装Vim插件。<br>
-<strong>建议：<strong>将以下快捷键交由IDE控制。</strong>（注：这部分内容将在我摸索使用VIM的过程中随之变更。）</strong></p>
+<p><strong>使用：</strong> 在 <strong>VSCode</strong>、<strong>Visual Studio</strong>、<strong>Idea</strong> 等 IDE 中安装 Vim 插件。<br>
+<strong>建议：</strong> 将以下快捷键交由 IDE 控制。<strong>（注：这部分内容将在我摸索使用 Vim 的过程中随之变更。）</strong></p>
 <table>
 <thead>
 <tr>
@@ -130,8 +138,8 @@
 </table>
 <h2 id="学习计划">学习计划📚</h2>
 <ol>
-<li>通过观看<a href="https://www.bilibili.com/video/BV1z541177Jy">VIM的相关教程</a>和<a href="vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">VIM的官方文档</a>来了解、学习VIM的快捷键，并做好笔记。</li>
-<li>在任何时候都尝试使用VIM来操作，提升自己操作的熟练度。（多敲代码，不仅能提升编程的实操能力，还能熟悉VIM，岂不美哉！😍😘）</li>
+<li>通过观看 <a href="https://www.bilibili.com/video/BV1z541177Jy">Vim 的相关教程</a> 和 <a href="http://vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">Vim 的官方文档</a> 来了解、学习 Vim 的快捷键，并做好笔记。</li>
+<li>在任何时候都尝试使用 Vim 来操作，提升自己操作的熟练度。（多敲代码，不仅能提升编程的实操能力，还能熟悉 Vim，岂不美哉！😍😘）</li>
 </ol>
 ]]></content>
     </entry>
@@ -161,9 +169,9 @@
 <p>🏷️  你可以对文章进行标签分组</p>
 <p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
 <p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>🌎  你可以使用 <strong>Github Pages</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
 <p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🇬🇧  你可以使用 <strong>中文简体</strong> 或 <strong>英语</strong></p>
 <p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
 <p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
 <p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
