@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2021-12-28T13:57:07.203Z</updated>
+    <updated>2021-12-28T13:59:15.073Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -60,7 +60,7 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
 <li>垃圾回收机制：<br>
 垃圾（内存）回收的目的在于主动清除不再使用的对象等，释放内存，减少了因程序设计时没有释放空间而造成内存泄漏的情况的发生。<br>
 <a href="https://www.jianshu.com/p/5261a62e4d29">👉浅谈 Java 的垃圾回收机制</a><br>
-<strong>TODO：Java GC 机制的学习🚩（占坑链接：https://waoap.github.io/post/java-gc-mechanism）</strong></li>
+<strong>TODO：Java GC 机制的学习🚩（占坑链接：<a href="https://waoap.github.io/post/java-gc-mechanism">Java GC 机制</a>）</strong></li>
 <li>跨平台实现：<br>
 <strong>Java 中：</strong> 由<strong>编译器</strong>将 <strong>.java 源文件</strong>编译为 <strong>.class 字节码文件</strong>，并由适合各个平台的 <strong>JVM 虚拟机</strong>翻译成机器码而后执行。其中，正是由 <strong>JVM 虚拟机</strong>充当着翻译官的角色，将字节码文件翻译成各平台对应的可执行文件，以此实现跨平台。（注：在执行 java 程序时，表面上我们使用的是 <code>java.exe</code> 命令来调用 java.exe 程序，但实际上会在此过程中动态调用 JVM，由 JVM 将字节码一行一行地解释成当前平台适合的可执行文件的格式，因此我们认为，Java是一种 <strong>“解释型语言”</strong>）<br>
 <strong>C 语言中：</strong> 由<strong>适合各个平台的编译器</strong>将 <strong>.c 源文件</strong>编译为各平台对应的可执行文件，以此实现跨平台<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。<br>
