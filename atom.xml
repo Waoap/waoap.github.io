@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2022-01-11T08:53:30.889Z</updated>
+    <updated>2022-01-11T09:14:28.632Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -224,6 +224,8 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
 <li>操作符（operator）；</li>
 <li>vim-easymotion；</li>
 <li>vim-surround；</li>
+<li>vim-sneak;</li>
+<li>小技巧（tricks）;</li>
 <li>多光标模式；</li>
 </ol>
 ]]></content>
