@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2021-12-28T14:05:38.335Z</updated>
+    <updated>2022-01-11T08:53:06.119Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
     <subtitle>&lt;font size=&quot;4sp&quot; &gt;书当快意辄阅尽，客莫可人不期来。&lt;/font&gt;</subtitle>
     <logo>https://waoap.github.io/images/avatar.png</logo>
     <icon>https://waoap.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Waoap&apos;s Blog</rights>
+    <rights>All rights reserved 2022, Waoap&apos;s Blog</rights>
     <entry>
         <title type="html"><![CDATA[Java GC 机制]]></title>
         <id>https://waoap.github.io/post/java-gc-mechanism/</id>
@@ -147,16 +147,21 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
         </link>
         <updated>2021-12-26T02:14:11.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
-<p>Vim，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</p>
+<p>Vim，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。<br>
+由于我个人倾向于使用 VSCode 作为生产力工具，<br>
+故我将学习的 Vim 为 VSCode 中的插件版本。</p>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="介绍">介绍🎉</h2>
-<p>Vim，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。</p>
+<p>Vim，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。<br>
+由于我个人倾向于使用 VSCode 作为生产力工具，<br>
+故我将学习的 Vim 为 VSCode 中的插件版本。</p>
 <!-- more -->
 <p>这里贴一段维基里百科里对 Vim 的介绍：</p>
 <blockquote>
 <p>Vim (/vɪm/; a contraction of Vi IMproved) is a free and open-source, screen-based text editor program for Unix. It is an improved clone of Bill Joy's vi.</p>
 </blockquote>
-<p>这里是 Vim 的 <a href="https://www.vim.org/">官网</a> 以及 <a href="https://github.com/vim/vim"> GitHub 仓库主页</a> 。</p>
+<p>这里是 Vim 的 <a href="https://www.vim.org/">官网</a> 以及 <a href="https://github.com/vim/vim"> GitHub 仓库主页</a> ；<br>
+这里是 Vim 的 <a href="https://github.com/VSCodeVim/Vim/">VSCode 插件版本的 GitHub 仓库主页</a>。</p>
 <h2 id="使用及建议">使用及建议👻</h2>
 <p><strong>使用：</strong> 在 <strong>VSCode</strong>、<strong>Visual Studio</strong>、<strong>Idea</strong> 等 IDE 中安装 Vim 插件。<br>
 <strong>建议：</strong> 将以下快捷键交由 IDE 控制。<strong>（注：这部分内容将在我摸索使用 Vim 的过程中随之变更。）</strong></p>
@@ -202,14 +207,24 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
 </tr>
 </tbody>
 </table>
-<h2 id="学习计划">学习计划📚</h2>
+<h2 id="学习计划vscode-vim">学习计划：VSCode + Vim📚</h2>
 <ol>
 <li>
-<p>通过观看 <a href="https://www.bilibili.com/video/BV1z541177Jy">Vim 的相关教程</a> 和 <a href="http://vimcdoc.sourceforge.net/doc/usr_toc.html#usr_toc.txt">Vim 的官方文档</a> 来了解、学习 Vim 的快捷键，并做好笔记。</p>
+<p>通过观看 <a href="https://www.bilibili.com/video/BV1z541177Jy">VSCode + Vim 的教程视频</a> 以及阅读 <a href="https://github.com/VSCodeVim/Vim/">VSCode Vim 插件的 README 文档</a> 来了解、学习 VSCode 中 Vim 插件的使用，并做好笔记。</p>
 </li>
 <li>
 <p>在任何时候都尝试使用 Vim 来操作，提升自己操作的熟练度。（多敲代码，不仅能提升编程的实操能力，还能熟悉 Vim，岂不美哉！😍😘）</p>
 </li>
+</ol>
+<h2 id="重点知识">重点知识 😝</h2>
+<ol>
+<li>三种模式；</li>
+<li>光标移动；</li>
+<li>动作（motion）；</li>
+<li>操作符（operator）；</li>
+<li>vim-easymotion；</li>
+<li>vim-surround；</li>
+<li>多光标模式；</li>
 </ol>
 ]]></content>
     </entry>
