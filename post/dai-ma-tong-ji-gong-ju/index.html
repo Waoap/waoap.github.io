@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Java Introduction | Waoap&#39;s Blog</title>
+<title>代码统计工具 | Waoap&#39;s Blog</title>
 <meta name="description" content="&lt;font size=&#34;4sp&#34; &gt;书当快意辄阅尽，客莫可人不期来。&lt;/font&gt;">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -15,6 +15,12 @@
 <link rel="stylesheet" href="https://waoap.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
@@ -23,6 +29,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://waoap.github.io">Waoap&#39;s Blog</a></h3>
@@ -79,50 +86,92 @@
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          <h2 class="current-tag">标签: Java Introduction</h2>
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/java-introduction/">Java 简介</a>
-    </h2>
-    <p class="article-meta">
-      2021-12-26
-      
-        <a href="https://waoap.github.io/tag/FquFORSyv6/" class="badge secondary">
-          Java Introduction
-        </a>
-      
-        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge success">
-          Java
-        </a>
-      
-        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="badge warning">
-          Computer Language
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <h2 id="摘要">💥 摘要</h2>
-<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong>、<strong>Java 的核心机制</strong> 。</p>
+          <article class="article">
+            <h1>代码统计工具</h1>
+            <p class="article-meta">
+              2022-01-16
+              
+            </p>
+            
+            <div class="post-content">
+              <p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
+配合本地自制的 colc 的启动器，<br>
+以此实现一键统计使用 VSCode 写出的代码的行数。</p>
+<!-- more -->
+<h2 id="启动器源码">启动器源码</h2>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
 
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/java-introduction/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
+// 接受 colc 输出结果的大小
+#define RESULT_SIZE 8192
 
+// 此处为命令
+#define COMMAND &quot;D:\\Programs\\Cloc\\cloc.exe E:\\Projects\\VSCode\\* --exclude-dir=.vscode&quot;
 
+// 模拟 string.h 中 strcat() 的功能
+void StrCat(char *dst, char *src)
+{
+    while (*dst) // 等价于 *dst != '\0'，下同
+        dst++;
+    while (*dst++ = *src++)
+        ;
+}
+
+int main()
+{
+    char buffer[128], result[MAX_RESULT_SIZE] = &quot;&quot;;
+
+    // 在命令行中执行程序
+    puts(&quot;Executing, please wait...&quot;);
+    FILE *fp = popen(COMMAND, &quot;r&quot;);
+    if (!fp)
+    {
+        puts(&quot;Error!\n&quot;);
+        return -1;
+    }
+
+    // 获取执行产生的输出
+    while (!feof(fp))
+        if (fgets(buffer, 128, fp))
+            StrCat(result, buffer);
+    pclose(fp);
+
+    // 输出此输出
+    puts(&quot;Done!\nTotal:\n&quot;);
+    puts(result);
+    return 0;
+}
+</code></pre>
+<h2 id="结果展示">结果展示</h2>
+<figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/1642313733689.png" alt="Result" loading="lazy"></figure>
+
+            </div>
+          </article>
         </div>
-        <div class="row flex-edges">
-  
-  
-</div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://waoap.github.io/post/java-gc-mechanism/">
+                <h3 class="post-title">
+                  Java GC 机制
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
 
+          
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://waoap.github.io/images/avatar.png?v=1642313754055" class="no-responsive avatar">
@@ -203,19 +252,19 @@
     </div>
     <div class="row">
       
-        <a href="https://waoap.github.io/tag/Em9jasbvh/" class="badge warning">
+        <a href="https://waoap.github.io/tag/Em9jasbvh/" class="badge ">
           Java GC Mechanism
         </a>
       
-        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge warning">
+        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge secondary">
           Java
         </a>
       
-        <a href="https://waoap.github.io/tag/FquFORSyv6/" class="badge secondary">
+        <a href="https://waoap.github.io/tag/FquFORSyv6/" class="badge success">
           Java Introduction
         </a>
       
-        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="badge ">
+        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="badge success">
           Computer Language
         </a>
       
@@ -223,15 +272,15 @@
           Computer Language History
         </a>
       
-        <a href="https://waoap.github.io/tag/8l8Jsygv2/" class="badge secondary">
+        <a href="https://waoap.github.io/tag/8l8Jsygv2/" class="badge ">
           Vim
         </a>
       
-        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="badge success">
+        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="badge warning">
           Coding Tools
         </a>
       
-        <a href="https://waoap.github.io/tag/OyKYFG7P3/" class="badge ">
+        <a href="https://waoap.github.io/tag/OyKYFG7P3/" class="badge warning">
           Gridea
         </a>
       
@@ -241,6 +290,7 @@
     Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://waoap.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
+
 
     </div>
 
@@ -253,6 +303,29 @@ AOS.init();
 hljs.initHighlightingOnLoad()
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2974cb002d2e01718b94',
+        clientSecret: 'b9fa60d5b695830fc2f640a2f62c6f6552e7be81',
+        repo: 'Waoap.github.io',
+        owner: 'Waoap',
+        admin: ['Waoap'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

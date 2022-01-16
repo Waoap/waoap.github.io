@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2022-01-11T09:14:28.632Z</updated>
+    <updated>2022-01-16T06:16:04.660Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -10,6 +10,67 @@
     <logo>https://waoap.github.io/images/avatar.png</logo>
     <icon>https://waoap.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Waoap&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[代码统计工具]]></title>
+        <id>https://waoap.github.io/post/dai-ma-tong-ji-gong-ju/</id>
+        <link href="https://waoap.github.io/post/dai-ma-tong-ji-gong-ju/">
+        </link>
+        <updated>2022-01-16T06:05:04.000Z</updated>
+        <summary type="html"><![CDATA[<p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
+配合本地自制的 colc 的启动器，<br>
+以此实现一键统计使用 VSCode 写出的代码的行数。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
+配合本地自制的 colc 的启动器，<br>
+以此实现一键统计使用 VSCode 写出的代码的行数。</p>
+<!-- more -->
+<h2 id="启动器源码">启动器源码</h2>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+// 接受 colc 输出结果的大小
+#define RESULT_SIZE 8192
+
+// 此处为命令
+#define COMMAND &quot;D:\\Programs\\Cloc\\cloc.exe E:\\Projects\\VSCode\\* --exclude-dir=.vscode&quot;
+
+// 模拟 string.h 中 strcat() 的功能
+void StrCat(char *dst, char *src)
+{
+    while (*dst) // 等价于 *dst != '\0'，下同
+        dst++;
+    while (*dst++ = *src++)
+        ;
+}
+
+int main()
+{
+    char buffer[128], result[MAX_RESULT_SIZE] = &quot;&quot;;
+
+    // 在命令行中执行程序
+    puts(&quot;Executing, please wait...&quot;);
+    FILE *fp = popen(COMMAND, &quot;r&quot;);
+    if (!fp)
+    {
+        puts(&quot;Error!\n&quot;);
+        return -1;
+    }
+
+    // 获取执行产生的输出
+    while (!feof(fp))
+        if (fgets(buffer, 128, fp))
+            StrCat(result, buffer);
+    pclose(fp);
+
+    // 输出此输出
+    puts(&quot;Done!\nTotal:\n&quot;);
+    puts(result);
+    return 0;
+}
+</code></pre>
+<h2 id="结果展示">结果展示</h2>
+<figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/1642313733689.png" alt="Result" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java GC 机制]]></title>
         <id>https://waoap.github.io/post/java-gc-mechanism/</id>
