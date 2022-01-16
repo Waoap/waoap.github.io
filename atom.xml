@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2022-01-16T06:16:04.660Z</updated>
+    <updated>2022-01-16T06:17:32.611Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2022, Waoap&apos;s Blog</rights>
     <entry>
         <title type="html"><![CDATA[代码统计工具]]></title>
-        <id>https://waoap.github.io/post/dai-ma-tong-ji-gong-ju/</id>
-        <link href="https://waoap.github.io/post/dai-ma-tong-ji-gong-ju/">
+        <id>https://waoap.github.io/post/colc/</id>
+        <link href="https://waoap.github.io/post/colc/">
         </link>
         <updated>2022-01-16T06:05:04.000Z</updated>
         <summary type="html"><![CDATA[<p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
