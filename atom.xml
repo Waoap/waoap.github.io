@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2022-01-16T06:40:39.722Z</updated>
+    <updated>2022-01-18T03:39:14.523Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -10,6 +10,61 @@
     <logo>https://waoap.github.io/images/avatar.png</logo>
     <icon>https://waoap.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Waoap&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Java 数据类型*]]></title>
+        <id>https://waoap.github.io/post/java-data-type/</id>
+        <link href="https://waoap.github.io/post/java-data-type/">
+        </link>
+        <updated>2022-01-18T03:12:21.000Z</updated>
+        <summary type="html"><![CDATA[<p>1、变量与常量；<br>
+2、基本数据类型；<br>
+3、编码和字符集；<br>
+3、类型转换；</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>1、变量与常量；<br>
+2、基本数据类型；<br>
+3、编码和字符集；<br>
+3、类型转换；</p>
+<!-- more -->
+<h2 id="1-变量与常量">1、变量与常量</h2>
+<p>常量：字面常量，如 <code>&quot;a&quot;</code> 、<code>123</code> 等；<br>
+变量：如 <code>int a = 1;</code> 等，重点内容包括声明<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>、赋值、使用<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>、所处内存；</p>
+<h2 id="2-基本数据类型">2、基本数据类型</h2>
+<p>包括：整数类型、浮点数类型、字符类型、布尔类型；</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Java 是强类型语言，声明变量时必须定义类型； <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>使用前必须赋值（初始化）； <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java 开发小贴士]]></title>
+        <id>https://waoap.github.io/post/java-development-tips/</id>
+        <link href="https://waoap.github.io/post/java-development-tips/">
+        </link>
+        <updated>2022-01-18T03:04:25.000Z</updated>
+        <summary type="html"><![CDATA[<p>1、标识符命名规则；<br>
+2、</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>1、标识符命名规则；<br>
+2、</p>
+<!-- more -->
+<h2 id="1-标识符命名规则">1、标识符命名规则</h2>
+<ul>
+<li>不可以以数字开头，不可以使用关键字；</li>
+<li>命名有意义；</li>
+<li>类名：首字母大写的驼峰命名法；</li>
+<li>方法名、变量名：首字母小写的驼峰命名法；</li>
+<li>包名：全部小写；</li>
+</ul>
+<h2 id="2">2、</h2>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[代码统计工具]]></title>
         <id>https://waoap.github.io/post/colc/</id>
@@ -84,16 +139,16 @@ int main()
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Java 简介]]></title>
+        <title type="html"><![CDATA[Java 简介*]]></title>
         <id>https://waoap.github.io/post/java-introduction/</id>
         <link href="https://waoap.github.io/post/java-introduction/">
         </link>
         <updated>2021-12-26T12:04:59.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="摘要">💥 摘要</h2>
-<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong>、<strong>Java 的核心机制</strong> 。</p>
+<p>本文的内容包括： Java 的发展简史 、 Java 的体系结构 、 Java 的特性与优势、<strong>Java 的核心机制</strong> 。</p>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="摘要">💥 摘要</h2>
-<p>本文的内容包括： <strong>Java 的发展简史</strong> 、 <strong>Java 的体系结构</strong> 、 <strong>Java 的特性与优势</strong>、<strong>Java 的核心机制</strong> 。</p>
+<p>本文的内容包括： Java 的发展简史 、 Java 的体系结构 、 Java 的特性与优势、<strong>Java 的核心机制</strong> 。</p>
 <!-- more -->
 <h2 id="️-java-的发展简史">🖇️ Java 的发展简史</h2>
 <p>一些资料见 <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">👉Java-Wikipedia</a> 以及 <a href="https://www.jetbrains.com/lp/devecosystem-2021/Java/">👉Jetbrains 对开发者生态系统的调研报告</a><br>
@@ -163,7 +218,7 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[计算机语言发展史]]></title>
+        <title type="html"><![CDATA[计算机语言发展史*]]></title>
         <id>https://waoap.github.io/post/computer-language-history/</id>
         <link href="https://waoap.github.io/post/computer-language-history/">
         </link>
