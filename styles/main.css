@@ -223,7 +223,6 @@ summary {
 body {
   box-sizing: border-box;
   font-weight: 300;
-  font-size: 14px;
   font-family: "Myriad Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a {
@@ -249,6 +248,7 @@ i {
 }
 p {
   margin: 0;
+  line-height: 1.4;
 }
 h1,
 h2,
@@ -281,13 +281,6 @@ p > code {
 }
 pre {
   overflow-x: scroll;
-  padding: 10pt 15pt;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background-color: #f5f5f5;
-  color: #333;
-  text-align: left;
-  font-size: 13px;
 }
 .i-card {
   position: relative;
@@ -808,25 +801,31 @@ body {
 }
 .post-detail .post .post-content p code,
 .post-detail .post .post-content li code {
-  padding: 0 2px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 2px 2px;
-  background-color: rgba(0, 0, 0, 0.06);
-  text-indent: 0;
-  word-wrap: break-word;
-  font-size: inherit;
-  font-family: monospace;
+  font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
   line-height: initial;
+  word-wrap: break-word;
+  border-radius: 0;
+  background-color: #fff5f5;
+  color: #c53030;
+  padding: 0.2em 0.33333333em;
+  margin-left: 0.125em;
+  margin-right: 0.125em;
 }
 .post-detail .post .post-content pre {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  position: relative;
 }
 .post-detail .post .post-content pre code {
+  font-size: 14px;
+  font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
   padding: 1em;
   border-radius: 5px;
-  font-size: 16px;
-  font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
   line-height: 1.375;
+  background: #f9f7f3;
+  color: #333;
+  display: block;
+  overflow-x: auto;
 }
 .post-detail .post .post-content blockquote {
   margin-bottom: 16px;
