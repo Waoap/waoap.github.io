@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2022-01-20T12:50:04.375Z</updated>
+    <updated>2022-01-20T13:05:03.954Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -189,11 +189,9 @@ int main()
         <link href="https://waoap.github.io/post/java-introduction/">
         </link>
         <updated>2021-12-26T12:04:59.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="摘要">💥 摘要</h2>
-<p>本文的内容包括： Java 的发展简史 、 Java 的体系结构 、 Java 的特性与优势、<strong>Java 的核心机制</strong> 。</p>
+        <summary type="html"><![CDATA[<p>本文的内容包括： Java 的发展简史 、 Java 的体系结构 、 Java 的特性与优势、<strong>Java 的核心机制</strong> 。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h2 id="摘要">💥 摘要</h2>
-<p>本文的内容包括： Java 的发展简史 、 Java 的体系结构 、 Java 的特性与优势、<strong>Java 的核心机制</strong> 。</p>
+        <content type="html"><![CDATA[<p>本文的内容包括： Java 的发展简史 、 Java 的体系结构 、 Java 的特性与优势、<strong>Java 的核心机制</strong> 。</p>
 <!-- more -->
 <h2 id="️-java-的发展简史">🖇️ Java 的发展简史</h2>
 <p>一些资料见 <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">👉Java-Wikipedia</a> 以及 <a href="https://www.jetbrains.com/lp/devecosystem-2021/Java/">👉Jetbrains 对开发者生态系统的调研报告</a><br>
@@ -268,12 +266,10 @@ Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公�
         <link href="https://waoap.github.io/post/computer-language-history/">
         </link>
         <updated>2021-12-26T10:28:49.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="介绍">🔖 介绍</h2>
-<p>💧 饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
+        <summary type="html"><![CDATA[<p>💧 饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
 🎉 计算机语言的历史主要分为<strong>机器语言</strong>、<strong>汇编语言</strong>、<strong>高级语言</strong>三个时期。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<h2 id="介绍">🔖 介绍</h2>
-<p>💧 饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
+        <content type="html"><![CDATA[<p>💧 饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
 🎉 计算机语言的历史主要分为<strong>机器语言</strong>、<strong>汇编语言</strong>、<strong>高级语言</strong>三个时期。</p>
 <!-- more -->
 <h2 id="发展历史">📔 发展历史</h2>
