@@ -2,14 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2022-01-18T03:39:14.523Z</updated>
+    <updated>2022-01-20T10:16:16.896Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
-    <subtitle>&lt;font size=&quot;4sp&quot; &gt;书当快意辄阅尽，客莫可人不期来。&lt;/font&gt;</subtitle>
+    <subtitle>书当快意辄阅尽，客莫可人不期来。</subtitle>
     <logo>https://waoap.github.io/images/avatar.png</logo>
     <icon>https://waoap.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Waoap&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Java 运算符]]></title>
+        <id>https://waoap.github.io/post/java-operator/</id>
+        <link href="https://waoap.github.io/post/java-operator/">
+        </link>
+        <updated>2022-01-20T03:31:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>1、算数运算符；<br>
+2、赋值运算符；<br>
+3、关系运算符；<br>
+4、逻辑运算符；<br>
+5、三元运算符；<br>
+6、位运算符；</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>1、算数运算符；<br>
+2、赋值运算符；<br>
+3、关系运算符；<br>
+4、逻辑运算符；<br>
+5、三元运算符；<br>
+6、位运算符；</p>
+<!-- more -->
+<p>…… ……</p>
+<p>6、位运算符</p>
+<ul>
+<li><code>&amp;</code>（按位与）；</li>
+<li><code>|</code>（按位或）；</li>
+<li><code>^</code>（按位异或）；</li>
+<li><code>~</code>（按位取反）；</li>
+<li><code>&lt;&lt;</code>（左移，空位补 0）：<img src="https://waoap.github.io/post-images/1642649970722.png" alt="" loading="lazy"><br>
+用途：用于快速实现乘法，如 4 * 8（2^3）等价于 4 &lt;&lt; 3；</li>
+<li><code>&gt;&gt;</code>（有符号右移，根据符号位决定空位补充 1 还是 0）：<img src="https://waoap.github.io/post-images/1642663838331.png" alt="" loading="lazy"></li>
+<li><code>&gt;&gt;&gt;</code>（无符号右移，空位补 0）：类似 <code>&gt;&gt;&gt;</code>。</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java 数据类型*]]></title>
         <id>https://waoap.github.io/post/java-data-type/</id>
@@ -18,19 +52,30 @@
         <updated>2022-01-18T03:12:21.000Z</updated>
         <summary type="html"><![CDATA[<p>1、变量与常量；<br>
 2、基本数据类型；<br>
-3、编码和字符集；<br>
-3、类型转换；</p>
+3、类型转换；<br>
+4、编码、字符集；</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>1、变量与常量；<br>
 2、基本数据类型；<br>
-3、编码和字符集；<br>
-3、类型转换；</p>
+3、类型转换；<br>
+4、编码、字符集；</p>
 <!-- more -->
 <h2 id="1-变量与常量">1、变量与常量</h2>
 <p>常量：字面常量，如 <code>&quot;a&quot;</code> 、<code>123</code> 等；<br>
 变量：如 <code>int a = 1;</code> 等，重点内容包括声明<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>、赋值、使用<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>、所处内存；</p>
-<h2 id="2-基本数据类型">2、基本数据类型</h2>
-<p>包括：整数类型、浮点数类型、字符类型、布尔类型；</p>
+<h2 id="2-数据类型">2、数据类型</h2>
+<p>基本数据类型包括：整数类型、浮点数类型、字符类型、布尔类型；<br>
+引用数据类型包括：类、接口、数组；</p>
+<h2 id="3-类型转换">3、类型转换</h2>
+<p>byte、short、char -&gt; int -&gt; long -&gt; float -&gt; double<br>
+--&gt; 自动转换 || &lt;-- 强制转换</p>
+<h2 id="4-编码-字符集">4、编码、字符集</h2>
+<p>常见：</p>
+<ul>
+<li>世界：ASCII、<strong>Unicode（UTF-8为主）</strong>；</li>
+<li>中国：GB2312、GBK；</li>
+<li>欧洲：IOS8859-1;</li>
+</ul>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">

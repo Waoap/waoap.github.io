@@ -1,454 +1,473 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>Waoap&#39;s Blog</title>
-<meta name="description" content="&lt;font size=&#34;4sp&#34; &gt;书当快意辄阅尽，客莫可人不期来。&lt;/font&gt;">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico?v=1642477130169">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Waoap&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico?v=1642673732388">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://waoap.github.io/styles/main.css">
-
-
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://waoap.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-
-  </head>
-  <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://waoap.github.io">Waoap&#39;s Blog</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://waoap.github.io">
+                <img class="avatar" src="https://waoap.github.io/images/avatar.png?v=1642673732388" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    Waoap&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-  </div>
-</nav>
+</div>
 
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/java-data-type/">Java 数据类型*</a>
-    </h2>
-    <p class="article-meta">
-      2022-01-18
-      
-        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge warning">
-          Java
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/java-operator/">
+                        Java 运算符
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2022-01-20</time>
+                    
+                        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="post-tag i-tag
+                            i-tag-">
+            #Java
         </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>1、变量与常量；<br>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>1、算数运算符；<br>
+2、赋值运算符；<br>
+3、关系运算符；<br>
+4、逻辑运算符；<br>
+5、三元运算符；<br>
+6、位运算符；</p>
+
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/java-operator/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/java-data-type/">
+                        Java 数据类型*
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2022-01-18</time>
+                    
+                        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="post-tag i-tag
+                            i-tag-other_1">
+            #Java
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>1、变量与常量；<br>
 2、基本数据类型；<br>
-3、编码和字符集；<br>
-3、类型转换；</p>
+3、类型转换；<br>
+4、编码、字符集；</p>
 
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/java-data-type/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/java-development-tips/">Java 开发小贴士</a>
-    </h2>
-    <p class="article-meta">
-      2022-01-18
-      
-        <a href="https://waoap.github.io/tag/zjUgkoAYq/" class="badge secondary">
-          Development Tips
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/java-data-type/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/java-development-tips/">
+                        Java 开发小贴士
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2022-01-18</time>
+                    
+                        <a href="https://waoap.github.io/tag/zjUgkoAYq/" class="post-tag i-tag
+                            i-tag-primary">
+            #Development Tips
         </a>
-      
-        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge secondary">
-          Java
+                        
+                        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="post-tag i-tag
+                            i-tag-success">
+            #Java
         </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>1、标识符命名规则；<br>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>1、标识符命名规则；<br>
 2、</p>
 
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/java-development-tips/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/colc/">代码统计工具</a>
-    </h2>
-    <p class="article-meta">
-      2022-01-16
-      
-        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="badge success">
-          Coding Tools
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/java-development-tips/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/colc/">
+                        代码统计工具
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2022-01-16</time>
+                    
+                        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="post-tag i-tag
+                            i-tag-other_1">
+            #Coding Tools
         </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://waoap.github.io/post/colc/" class="post-feature-image" style="background-image:url(https://waoap.github.io/post-images/colc.png) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
 配合本地自制的 colc 的启动器，<br>
 以此实现一键统计使用 VSCode 写出的代码的行数。</p>
 
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/colc/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/colc/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/java-gc-mechanism/">
+                        Java GC 机制
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-12-28</time>
+                    
+                        <a href="https://waoap.github.io/tag/k7XDZoTAN/" class="post-tag i-tag
+                            i-tag-success">
+            #Java Core Mechanism
+        </a>
+                        
+                        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="post-tag i-tag
+                            i-tag-other_2">
+            #Java
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://waoap.github.io/post/java-gc-mechanism/" class="post-feature-image" style="background-image:url(https://waoap.github.io/post-images/java-gc-mechanism.jpg) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>TODO：Java GC 机制学习🚩</p>
 
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/java-gc-mechanism/">Java GC 机制</a>
-    </h2>
-    <p class="article-meta">
-      2021-12-28
-      
-        <a href="https://waoap.github.io/tag/k7XDZoTAN/" class="badge warning">
-          Java Core Mechanism
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/java-gc-mechanism/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/java-introduction/">
+                        Java 简介*
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-12-26</time>
+                    
+                        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="post-tag i-tag
+                            i-tag-other_1">
+            #Java
         </a>
-      
-        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge ">
-          Java
+                        
+                        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="post-tag i-tag
+                            i-tag-banana">
+            #Computer Language
         </a>
-      
-    </p>
-    <p class="text-lead">
-      <p>TODO：Java GC 机制学习🚩</p>
-
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/java-gc-mechanism/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/java-introduction/">Java 简介*</a>
-    </h2>
-    <p class="article-meta">
-      2021-12-26
-      
-        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge ">
-          Java
-        </a>
-      
-        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="badge ">
-          Computer Language
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      <h2 id="摘要">💥 摘要</h2>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://waoap.github.io/post/java-introduction/" class="post-feature-image" style="background-image:url(https://waoap.github.io/post-images/java-introduction.jpg) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <h2 id="摘要">💥 摘要</h2>
 <p>本文的内容包括： Java 的发展简史 、 Java 的体系结构 、 Java 的特性与优势、<strong>Java 的核心机制</strong> 。</p>
 
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/java-introduction/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/computer-language-history/">计算机语言发展史*</a>
-    </h2>
-    <p class="article-meta">
-      2021-12-26
-      
-        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="badge ">
-          Computer Language
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/java-introduction/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/computer-language-history/">
+                        计算机语言发展史*
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-12-26</time>
+                    
+                        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="post-tag i-tag
+                            i-tag-other_1">
+            #Computer Language
         </a>
-      
-    </p>
-    <p class="text-lead">
-      <h2 id="介绍">🔖 介绍</h2>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://waoap.github.io/post/computer-language-history/" class="post-feature-image" style="background-image:url(https://waoap.github.io/post-images/computer-language-history.png) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <h2 id="介绍">🔖 介绍</h2>
 <p>💧 饮水要思源，学习计算机语言则要从它的发展史了解起。<br>
 🎉 计算机语言的历史主要分为<strong>机器语言</strong>、<strong>汇编语言</strong>、<strong>高级语言</strong>三个时期。</p>
 
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/computer-language-history/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/vim/">Vim</a>
-    </h2>
-    <p class="article-meta">
-      2021-12-26
-      
-        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="badge success">
-          Coding Tools
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/computer-language-history/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/vim/">
+                        Vim
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-12-26</time>
+                    
+                        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="post-tag i-tag
+                            i-tag-info">
+            #Coding Tools
         </a>
-      
-    </p>
-    <p class="text-lead">
-      <h2 id="介绍">介绍🎉</h2>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://waoap.github.io/post/vim/" class="post-feature-image" style="background-image:url(https://waoap.github.io/post-images/vim.png) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <h2 id="介绍">介绍🎉</h2>
 <p>Vim，程序员必备工具，一种丢掉鼠标的优雅生活方式💕。<br>
 由于我个人倾向于使用 VSCode 作为生产力工具，<br>
 故我将学习的 Vim 为 VSCode 中的插件版本。</p>
 
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/vim/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://waoap.github.io/post/hello-gridea/">Hello Gridea</a>
-    </h2>
-    <p class="article-meta">
-      2021-12-25
-      
-        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="badge secondary">
-          Coding Tools
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/vim/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://waoap.github.io/post/hello-gridea/">
+                        Hello Gridea
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-12-25</time>
+                    
+                        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="post-tag i-tag
+                            i-tag-other_2">
+            #Coding Tools
         </a>
-      
-    </p>
-    <p class="text-lead">
-      <h2 id="介绍">介绍👇</h2>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://waoap.github.io/post/hello-gridea/" class="post-feature-image" style="background-image:url(https://waoap.github.io/post-images/hello-gridea.png) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <h2 id="介绍">介绍👇</h2>
 <p>👏  欢迎来到 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong>， 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... 我将用它来记录自己的学习、成长以及期间的思考、感悟等等，而这也是我第一次尝试建立自己的博客！</p>
 
-    </p>
-    <div class="row">
-      <a href="https://waoap.github.io/post/hello-gridea/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://waoap.github.io/post/hello-gridea/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
 
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://waoap.github.io/images/avatar.png?v=1642673732388)">
+        </div>
+        <h1 class="id_card-title">
+            Waoap&#39;s Blog
+        </h1>
+        <h2 class="id_card-description">
+            书当快意辄阅尽，客莫可人不期来。
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
 
         </div>
-        
-        <div class="row flex-edges">
-  
-  
+    </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+
+                </div>
+            </div>
+
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://waoap.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-      </div>
-      
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://waoap.github.io/images/avatar.png?v=1642477130169" class="no-responsive avatar">
-    <div class="text-muted"><font size="4sp" >书当快意辄阅尽，客莫可人不期来。</font></div>
-    <div class="social-container">
-      
-        
-          <a href="https://github.com/Waoap" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/java-data-type/">Java 数据类型*</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/java-development-tips/">Java 开发小贴士</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/colc/">代码统计工具</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/java-gc-mechanism/">Java GC 机制</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/java-introduction/">Java 简介*</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/computer-language-history/">计算机语言发展史*</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/vim/">Vim</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/hello-gridea/">Hello Gridea</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/about/">关于</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge success">
-          Java
-        </a>
-      
-        <a href="https://waoap.github.io/tag/zjUgkoAYq/" class="badge warning">
-          Development Tips
-        </a>
-      
-        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="badge secondary">
-          Coding Tools
-        </a>
-      
-        <a href="https://waoap.github.io/tag/k7XDZoTAN/" class="badge secondary">
-          Java Core Mechanism
-        </a>
-      
-        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="badge success">
-          Computer Language
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://waoap.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
 
-
-
-  </body>
 </html>

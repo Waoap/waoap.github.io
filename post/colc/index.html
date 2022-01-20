@@ -1,106 +1,127 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>代码统计工具 | Waoap&#39;s Blog</title>
-<meta name="description" content="&lt;font size=&#34;4sp&#34; &gt;书当快意辄阅尽，客莫可人不期来。&lt;/font&gt;">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico?v=1642477130169">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    代码统计工具 | Waoap&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico?v=1642673732388">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://waoap.github.io/styles/main.css">
-
-
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
-
-  
-
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://waoap.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
 
+                    
+                            
+</head>
 
-  </head>
-  <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://waoap.github.io">Waoap&#39;s Blog</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://waoap.github.io">
+                <img class="avatar" src="https://waoap.github.io/images/avatar.png?v=1642673732388" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    Waoap&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-  </div>
-</nav>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>代码统计工具</h1>
-            <p class="article-meta">
-              2022-01-16
-              
-                <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="badge success">
-                  Coding Tools
-                </a>
-              
-            </p>
-            
-              <img src="https://waoap.github.io/post-images/colc.png" alt="代码统计工具">
-            
-            <div class="post-content">
-              <p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            代码统计工具
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2022-01-16</time>
+                            
+                                <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="post-tag i-tag
+                            i-tag-other_2">
+                            #Coding Tools
+                        </a>
+                                
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('https://waoap.github.io/post-images/colc.png')"></div>
+                            
+                                <div class="post-content">
+                                    <p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
 配合本地自制的 colc 的启动器，<br>
 以此实现一键统计使用 VSCode 写出的代码的行数。</p>
 <!-- more -->
@@ -150,191 +171,115 @@ int main()
 <h2 id="结果展示">结果展示</h2>
 <figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/1642313733689.png" alt="Result" loading="lazy"></figure>
 
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://waoap.github.io/post/java-gc-mechanism/">
-                <h3 class="post-title">
-                  Java GC 机制
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-        
-          
-            <div class="paper" data-aos="fade-in">
-              <div id="gitalk-container"></div>
-            </div>
-          
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://waoap.github.io/post/java-gc-mechanism/">
+                                <h3 class="post-title">
+                                    Java GC 机制
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%90%AF%E5%8A%A8%E5%99%A8%E6%BA%90%E7%A0%81">启动器源码</a></li>
+<li><a href="#%E7%BB%93%E6%9E%9C%E5%B1%95%E7%A4%BA">结果展示</a></li>
+</ul>
+</li>
+</ul>
 
-          
-        
-      </div>
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
 
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://waoap.github.io/images/avatar.png?v=1642477130169" class="no-responsive avatar">
-    <div class="text-muted"><font size="4sp" >书当快意辄阅尽，客莫可人不期来。</font></div>
-    <div class="social-container">
-      
-        
-          <a href="https://github.com/Waoap" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/java-data-type/">Java 数据类型*</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/java-development-tips/">Java 开发小贴士</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/colc/">代码统计工具</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/java-gc-mechanism/">Java GC 机制</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/java-introduction/">Java 简介*</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/computer-language-history/">计算机语言发展史*</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/vim/">Vim</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/hello-gridea/">Hello Gridea</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://waoap.github.io/post/about/">关于</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://waoap.github.io/tag/iPo_IRy54/" class="badge ">
-          Java
-        </a>
-      
-        <a href="https://waoap.github.io/tag/zjUgkoAYq/" class="badge success">
-          Development Tips
-        </a>
-      
-        <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="badge secondary">
-          Coding Tools
-        </a>
-      
-        <a href="https://waoap.github.io/tag/k7XDZoTAN/" class="badge ">
-          Java Core Mechanism
-        </a>
-      
-        <a href="https://waoap.github.io/tag/oEgdvA8-wy/" class="badge warning">
-          Computer Language
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://waoap.github.io/atom.xml" target="_blank">RSS</a>
-  </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://waoap.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
 
-
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    </div>
     <script>
-
-      var gitalk = new Gitalk({
-        clientID: '2974cb002d2e01718b94',
-        clientSecret: 'b9fa60d5b695830fc2f640a2f62c6f6552e7be81',
-        repo: 'Waoap.github.io',
-        owner: 'Waoap',
-        admin: ['Waoap'],
-        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
-
-      gitalk.render('gitalk-container')
-
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
     </script>
-  
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '2974cb002d2e01718b94',
+            clientSecret: 'b9fa60d5b695830fc2f640a2f62c6f6552e7be81',
+            repo: 'Waoap.github.io',
+            owner: 'Waoap',
+            admin: ['Waoap'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
 
-  
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
 
+                    
+                                
+</body>
 
-
-
-  </body>
 </html>
