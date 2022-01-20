@@ -793,21 +793,21 @@ body {
   transition: all 0.3s;
   border-bottom: 1px solid #f5a623;
 }
-.post-detail .post .post-content a img {
+.post-detail .post .post-content img {
   display: block;
   margin: 24px auto;
   max-width: 100%;
   border-radius: 2px;
   box-shadow: 0 0 30px #eee;
 }
-.post-detail .post .post-content a p {
+.post-detail .post .post-content p {
   margin-bottom: 24px;
   letter-spacing: 0.05em;
   font-size: 16px;
   line-height: 1.725;
 }
-.post-detail .post .post-content a p code,
-.post-detail .post .post-content a li code {
+.post-detail .post .post-content p code,
+.post-detail .post .post-content li code {
   padding: 0 2px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 2px 2px;
@@ -818,85 +818,85 @@ body {
   font-family: monospace;
   line-height: initial;
 }
-.post-detail .post .post-content a pre {
+.post-detail .post .post-content pre {
   margin-bottom: 24px;
 }
-.post-detail .post .post-content a pre code {
+.post-detail .post .post-content pre code {
   padding: 1em;
   border-radius: 5px;
   font-size: 16px;
   font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
   line-height: 1.375;
 }
-.post-detail .post .post-content a blockquote {
+.post-detail .post .post-content blockquote {
   margin-bottom: 16px;
   padding: 16px;
   border-left: 2px solid #006cff;
   background: #f3f5f7;
 }
-.post-detail .post .post-content a blockquote p {
+.post-detail .post .post-content blockquote p {
   margin-bottom: 0;
 }
-.post-detail .post .post-content a table {
+.post-detail .post .post-content table {
   display: block;
   overflow-x: auto;
   margin: 1rem 0;
   border-collapse: collapse;
 }
-.post-detail .post .post-content a tr {
+.post-detail .post .post-content tr {
   border-top: 1px solid #dfe2e5;
 }
-.post-detail .post .post-content a td,
-.post-detail .post .post-content a th {
+.post-detail .post .post-content td,
+.post-detail .post .post-content th {
   padding: 0.6em 1em;
   border: 1px solid #dfe2e5;
 }
-.post-detail .post .post-content a ul,
-.post-detail .post .post-content a ol {
+.post-detail .post .post-content ul,
+.post-detail .post .post-content ol {
   margin-bottom: 16px;
   padding-left: 24px;
   line-height: 1.725;
 }
-.post-detail .post .post-content a h1,
-.post-detail .post .post-content a h2,
-.post-detail .post .post-content a h3,
-.post-detail .post .post-content a h4,
-.post-detail .post .post-content a h5,
-.post-detail .post .post-content a h6 {
+.post-detail .post .post-content h1,
+.post-detail .post .post-content h2,
+.post-detail .post .post-content h3,
+.post-detail .post .post-content h4,
+.post-detail .post .post-content h5,
+.post-detail .post .post-content h6 {
   margin: 16px 0;
   font-weight: bold;
 }
-.post-detail .post .post-content a h1 {
+.post-detail .post .post-content h1 {
   font-size: 28px;
 }
-.post-detail .post .post-content a h2 {
+.post-detail .post .post-content h2 {
   font-size: 24px;
 }
-.post-detail .post .post-content a h3 {
+.post-detail .post .post-content h3 {
   font-size: 20px;
 }
-.post-detail .post .post-content a h4 {
+.post-detail .post .post-content h4 {
   font-size: 18px;
 }
-.post-detail .post .post-content a h5 {
+.post-detail .post .post-content h5 {
   font-size: 16px;
 }
-.post-detail .post .post-content a h6 {
+.post-detail .post .post-content h6 {
   font-size: 14px;
 }
-.post-detail .next-post {
+.next-post {
   padding: 24px 32px;
   text-align: center;
 }
-.post-detail .next-post .next {
+.next-post .next {
   margin-bottom: 24px;
 }
-.post-detail .next-post .post-title {
+.next-post .post-title {
   font-weight: bold;
   font-size: 20px;
 }
-.post-detail #gitalk-container,
-.post-detail #disqus_thread {
+#gitalk-container,
+#disqus_thread {
   padding: 0 30px;
 }
 .id_card {
