@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    代码统计工具 | Waoap&#39;s Blog
+    Java 数据 | Waoap&#39;s Blog
 </title>
 <link rel="shortcut icon" href="https://waoap.github.io/favicon.ico?v=1642864524499">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -106,70 +106,59 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            代码统计工具
+                            Java 数据
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2022-01-16</time>
+                            <time class="post-time">2022-01-18</time>
                             
-                                <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="post-tag i-tag
-                            i-tag-banana">
-                            #Coding Tools
+                                <a href="https://waoap.github.io/tag/iPo_IRy54/" class="post-tag i-tag
+                            i-tag-error">
+                            #Java
                         </a>
                                 
                         </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://waoap.github.io/post-images/colc.png')"></div>
+                            <div class="post-feature-image" style="background-image: url('https://waoap.github.io/post-images/java-data.png')"></div>
                             
                                 <div class="post-content">
-                                    <p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
-配合本地自制的 colc 的启动器，<br>
-以此实现一键统计使用 VSCode 写出的代码的行数。</p>
+                                    <p>1、变量与常量；<br>
+2、基本数据类型；<br>
+3、类型转换；<br>
+4、编码、字符集。</p>
 <!-- more -->
-<h2 id="启动器源码">启动器源码</h2>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-// 接受 colc 输出结果的大小
-#define MAX_RESULT_SIZE 8192
-
-// 此处为命令
-#define COMMAND &quot;D:\\Programs\\Cloc\\cloc.exe E:\\Projects\\VSCode\\* --exclude-dir=.vscode&quot;
-
-// 模拟 string.h 中 strcat() 的功能
-void StrCat(char *dst, char *src)
-{
-    while (*dst) // 等价于 *dst != '\0'，下同
-        dst++;
-    while (*dst++ = *src++)
-        ;
-}
-
-int main()
-{
-    char buffer[128], result[MAX_RESULT_SIZE] = &quot;&quot;;
-
-    // 在命令行中执行程序
-    puts(&quot;Executing, please wait...&quot;);
-    FILE *fp = popen(COMMAND, &quot;r&quot;);
-    if (!fp)
-    {
-        puts(&quot;Error!\n&quot;);
-        return -1;
-    }
-
-    // 获取执行产生的输出
-    while (!feof(fp))
-        if (fgets(buffer, 128, fp))
-            StrCat(result, buffer);
-    pclose(fp);
-
-    // 输出此输出
-    puts(&quot;Done!\nTotal:\n&quot;);
-    puts(result);
-    return 0;
-}
-</code></pre>
-<h2 id="结果展示">结果展示</h2>
-<figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/1642313733689.png" alt="Result" loading="lazy"></figure>
+<h2 id="1-变量与常量">1、变量与常量</h2>
+<p><strong>变量：</strong><br>
+变量用于表示特定类型的数据。<br>
+重点内容包括声明<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>、初始化（赋值）<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>、使用<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>、使用范围、在内存中的地址；</p>
+<p><strong>常量：</strong><br>
+<strong>常值（直接量）</strong> ，如 <code>&quot;a&quot;</code> 、<code>123</code> 等；<br>
+<strong>命名常量</strong> ，如由 final 关键字修饰的常量；</p>
+<h2 id="2-数据类型">2、数据类型</h2>
+<p><strong>基本数据类型：</strong> 整数类型、浮点数类型、字符类型、布尔类型；<br>
+<strong>引用数据类型：</strong> 类、接口、数组；</p>
+<h2 id="3-类型转换">3、类型转换</h2>
+<p>byte、short、char -&gt; int -&gt; long -&gt; float -&gt; double<br>
+左 --&gt; 右： 自动（隐式）转换；<br>
+左 &lt;-- 右： 强制（显式）转换。</p>
+<h2 id="4-编码-字符集">4、编码、字符集</h2>
+<p>常见：</p>
+<ul>
+<li>通用：ASCII、<strong>Unicode（UTF-8为主）</strong>；</li>
+<li>中国：GB2312、GBK；</li>
+<li>欧洲：IOS8859-1;</li>
+<li>…… ……</li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Java 是强类型语言，声明变量时必须定义类型； <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><code>...(x = 1);</code> 等价于 <code>x = 1; ...(x);</code>，这被称为赋值表达式； <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>变量在使用前必须被声明和初始化； <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
                                 </div>
                     </article>
@@ -177,9 +166,9 @@ int main()
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://waoap.github.io/post/c.p.j-summary/">
+                            <a href="https://waoap.github.io/post/java-development-tips/">
                                 <h3 class="post-title">
-                                    计算机、程序和 Java 概述
+                                    Java 开发准则
                                 </h3>
                             </a>
                         </div>
@@ -200,8 +189,10 @@ int main()
             <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E5%90%AF%E5%8A%A8%E5%99%A8%E6%BA%90%E7%A0%81">启动器源码</a></li>
-<li><a href="#%E7%BB%93%E6%9E%9C%E5%B1%95%E7%A4%BA">结果展示</a></li>
+<li><a href="#1-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F">1、变量与常量</a></li>
+<li><a href="#2-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2、数据类型</a></li>
+<li><a href="#3-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2">3、类型转换</a></li>
+<li><a href="#4-%E7%BC%96%E7%A0%81-%E5%AD%97%E7%AC%A6%E9%9B%86">4、编码、字符集</a></li>
 </ul>
 </li>
 </ul>

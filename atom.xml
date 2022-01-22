@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waoap.github.io</id>
     <title>Waoap&apos;s Blog</title>
-    <updated>2022-01-21T03:32:11.034Z</updated>
+    <updated>2022-01-22T15:16:16.277Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waoap.github.io"/>
     <link rel="self" href="https://waoap.github.io/atom.xml"/>
@@ -11,27 +11,57 @@
     <icon>https://waoap.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Waoap&apos;s Blog</rights>
     <entry>
+        <title type="html"><![CDATA[软件开发过程]]></title>
+        <id>https://waoap.github.io/post/program-development/</id>
+        <link href="https://waoap.github.io/post/program-development/">
+        </link>
+        <updated>2022-01-22T14:56:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>软件开发生命周期是一个多阶段的过程，包括需求规范、分析、设计、实现、<br>
+测试、部署和维护。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>软件开发生命周期是一个多阶段的过程，包括需求规范、分析、设计、实现、<br>
+测试、部署和维护。</p>
+<!-- more -->
+<p>开发一个软件产品是一个工程过程。软件产品，无论多大或者多小，具有同样的生命周<br>
+期：<strong>需求规范、分析、设计、实现、测试、部署和维护</strong> 。</p>
+<ul>
+<li><strong>需求规范</strong> 是一个规范化的过程，旨在理解软件要处理的问题，以及将软件系统需要做的详细记录到文档中。开发者需要和他们的顾客（使用软件的个人或者组织）密切合作，仔细地研究问题，以确定软件需要做什么。</li>
+<li><strong>系统分析</strong> 旨在分析数据流，并且确定系统的输人和输出。首先确定输出，然后弄清楚需要什么样子的输入从而产生结果。</li>
+<li><strong>系统设计</strong> 是设计一个从输人获得输出的过程。这个阶段涉及使用多层的抽象，将问题分解为可管理的组成部分，并且设计执行每个组成部分的策略。可以将每个组成部分看作一个执行系统特定功能的子系统。<br>
+<strong>注：系统分析和设计的本质是输入、处理和输出（IPO)。</strong></li>
+<li><strong>实现</strong> 是将系统设计翻译成程序。为每个组成部分编写独立的程序，然后集成在一起工作。这个过程需要使用一门编程语言。实现包括编码、自我测试，以及调试(即，在代码中寻找错误，称为调试）。</li>
+<li><strong>测试</strong> 确保代码符合需求规范，并且排除错误。通常由一个没有参与产品设计和实现的独立软件工程团队完成这样的测试。</li>
+<li><strong>部署</strong> 使得软件可以被使用。按照软件类型的不同，可能被安装到每个用户的机器上，或<br>
+者安装在一个 Internet 可访问的服务器上。</li>
+<li><strong>维护</strong> 是对软件产品进行更新和改进。软件产品必须在一直演化的环境中连续运行和改<br>
+进。这要求产品的周期性改进，以修正新发现的错误，并且将更改集成到产品中。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Java 运算符]]></title>
         <id>https://waoap.github.io/post/java-operator/</id>
         <link href="https://waoap.github.io/post/java-operator/">
         </link>
         <updated>2022-01-20T03:31:31.000Z</updated>
-        <summary type="html"><![CDATA[<p>1、算数运算符；<br>
-2、赋值运算符；<br>
-3、关系运算符；<br>
-4、逻辑运算符；<br>
-5、三元运算符；<br>
-6、位运算符；</p>
+        <summary type="html"><![CDATA[<p>1、运算符类型；<br>
+2、运算符优先级。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>1、算数运算符；<br>
-2、赋值运算符；<br>
-3、关系运算符；<br>
-4、逻辑运算符；<br>
-5、三元运算符；<br>
-6、位运算符；</p>
+        <content type="html"><![CDATA[<p>1、运算符类型；<br>
+2、运算符优先级。</p>
 <!-- more -->
+<h2 id="1-运算符类型">1、运算符类型</h2>
+<p><strong>概览：</strong></p>
+<ul>
+<li>算数运算符（<code>+</code>、<code>-</code>、<code>*</code>、<code>/</code>、<code>%</code>）；</li>
+<li>赋值运算符（<code>=</code>）；</li>
+<li>关系运算符（<code>&gt;</code>、<code>&lt;</code>、<code>&gt;=</code>、<code>&lt;=</code>、<code>==</code>）；</li>
+<li>逻辑运算符（<code>&amp;&amp;</code>、<code>||</code>、<code>!</code>）；</li>
+<li>三元运算符（<code>exp1 : val1 ? val2</code>）；</li>
+<li>位运算符（<code>&amp;</code>、<code>|</code>、<code>^</code>、<code>~</code>、<code>&lt;&lt;</code>、<code>&gt;&gt;</code>、<code>&gt;&gt;&gt;</code>）；</li>
+</ul>
 <p>…… ……</p>
-<p>6、位运算符</p>
+<h3 id="16-位运算符">1.6 位运算符</h3>
 <ul>
 <li><code>&amp;</code>（按位与）；</li>
 <li><code>|</code>（按位或）；</li>
@@ -42,46 +72,56 @@
 <li><code>&gt;&gt;</code>（有符号右移，根据符号位决定空位补充 1 还是 0）：<img src="https://waoap.github.io/post-images/1642663838331.png" alt="" loading="lazy"></li>
 <li><code>&gt;&gt;&gt;</code>（无符号右移，空位补 0）：类似 <code>&gt;&gt;&gt;</code>。</li>
 </ul>
+<h2 id="2-运算符优先级">2、运算符优先级</h2>
+<figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/1642863310737.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Java 数据类型*]]></title>
-        <id>https://waoap.github.io/post/java-data-type/</id>
-        <link href="https://waoap.github.io/post/java-data-type/">
+        <title type="html"><![CDATA[Java 数据]]></title>
+        <id>https://waoap.github.io/post/java-data/</id>
+        <link href="https://waoap.github.io/post/java-data/">
         </link>
         <updated>2022-01-18T03:12:21.000Z</updated>
         <summary type="html"><![CDATA[<p>1、变量与常量；<br>
 2、基本数据类型；<br>
 3、类型转换；<br>
-4、编码、字符集；</p>
+4、编码、字符集。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>1、变量与常量；<br>
 2、基本数据类型；<br>
 3、类型转换；<br>
-4、编码、字符集；</p>
+4、编码、字符集。</p>
 <!-- more -->
 <h2 id="1-变量与常量">1、变量与常量</h2>
-<p>常量：字面常量，如 <code>&quot;a&quot;</code> 、<code>123</code> 等；<br>
-变量：如 <code>int a = 1;</code> 等，重点内容包括声明<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>、赋值、使用<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>、所处内存；</p>
+<p><strong>变量：</strong><br>
+变量用于表示特定类型的数据。<br>
+重点内容包括声明<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>、初始化（赋值）<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>、使用<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>、使用范围、在内存中的地址；</p>
+<p><strong>常量：</strong><br>
+<strong>常值（直接量）</strong> ，如 <code>&quot;a&quot;</code> 、<code>123</code> 等；<br>
+<strong>命名常量</strong> ，如由 final 关键字修饰的常量；</p>
 <h2 id="2-数据类型">2、数据类型</h2>
-<p>基本数据类型包括：整数类型、浮点数类型、字符类型、布尔类型；<br>
-引用数据类型包括：类、接口、数组；</p>
+<p><strong>基本数据类型：</strong> 整数类型、浮点数类型、字符类型、布尔类型；<br>
+<strong>引用数据类型：</strong> 类、接口、数组；</p>
 <h2 id="3-类型转换">3、类型转换</h2>
 <p>byte、short、char -&gt; int -&gt; long -&gt; float -&gt; double<br>
---&gt; 自动转换 || &lt;-- 强制转换</p>
+左 --&gt; 右： 自动（隐式）转换；<br>
+左 &lt;-- 右： 强制（显式）转换。</p>
 <h2 id="4-编码-字符集">4、编码、字符集</h2>
 <p>常见：</p>
 <ul>
-<li>世界：ASCII、<strong>Unicode（UTF-8为主）</strong>；</li>
+<li>通用：ASCII、<strong>Unicode（UTF-8为主）</strong>；</li>
 <li>中国：GB2312、GBK；</li>
 <li>欧洲：IOS8859-1;</li>
+<li>…… ……</li>
 </ul>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
 <li id="fn1" class="footnote-item"><p>Java 是强类型语言，声明变量时必须定义类型； <a href="#fnref1" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn2" class="footnote-item"><p>使用前必须赋值（初始化）； <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+<li id="fn2" class="footnote-item"><p><code>...(x = 1);</code> 等价于 <code>x = 1; ...(x);</code>，这被称为赋值表达式； <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>变量在使用前必须被声明和初始化； <a href="#fnref3" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
@@ -93,21 +133,29 @@
         <link href="https://waoap.github.io/post/java-development-tips/">
         </link>
         <updated>2022-01-18T03:04:25.000Z</updated>
-        <summary type="html"><![CDATA[<p>1、标识符命名规则；<br>
+        <summary type="html"><![CDATA[<p>1、标识符命名规则、规范；<br>
 2、待更新……</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>1、标识符命名规则；<br>
+        <content type="html"><![CDATA[<p>1、标识符命名规则、规范；<br>
 2、待更新……</p>
 <!-- more -->
-<h2 id="1-标识符命名规则">1、标识符命名规则</h2>
+<h2 id="1-标识符命名规则-规范">1、标识符命名规则、规范</h2>
+<p>规则：</p>
 <ul>
-<li>不可以以数字开头，不可以使用关键字；</li>
-<li>命名有意义；</li>
-<li>类名：首字母大写的驼峰命名法；</li>
-<li>方法名、变量名：首字母小写的驼峰命名法；</li>
-<li>包名：全部小写；</li>
+<li>标识符以字母、下划线 _ 和美元符号 $ 开头，不能以数字开头；</li>
+<li>标识符不可以是关键字；</li>
+<li>标识符可以是任意长度；</li>
 </ul>
-<h2 id="2">2、</h2>
+<p>规范：</p>
+<ul>
+<li>标识符的命名应有意义，尽量避免使用缩写；</li>
+<li>不要用字符 $ 命名标识符，习惯上，字符 $ 只用在机器自动产生的源代码中；</li>
+<li><strong>变量名、方法名：</strong> 使用首字母小写的驼峰命名法；</li>
+<li><strong>类名：</strong> 使用首字母大写的驼峰命名法；</li>
+<li><strong>常量名：</strong> 所有字母大写，单词间以下划线连接；</li>
+<li><strong>包名：</strong> 一般所有字母小写；</li>
+</ul>
+<h2 id="2-待更新">2、待更新……</h2>
 ]]></content>
     </entry>
     <entry>
@@ -128,7 +176,7 @@
 <pre><code class="language-c">#include &lt;stdio.h&gt;
 
 // 接受 colc 输出结果的大小
-#define RESULT_SIZE 8192
+#define MAX_RESULT_SIZE 8192
 
 // 此处为命令
 #define COMMAND &quot;D:\\Programs\\Cloc\\cloc.exe E:\\Projects\\VSCode\\* --exclude-dir=.vscode&quot;
@@ -172,18 +220,6 @@ int main()
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Java GC 机制]]></title>
-        <id>https://waoap.github.io/post/java-gc-mechanism/</id>
-        <link href="https://waoap.github.io/post/java-gc-mechanism/">
-        </link>
-        <updated>2021-12-28T13:20:34.000Z</updated>
-        <summary type="html"><![CDATA[<p>TODO：Java GC 机制学习🚩</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>TODO：Java GC 机制学习🚩</p>
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[计算机、程序和 Java 概述]]></title>
         <id>https://waoap.github.io/post/c.p.j-summary/</id>
         <link href="https://waoap.github.io/post/c.p.j-summary/">
@@ -201,19 +237,19 @@ int main()
 3、操作系统；<br>
 4、Java 概述。</p>
 <!-- more -->
-<h2 id="11-计算机">1.1 计算机</h2>
+<h2 id="1-计算机">1、计算机</h2>
 <p>计算机是 <strong>存储和处理电子数据的电子设备</strong> ，包括 <strong>硬件</strong> 和 <strong>软件</strong> 两部分，硬件包括计算机中可以看得见的物理部分，而软件提供看不见的指令。一台计算机是由以下几个主要的硬件组件构成的：<br>
 <img src="https://waoap.github.io/post-images/1642726256619.png" alt="" loading="lazy"><br>
 它们通过一个称为 <strong>总线（bus）</strong> 的子系统连接。在 PC （个人电脑）中，总线搭建在主板上。</p>
-<h3 id="111-中央处理器">1.1.1 中央处理器</h3>
+<h3 id="11-中央处理器">1.1 中央处理器</h3>
 <p>中央处理器（CPU）通常由 <strong>控制单元（control unit）</strong> 和 <strong>算数/逻辑单元（arithmetic/logic unit）</strong> 两部分组成。控制单元用于控制和协调其他组件的动作，算术/逻辑单元用于完成数值运算（加法、减法、乘法、除法）和逻辑运算（比较）。</p>
 <p>每台计算机都有一个 <strong>内部时钟</strong> ，以固定速度发射电子脉冲，用于控制和同步各种操作的步调，其发射频率也即是我们常说的 CPU 频率，单位一般为 <strong>兆赫兹（MHz）</strong> 和 <strong>千兆赫（GHz）</strong> 。</p>
 <p>最初的 CPU 只有一个 <strong>核（core）</strong> ，核是 CPU 中实现指令读取和执行的部分。</p>
-<h3 id="112-比特和字节">1.1.2 比特和字节</h3>
+<h3 id="12-比特和字节">1.2 比特和字节</h3>
 <p>1 个二进制数为 1 <strong>比特（bit）</strong> ，8 比特为 1 <strong>字节（byte）</strong> 。字节是计算机中最小的存储单元。各种类型的数据都根据编码模式（scheme）被编码为字节序列。</p>
-<h3 id="113-内存">1.1.3 内存</h3>
+<h3 id="13-内存">1.3 内存</h3>
 <p>内存由一个有序的字节序列组成，每个字节都有唯一的地址，由于可以按任意顺序存取字节，内存被称为 <strong>随机访问存储器（Random-Access Memory，RAM）</strong> 。内存中字节的内容永远非空但可能对我们的程序来说毫无意义。</p>
-<h3 id="114-存储设备">1.1.4 存储设备</h3>
+<h3 id="14-存储设备">1.4 存储设备</h3>
 <p>相较内存慢但不易失的存储器，被称为 <strong>只读内存（Read-Only Memory）</strong> ，主要有以下三种类型：</p>
 <ul>
 <li>磁盘驱动器；</li>
@@ -226,18 +262,18 @@ int main()
 <li><strong>光盘和数字化视频磁盘（CD 和 DVD）：</strong> 都分只读和可读写两种（CD-R、CD-RW，DVD-R、DVD-RW）；</li>
 <li><strong>USB 闪存驱动器：</strong> 通用串行总线（Universal Serial Bus，USB）接口允许用户将多种外部设备连接到计算机，包括 USB 闪存驱动器（flash drive），即我们说的 u 盘。</li>
 </ul>
-<h3 id="115-输入输出设备">1.1.5 输入输出设备</h3>
+<h3 id="15-输入输出设备">1.5 输入输出设备</h3>
 <p>常用的输入设备包括键盘、鼠标、麦克风、摄像头等；<br>
 常用的输出设备包括显示器、音响、打印机等。</p>
-<h3 id="116-通信设备">1.1.6 通信设备</h3>
+<h3 id="16-通信设备">1.6 通信设备</h3>
 <p>包括各种调制解调器、DSL、有线网卡接口、无线适配器等。</p>
-<h2 id="12-编程语言">1.2 编程语言</h2>
+<h2 id="2-编程语言">2、编程语言</h2>
 <p>计算机程序（program）必须使用计算机可以使用的语言编写。编程语言包括如下几种：</p>
-<h3 id="121-机器语言">1.2.1 机器语言</h3>
+<h3 id="21-机器语言">2.1 机器语言</h3>
 <p>计算机的原生语言就是 <strong>机器语言（machine language）</strong> ，即一套内嵌的原子指令集，这些指令都以二进制的形式存在，因而编写程序时必须以二进制代码输入指令。</p>
-<h3 id="122-汇编语言低级语言">1.2.2 汇编语言（低级语言）</h3>
+<h3 id="22-汇编语言低级语言">2.2 汇编语言（低级语言）</h3>
 <p><strong>汇编语言（assembly language）</strong> 使用助记符来表示每一条机器语言指令，降低了程序设计的难度，但本质上非常接近机器语言，是机器相关的，使用时需要知道 CPU 是如何工作的，被认为是低级语言。汇编语言使用 <strong>汇编器（assembler）</strong> 将汇编代码转化为机器代码。</p>
-<h3 id="123-高级语言">1.2.3 高级语言</h3>
+<h3 id="23-高级语言">2.3 高级语言</h3>
 <p>高级语言的指令称为语句，其编写的程序称为源程序（source program）或源代码（sourc code）。由于计算机不能运行源程序，必须被翻译成机器代码。其中，翻译由 <strong>解释器</strong> 或 <strong>编译器</strong> 来完成。</p>
 <ul>
 <li>解释器从源代码中读取一条语句，将其翻译为机器代码或者虚拟机器代码，然后立刻运行，来自源代码的一条语句可能被翻译为多条机器指令。<br>
@@ -245,7 +281,7 @@ int main()
 <li>编译器将整个源代码翻译为机器代码文件，然后执行该机器代码文件。<br>
 <img src="https://waoap.github.io/post-images/1642731554347.png" alt="" loading="lazy"></li>
 </ul>
-<h2 id="13-操作系统">1.3 操作系统</h2>
+<h2 id="3-操作系统">3、操作系统</h2>
 <p><strong>操作系统（Operating System, OS)</strong> 是运行在计算机上的最重要的程序，它可<br>
 以管理和控制计算机的活动，其主要任务有：</p>
 <ul>
@@ -253,7 +289,7 @@ int main()
 <li>分配和调配系统资源；</li>
 <li>调度操作（包括多道程序设计、多线程、多处理等技术）。</li>
 </ul>
-<h2 id="14-java-概述">1.4 Java 概述</h2>
+<h2 id="4-java-概述">4、Java 概述</h2>
 <p>Java最早由 SUN 公司于 1996 年发布，然后来 SUN 公司为 Oracle 公司收购，如今我们使用的便是 Oracle Java。一些资料见 <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">👉Java-Wikipedia</a> 以及 <a href="https://www.jetbrains.com/lp/devecosystem-2021/Java/">👉Jetbrains 对开发者生态系统的调研报告</a></p>
 <p>Java 是简单的（simple)、面向对象的（object oriented )、分布式的（distributed )、解释型的（interpreted )、健壮的(robust)、安全的（secure)、体系结构中立的（architectureneutral)、可移植的（portable)、高性能的（high performance)、多线程的（multithreaded ) 和动态的（dynamic)。</p>
 <p>Java 语言规范（Java language specification) 是对语言的技术定义，包括 Java 程序设计语<br>
@@ -269,14 +305,13 @@ int main()
 <p>JDK，即 Java 开发工具包（Java Development Toolkit，JDK）是由一套独立程序构成的集合，用于开发和测试 Java 程序。</p>
 <p>Java 程序可以在 Web 浏览器中运行，称为 Java 小程序（applet），内嵌在 HTML 中。我们也可以使用 Java 开发富因特网应用（RIA）。现在，Java 广泛用于开发服务器端的应用程序。</p>
 <p>Java 的核心特性与优势是 <strong>跨平台、可移植性</strong> （如 Java 的 int 永远是 32 位，不同于 C++ 等可能因编译器不同而产生软件移植时的困难）和 <strong>垃圾回收机制</strong> 。</p>
-<h3 id="141-跨平台实现">1.4.1 跨平台实现：</h3>
+<h3 id="41-跨平台实现">4.1 跨平台实现：</h3>
 <p><strong>Java 中：</strong> 由 <strong>编译器</strong> 将 <strong>.java 源文件</strong> 编译为 <strong>.class 字节码文件</strong> ，并由适合各个平台的 <strong>JVM 虚拟机</strong> 翻译成机器码而后执行。其中，正是由 <strong>JVM 虚拟机</strong> 充当着翻译官的角色，将字节码文件翻译成各平台对应的可执行文件，以此实现跨平台。（注：在执行 java 程序时，表面上我们使用的是 <code>java.exe</code> 命令来调用 java.exe 程序，但实际上会在此过程中动态调用 JVM，由 JVM 将字节码一行一行地解释成当前平台适合的可执行文件的格式，因此我们认为，Java是一种 <strong>“解释型语言”</strong> ）</p>
 <p><strong>C 语言中：</strong> 由 <strong>适合各个平台的编译器</strong> 将 <strong>.c 源文件</strong> 编译为各平台对应的可执行文件，以此实现跨平台<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。</p>
 <p><strong>区别：</strong> Java 语言的字节码与平台无关，可以使用一份源文件编译出的一份字节码在不同平台上使用；C 语言的编译器与平台相关，编译后的可执行文件也与平台相关，并不属于真正意义上的跨平台，即便是编译前的源文件，也会受到编译器不一致带来的影响。</p>
-<h3 id="142-垃圾回收机制">1.4.2 垃圾回收机制：</h3>
+<h3 id="42-垃圾回收机制">4.2 垃圾回收机制：</h3>
 <p>垃圾（内存）回收的目的在于主动清除不再使用的对象等，释放内存，减少了因程序设计时没有释放空间而造成内存泄漏的情况的发生。<br>
 <a href="https://www.jianshu.com/p/5261a62e4d29">👉浅谈 Java 的垃圾回收机制</a></p>
-<p><strong>TODO：Java GC 机制的学习🚩（占坑链接：<a href="https://waoap.github.io/post/java-gc-mechanism">Java GC 机制</a>）</strong></p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">

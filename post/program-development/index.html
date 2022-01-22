@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    代码统计工具 | Waoap&#39;s Blog
+    软件开发过程 | Waoap&#39;s Blog
 </title>
 <link rel="shortcut icon" href="https://waoap.github.io/favicon.ico?v=1642864524499">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -106,70 +106,43 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            代码统计工具
+                            软件开发过程
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2022-01-16</time>
+                            <time class="post-time">2022-01-22</time>
                             
-                                <a href="https://waoap.github.io/tag/o0UNeMVHZ/" class="post-tag i-tag
-                            i-tag-banana">
-                            #Coding Tools
+                                <a href="https://waoap.github.io/tag/mHj7TmBPSA/" class="post-tag i-tag
+                            i-tag-warning">
+                            #Program
+                        </a>
+                                
+                                <a href="https://waoap.github.io/tag/iPo_IRy54/" class="post-tag i-tag
+                            i-tag-info">
+                            #Java
                         </a>
                                 
                         </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://waoap.github.io/post-images/colc.png')"></div>
+                            <div class="post-feature-image" style="background-image: url('https://waoap.github.io/post-images/program-development.jpg')"></div>
                             
                                 <div class="post-content">
-                                    <p>利用 github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，<br>
-配合本地自制的 colc 的启动器，<br>
-以此实现一键统计使用 VSCode 写出的代码的行数。</p>
+                                    <p>软件开发生命周期是一个多阶段的过程，包括需求规范、分析、设计、实现、<br>
+测试、部署和维护。</p>
 <!-- more -->
-<h2 id="启动器源码">启动器源码</h2>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-// 接受 colc 输出结果的大小
-#define MAX_RESULT_SIZE 8192
-
-// 此处为命令
-#define COMMAND &quot;D:\\Programs\\Cloc\\cloc.exe E:\\Projects\\VSCode\\* --exclude-dir=.vscode&quot;
-
-// 模拟 string.h 中 strcat() 的功能
-void StrCat(char *dst, char *src)
-{
-    while (*dst) // 等价于 *dst != '\0'，下同
-        dst++;
-    while (*dst++ = *src++)
-        ;
-}
-
-int main()
-{
-    char buffer[128], result[MAX_RESULT_SIZE] = &quot;&quot;;
-
-    // 在命令行中执行程序
-    puts(&quot;Executing, please wait...&quot;);
-    FILE *fp = popen(COMMAND, &quot;r&quot;);
-    if (!fp)
-    {
-        puts(&quot;Error!\n&quot;);
-        return -1;
-    }
-
-    // 获取执行产生的输出
-    while (!feof(fp))
-        if (fgets(buffer, 128, fp))
-            StrCat(result, buffer);
-    pclose(fp);
-
-    // 输出此输出
-    puts(&quot;Done!\nTotal:\n&quot;);
-    puts(result);
-    return 0;
-}
-</code></pre>
-<h2 id="结果展示">结果展示</h2>
-<figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/1642313733689.png" alt="Result" loading="lazy"></figure>
+<p>开发一个软件产品是一个工程过程。软件产品，无论多大或者多小，具有同样的生命周<br>
+期：<strong>需求规范、分析、设计、实现、测试、部署和维护</strong> 。</p>
+<ul>
+<li><strong>需求规范</strong> 是一个规范化的过程，旨在理解软件要处理的问题，以及将软件系统需要做的详细记录到文档中。开发者需要和他们的顾客（使用软件的个人或者组织）密切合作，仔细地研究问题，以确定软件需要做什么。</li>
+<li><strong>系统分析</strong> 旨在分析数据流，并且确定系统的输人和输出。首先确定输出，然后弄清楚需要什么样子的输入从而产生结果。</li>
+<li><strong>系统设计</strong> 是设计一个从输人获得输出的过程。这个阶段涉及使用多层的抽象，将问题分解为可管理的组成部分，并且设计执行每个组成部分的策略。可以将每个组成部分看作一个执行系统特定功能的子系统。<br>
+<strong>注：系统分析和设计的本质是输入、处理和输出（IPO)。</strong></li>
+<li><strong>实现</strong> 是将系统设计翻译成程序。为每个组成部分编写独立的程序，然后集成在一起工作。这个过程需要使用一门编程语言。实现包括编码、自我测试，以及调试(即，在代码中寻找错误，称为调试）。</li>
+<li><strong>测试</strong> 确保代码符合需求规范，并且排除错误。通常由一个没有参与产品设计和实现的独立软件工程团队完成这样的测试。</li>
+<li><strong>部署</strong> 使得软件可以被使用。按照软件类型的不同，可能被安装到每个用户的机器上，或<br>
+者安装在一个 Internet 可访问的服务器上。</li>
+<li><strong>维护</strong> 是对软件产品进行更新和改进。软件产品必须在一直演化的环境中连续运行和改<br>
+进。这要求产品的周期性改进，以修正新发现的错误，并且将更改集成到产品中。</li>
+</ul>
 
                                 </div>
                     </article>
@@ -177,9 +150,9 @@ int main()
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://waoap.github.io/post/c.p.j-summary/">
+                            <a href="https://waoap.github.io/post/java-operator/">
                                 <h3 class="post-title">
-                                    计算机、程序和 Java 概述
+                                    Java 运算符
                                 </h3>
                             </a>
                         </div>
@@ -192,47 +165,35 @@ int main()
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                        <!-- toc -->
-                        
-    <div class="toc-card i-card ">
-        <div class="toc-title i-card-title">目录</div>
-        <div class="toc-content">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%90%AF%E5%8A%A8%E5%99%A8%E6%BA%90%E7%A0%81">启动器源码</a></li>
-<li><a href="#%E7%BB%93%E6%9E%9C%E5%B1%95%E7%A4%BA">结果展示</a></li>
-</ul>
-</li>
-</ul>
+                                <!-- id-card -->
+                                
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://waoap.github.io/images/avatar.png?v=1642864524499)">
+        </div>
+        <h1 class="id_card-title">
+            Waoap&#39;s Blog
+        </h1>
+        <h2 class="id_card-description">
+            书当快意辄阅尽，客莫可人不期来。
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/Waoap" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
 
         </div>
-        <script>
-            function locateCatelogList() {
-                /*获取文章目录集合,可通过:header过滤器*/
-                var alis = $('.post-content :header');
-                /*获取侧边栏目录列表集合**/
-                var sidebar_alis = $('.markdownIt-TOC a');
-                /*获取滚动条到顶部的距离*/
-                var scroll_height = $(window).scrollTop();
-                for (var i = 0; i < alis.length; i++) {
-                    /*获取锚点集合中的元素分别到顶点的距离*/
-                    var a_height = $(alis[i]).offset().top;
-                    if (a_height < scroll_height) {
-                        /*高亮显示*/
-                        sidebar_alis.removeClass('on');
-                        $(sidebar_alis[i]).addClass('on');
-                    }
-                }
-            }
-            $(function() {
-                /*绑定滚动事件 */
-                $(window).bind('scroll', locateCatelogList);
-            });
-        </script>
     </div>
     
-                            
+                                    
 
                 </div>
 
