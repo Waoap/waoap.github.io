@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    Java 开发准则 | Waoap&#39;s Blog
+    Java 数据结构 | Waoap&#39;s Blog
 </title>
 <link rel="shortcut icon" href="https://waoap.github.io/favicon.ico?v=1642868907588">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -106,46 +106,59 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            Java 开发准则
+                            Java 数据结构
                         </h2>
                         <div class="post-info">
                             <time class="post-time">2022-01-18</time>
                             
-                                <a href="https://waoap.github.io/tag/zjUgkoAYq/" class="post-tag i-tag
-                            i-tag-banana">
-                            #Development Tips
-                        </a>
-                                
                                 <a href="https://waoap.github.io/tag/iPo_IRy54/" class="post-tag i-tag
-                            i-tag-warning">
+                            i-tag-other_4">
                             #Java
                         </a>
                                 
                         </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://waoap.github.io/post-images/java-development-tips.png')"></div>
+                            <div class="post-feature-image" style="background-image: url('https://waoap.github.io/post-images/java-data-structure.png')"></div>
                             
                                 <div class="post-content">
-                                    <p>1、标识符命名规则、规范；<br>
-2、待更新……</p>
+                                    <p>1、变量与常量；<br>
+2、基本数据类型；<br>
+3、类型转换；<br>
+4、编码、字符集。</p>
 <!-- more -->
-<h2 id="1-标识符命名规则-规范">1、标识符命名规则、规范</h2>
-<p>规则：</p>
+<h2 id="1-变量与常量">1、变量与常量</h2>
+<p><strong>变量：</strong><br>
+变量用于表示特定类型的数据。<br>
+重点内容包括声明<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>、初始化（赋值）<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>、使用<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>、使用范围、在内存中的地址；</p>
+<p><strong>常量：</strong><br>
+<strong>常值（直接量）</strong> ，如 <code>&quot;a&quot;</code> 、<code>123</code> 等；<br>
+<strong>命名常量</strong> ，如由 final 关键字修饰的常量；</p>
+<h2 id="2-数据类型">2、数据类型</h2>
+<p><strong>基本数据类型：</strong> 整数类型、浮点数类型、字符类型、布尔类型；<br>
+<strong>引用数据类型：</strong> 类、接口、数组；</p>
+<h2 id="3-类型转换">3、类型转换</h2>
+<p>byte、short、char -&gt; int -&gt; long -&gt; float -&gt; double<br>
+左 --&gt; 右： 自动（隐式）转换；<br>
+左 &lt;-- 右： 强制（显式）转换。</p>
+<h2 id="4-编码-字符集">4、编码、字符集</h2>
+<p>常见：</p>
 <ul>
-<li>标识符以字母、下划线 _ 和美元符号 $ 开头，不能以数字开头；</li>
-<li>标识符不可以是关键字；</li>
-<li>标识符可以是任意长度；</li>
+<li>通用：ASCII、<strong>Unicode（UTF-8为主）</strong>；</li>
+<li>中国：GB2312、GBK；</li>
+<li>欧洲：IOS8859-1;</li>
+<li>…… ……</li>
 </ul>
-<p>规范：</p>
-<ul>
-<li>标识符的命名应有意义，尽量避免使用缩写；</li>
-<li>不要用字符 $ 命名标识符，习惯上，字符 $ 只用在机器自动产生的源代码中；</li>
-<li><strong>变量名、方法名：</strong> 使用首字母小写的驼峰命名法；</li>
-<li><strong>类名：</strong> 使用首字母大写的驼峰命名法；</li>
-<li><strong>常量名：</strong> 所有字母大写，单词间以下划线连接；</li>
-<li><strong>包名：</strong> 一般所有字母小写；</li>
-</ul>
-<h2 id="2-待更新">2、待更新……</h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Java 是强类型语言，声明变量时必须定义类型； <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><code>...(x = 1);</code> 等价于 <code>x = 1; ...(x);</code>，这被称为赋值表达式； <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>变量在使用前必须被声明和初始化； <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
                                 </div>
                     </article>
@@ -153,9 +166,9 @@
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://waoap.github.io/post/colc/">
+                            <a href="https://waoap.github.io/post/java-development-tips/">
                                 <h3 class="post-title">
-                                    代码统计工具
+                                    Java 开发准则
                                 </h3>
                             </a>
                         </div>
@@ -176,8 +189,10 @@
             <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#1-%E6%A0%87%E8%AF%86%E7%AC%A6%E5%91%BD%E5%90%8D%E8%A7%84%E5%88%99-%E8%A7%84%E8%8C%83">1、标识符命名规则、规范</a></li>
-<li><a href="#2-%E5%BE%85%E6%9B%B4%E6%96%B0">2、待更新……</a></li>
+<li><a href="#1-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F">1、变量与常量</a></li>
+<li><a href="#2-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2、数据类型</a></li>
+<li><a href="#3-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2">3、类型转换</a></li>
+<li><a href="#4-%E7%BC%96%E7%A0%81-%E5%AD%97%E7%AC%A6%E9%9B%86">4、编码、字符集</a></li>
 </ul>
 </li>
 </ul>
