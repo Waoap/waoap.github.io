@@ -1,0 +1,1000 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Java 数据类型 -
+    Waoap&#39;s Blog</title>
+<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico" />
+<link
+  href="https://fastly.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://fastly.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://waoap.github.io/media/css/tailwind.css"
+/>
+<link rel="stylesheet" href="https://waoap.github.io/styles/main.css" />
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  title="Java 数据类型 -
+    Waoap&#39;s Blog - Atom Feed"
+  href="https://waoap.github.io/atom.xml"
+/>
+
+
+
+    <meta name="description" content="
+
+变量与常量
+
+
+数据类型
+
+
+类型转换
+
+
+
+1. 变量与常量
+1.1 变量
+
+变量 用于保存特定类型的数据或它的引用。
+
+变量方面，需要掌握的知识点包括变量的 声明、初始化、作用域以及存储的位置 。
+1.1.1 声明变量
+
+Java ..." />
+    <meta
+      property="og:title"
+      content="Java 数据类型 - Waoap&#39;s Blog"
+    />
+    <meta property="og:description" content="
+
+变量与常量
+
+
+数据类型
+
+
+类型转换
+
+
+
+1. 变量与常量
+1.1 变量
+
+变量 用于保存特定类型的数据或它的引用。
+
+变量方面，需要掌握的知识点包括变量的 声明、初始化、作用域以及存储的位置 。
+1.1.1 声明变量
+
+Java ..." />
+    <meta property="og:type" content="articles" />
+    <meta property="og:url" content="https://waoap.github.io/post/java-data-type/" />
+    <meta
+      property="og:image"
+      content="https://waoap.github.io/post-images/java-data-type.png"
+    />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="1200" />
+    <meta
+      name="twitter:title"
+      content="Java 数据类型 - Waoap&#39;s Blog"
+    />
+    <meta name="twitter:description" content="
+
+变量与常量
+
+
+数据类型
+
+
+类型转换
+
+
+
+1. 变量与常量
+1.1 变量
+
+变量 用于保存特定类型的数据或它的引用。
+
+变量方面，需要掌握的知识点包括变量的 声明、初始化、作用域以及存储的位置 。
+1.1.1 声明变量
+
+Java ..." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://waoap.github.io/post/java-data-type/" />
+
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"
+    />
+
+    
+    <link
+      rel="stylesheet"
+      href="https://waoap.github.io/media/css/prism-synthwave84.css"
+    />
+     
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css"
+    />
+    
+  </head>
+
+  <body>
+    <div class="antialiased flex flex-col min-h-screen" id="app">
+      <a
+        href="https://waoap.github.io"
+        class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft"
+      >
+        Waoap&#39;s Blog
+      </a>
+      <div class="max-w-4xl w-full mx-auto">
+        <div
+          class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8"
+        >
+          <h1
+            class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700"
+          >
+            Java 数据类型
+          </h1>
+          
+          <img
+            src="https://waoap.github.io/post-images/java-data-type.png"
+            alt="Java 数据类型"
+            class="block w-full mb-8"
+          />
+          
+          <div class="mb-8 flex flex-wrap">
+            <div class="text-gray-400 text-sm mr-4">
+              2022-01-18 · 19 min read
+            </div>
+            
+            <a
+              href="https://waoap.github.io/tag/iPo_IRy54/"
+              class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2"
+            >
+              <i class="ri-hashtag"></i>
+              Java
+            </a>
+            
+          </div>
+          <div class="markdown mb-8" v-pre><ol>
+<li>
+<p>变量与常量</p>
+</li>
+<li>
+<p>数据类型</p>
+</li>
+<li>
+<p>类型转换</p>
+</li>
+</ol>
+<!-- more -->
+<h2 id="1-变量与常量">1. 变量与常量</h2>
+<h3 id="11-变量">1.1 变量</h3>
+<blockquote>
+<p><strong>变量</strong> 用于保存特定类型的数据或它的引用。</p>
+</blockquote>
+<p>变量方面，需要掌握的知识点包括变量的 <strong>声明、初始化、作用域以及存储的位置</strong> 。</p>
+<h4 id="111-声明变量">1.1.1 声明变量</h4>
+<blockquote>
+<p>Java 是强类型语言，声明变量时必须声明其类型。</p>
+</blockquote>
+<p>形如：</p>
+<pre><code class="language-java">double salary;
+int vacationDays;
+long earthPopulation;
+boolean done;
+</code></pre>
+<p>也可以在一行中声明多个变量，如：</p>
+<pre><code class="language-java">int i, j;
+</code></pre>
+<p><strong>不过，不提倡使用这种风格，逐一声明每个变量可以提高程序的可读性。</strong></p>
+<p>从 Java 10 开始，对于局部变量，如果 <strong>可以从变量的初始值推断出它的类型</strong> ，就不再需要手动声明类型，如：</p>
+<pre><code class="language-java">var vacationDays = 12; // int
+var greeting = &quot;Hello&quot; // String
+</code></pre>
+<p><strong>但也不提倡使用这种风格，写明每个变量的类型可以提高程序的可读性。</strong></p>
+<p><strong>在 Java 中，变量声明应尽可能靠近变量第一次使用的地方，这是一种良好的程序编写风格。</strong></p>
+<h4 id="112-变量初始化">1.1.2 变量初始化</h4>
+<p>变量在使用前必须被声明和初始化。</p>
+<p>形如：</p>
+<pre><code class="language-java">int a; // 声明
+a = 10; // 初始化
+</code></pre>
+<p>或：</p>
+<pre><code class="language-java">int a = 10; // 使用初始化语句，声明并初始化变量
+</code></pre>
+<h4 id="113-变量的作用域">1.1.3 变量的作用域</h4>
+<blockquote>
+<p>变量的作用域（Scope of Variable）是指变量可以在程序中被引用的范围</p>
+</blockquote>
+<ul>
+<li>
+<p>类变量：</p>
+<p>—个类的 <strong>实例变量</strong> 和 <strong>静态变量</strong> 统称为 <strong>类变量（Class's Variables）</strong> ，无论在声明在类的何处，其作用域都为 <strong>整个类</strong> 。</p>
+</li>
+<li>
+<p>局部变量：</p>
+<p>在方法中定义的变量称为 <strong>局部变量（Local Variables）</strong> ，作用域是 <strong>从变量声明的地方开始</strong> ，直至 <strong>包含该变量的代码块的末尾</strong> 。</p>
+</li>
+</ul>
+<p>注意，如果一个类中存在某个局部变量和某个类变量具有 <strong>相同的标识（即变量名）</strong> ，那么优先被使用的将是 <strong>局部变量</strong> ，而同名的类变量将被 <strong>隐藏（屏蔽）</strong> 。</p>
+<h4 id="114-变量存储的位置">1.1.4 变量存储的位置</h4>
+<p><strong>TODO . . .</strong></p>
+<h3 id="12-常量">1.2 常量</h3>
+<ol>
+<li>
+<p><strong>常值常量（Literal，字面值常量）</strong></p>
+<p>如以下代码中的 <code>&quot;this is a string.&quot;</code> 、<code>123</code> 、<code>true</code> ：</p>
+<pre><code class="language-java">String mString = &quot;this is a string.&quot;;
+int num = 123;
+boolean done = true;
+</code></pre>
+</li>
+<li>
+<p><strong>非常值常量，即由 <code>final</code> 修饰符修饰的变量</strong></p>
+<p>如以下代码中的 <code>PI</code> 、<code>CM_PER_INCH</code> ：</p>
+<pre><code class="language-java">final double PI = 3.141592653;
+final double CM_PER_INCH = 2.54;
+</code></pre>
+</li>
+</ol>
+<h3 id="13-一些术语">1.3 一些术语</h3>
+<p><strong>实例变量</strong> 与 <strong>实例常量</strong> 统称为 <strong>实例字段（或实例数据域）</strong> ，<strong>静态变量</strong> 与 <strong>静态常量</strong> 统称为 <strong>静态字段（或静态数据域）</strong> 。也即：</p>
+<ul>
+<li>
+<p>数据域（Data Filed）== 字段（Field），指 <strong>变量和非常值常量（由 <code>final</code> 修饰符修饰的变量）</strong> 。</p>
+</li>
+<li>
+<p>实例（Instance）== 对象（Object），指 <strong>由类构造出来的对象</strong>（以此类推，实例的 == 对象的）。</p>
+</li>
+<li>
+<p>静态的（Static）== 和类相关的（Class Related），指某个东西 <strong>和对象无关，是只和类有关的</strong> 。</p>
+</li>
+</ul>
+<h2 id="2-数据类型">2. 数据类型</h2>
+<ol>
+<li>
+<p><strong>基本数据类型：</strong></p>
+<p><strong>整型：</strong> byte、short、int、long <strong>（默认值：<code>0</code>）</strong></p>
+<p><strong>浮点型：</strong> float、double <strong>（默认值：<code>0.0</code>）</strong></p>
+<p><strong>布尔型：</strong> boolean <strong>（默认值：<code>false</code>）</strong></p>
+<p><strong>字符型：</strong> char <strong>（默认值：<code>'\u0000'</code>）</strong></p>
+</li>
+<li>
+<p><strong>引用数据类型：</strong></p>
+<p>数组、类、接口、空类型 <strong>（默认值：<code>null</code> ，即空引用）</strong></p>
+</li>
+</ol>
+<h3 id="21-基本数据类型">2.1 基本数据类型</h3>
+<p><strong>基本数据类型的使用原则：</strong></p>
+<ol>
+<li>
+<p>描述数字，首选 int 、double 类型</p>
+</li>
+<li>
+<p>数据传输以及文字编码转换，首选 byte 类型</p>
+</li>
+<li>
+<p>处理中文，首选 char 类型</p>
+</li>
+<li>
+<p>描述内存或文件大小、<strong>描述表的主键列（自动增长）</strong>，首选 long 类型</p>
+</li>
+</ol>
+<h4 id="211-数值型">2.1.1 数值型</h4>
+<h5 id="2111-整型">2.1.1.1 整型</h5>
+<p>Java 对 byte 类型做了特殊处理，在且仅在为 byte 赋值 <strong>整型字面值（整型字面值默认为 int 类型）</strong> 时，若所赋的值不超过 byte 的范围，可无需进行强制转换。</p>
+<p><strong>十六进制整形字面值</strong> 有一个前缀 0x 或 0X ，如 <code>0xCAFE</code> 。</p>
+<p><strong>八进制整型字面值</strong> 有一个前缀 0 ，如 <code>010</code> 。</p>
+<p>由于八进制表示法比较容易混淆，所以建议最好不要使用八进制整型字面值。</p>
+<p>从 Java 7 开始，加上前缀 0b 或 0B 就可以表示 <strong>二进制整型字面值</strong> ，如 <code>0b1001</code> 。</p>
+<p>另外，同样从 Java 7 开始，还可以为整型字面值 <strong>添加下划线</strong> ，如使用 <code>1_000_000</code> 来表示 100 万，以此来提高代码的可读性。</p>
+<p>Java 中没有任何 <strong>无符号（Unsigned）形式</strong> 的 int 、long 、short 或 byte 类型。如果要使用不可能为负的整数值且确实需要额外的一位（bit），也可以把有符号整数值解释为无符号数，但要小心。</p>
+<p>例如，一个 byte 值可以不表示范围 -128 ~ 127 ，如果你想要表示 0 ~ 255 ，也可以存储在一个 byte 中。基于二进制算术运算的性质，只要不溢出，加法、减法和乘法都能正常计算。但对于其他运算，需要调用 Byte 类的 <code>toUnsignedInt</code> 方法来获得它表示的无符号值，然后进行运算，再转换回 byte 。</p>
+<p>Integer 和 Long 类型都提供了处理无符号除法和取模（求余数）的方法。</p>
+<h5 id="2112-浮点类型">2.1.1.2 浮点类型</h5>
+<p><strong>浮点类型字面值默认为 double 类型。</strong></p>
+<p>可以使用十六进制表示浮点数值，如 0.125 = <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{-3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span> 可以表示成十进制的 1.25<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">e^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span> 或十六进制的 0x1.0<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>p</mi><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">p^{-3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">p</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span> 。</p>
+<p>在十六进制表示法中，使用 p 表示指数，其基数是 2 。尾数采用十六进制，指数采用十进制。</p>
+<p>所有的浮点数值计算都遵循 IEEE 754 规范。下面是用于表示溢出和出错情况的三个特殊的浮点数值：</p>
+<ol>
+<li>
+<p>正无穷大</p>
+</li>
+<li>
+<p>负无穷大</p>
+</li>
+<li>
+<p>NaN（Not a Number）</p>
+</li>
+</ol>
+<p>常量 <code>Double.POSITIVE_INFINITY</code> 、<code>Double.NEGATIVE_INFINITY</code> 、<code>Double.NaN</code>（以及相应的 Float 类型的常量）分别表示这三个特殊的值，但在实际应用中很少遇到。</p>
+<p>要注意的是，我们不能直接比较一个特定的值是否等于 <code>Double.NaN</code> ，因为所有的 NaN 都被认为是不相同的：</p>
+<pre><code class="language-java">if (x == Double.NaN) // is never true
+if (Double.isNaN(x)) // correct
+</code></pre>
+<p>浮点数值采用二进制系统表示，而在二进制系统中无法精确地表示分数 1/10 等，它不适用于无法接受舍入误差的金融计算。</p>
+<p>为减小计算时的误差，我们应在较大浮点数之前先计算较小的浮点数。</p>
+<figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/1643462012050.png" alt="浮点数计算问题" loading="lazy"></figure>
+<p>如果在数值计算中不允许有任何舍入误差，就应该使用 BigDecimal 类。</p>
+<p>也正是因为浮点数值具有有限的计算精度，涉及浮点数的计算可能产生舍入误差。因此，将两个浮点数值直接进行比较是错误的。对此，我们使用如下方法：</p>
+<figure data-type="image" tabindex="2"><img src="https://waoap.github.io/post-images/1642939386111.png" alt="浮点数比较方法" loading="lazy"></figure>
+<h4 id="212-布尔类型">2.1.2 布尔类型</h4>
+<p>Java 是 <strong>强类型语言</strong> ，整型和布尔型之间 <strong>不能相互转换</strong> 。</p>
+<h4 id="213-char-类型">2.1.3 char 类型</h4>
+<h5 id="2131-char-类型的编码与-unicode">2.1.3.1 char 类型的编码与 Unicode</h5>
+<p>计算机内部使用二进制数。一个字符在计算机中是以 0 和 1 构成的序列的形式来存储的。将字符映射到它的二进制形式的过程称为 <strong>编码（Encoding）</strong> 。字符有多种不同的编码方式，<strong>编码表（Encoding Scheme）</strong> 定义该如何编码每个字符。</p>
+<p>char 类型原本用于表示单个字符，不过，现在的情况已经有所变化。</p>
+<p>如今，有些 Unicode 字符可以用一个 char 值表示，另外的一些 Unicode 字符则需要两个 char 值。</p>
+<p>Unicode 转义序列会在解析代码之前得到处理，如 <code>&quot;\u0022+\u0022&quot;</code> 并不是一个内容为 <code>&quot;+&quot;</code> 的字符串，而是一个被解析为 <code>&quot;&quot;+&quot;&quot;</code> 的空串。</p>
+<p>因此要当心注释中的 \u ，如：</p>
+<pre><code class="language-java">// \u000A is a new line
+// 这会产生一个语法错误，因为 \u000A 是一个换行符。
+
+// look inside c:\users
+// 也会产生一个语法错误，因为 \u 后面没有跟着 4 个十六进制数
+</code></pre>
+<p>在 Unicode 出现之前，已经有许多种不同的标准：美国的 ASCII 、西欧语言中的 ISO 8859-1 、俄罗斯的 KOI-8 、中国的 GB18030 和 BIG-5 等。这样就产生了下面两个问题：一个是对于任意给定的代码值，在不同编码方案下有可能对应不同字母；二是采用大字符集的语言其编码长度可能不同。例如有些常用的字符采用单字节编码，而另一些字符则需要两个或多个字节。</p>
+<p>设计 Unicode 编码的目的就是要解决这些问题。在 20 世纪 80 年代开始启动同一工作时，人们认为两个字节的代码宽度足以对世界上各种语言的所有字符进行编码，并有足够的空间留给未来拓展。在 1991 年发布了 Unicode 1.0 ，当时仅占用 65 536 个代码值中不到一半的部分。在设计 Java 时决定采用 16 位的 Unicode 字符集，这比使用 8 位字符集的其他程序设计语言有了很大的改进。遗憾的是，现在，Unicode 字符已经超过了 65 536 个，16 位的 char 类型已经不能满足容纳所有 Unicode 字符的需要了。</p>
+<p>下面利用一些专用术语来解释 Java 语言从 Java 5 开始如何解决这个问题。</p>
+<p><strong>码点（Code Point）</strong> 是指一个编码表中的某个字符对应的代码值。在 Unicode 标准中，码点采用十六进制书写，并加上前缀 U+ ，如 U+0041 就是拉丁字母 A 的码点。Unicode 码点可以分成 17 个 <strong>代码平面（Code Plane）</strong>。第一个代码平面称为 <strong>基本多语言平面（Basic Multilingual Plane）</strong> ，包括码点从 U+0000 到 U+FFFF 的“经典”Unicode 代码；其余的 16 个平面的码点从 U+10000 到 U+10FFFF ，包括 <strong>辅助字符（Supplementar Character）</strong> 。</p>
+<p>UTF-16 编码采用不同长度的编码表示所有 Unicode 码点。在基本多语言平面中，每个字符用 16 位表示，通常称为 <strong>代码单元（Code Unit）</strong> ；而辅助字符编码为一对连续的代码单元。采用这种编码对表示的各个值落入基本多语言平面中未使用的 2048 个值范围内，通常称为 <strong>替代区域（Surrogate Area）</strong>（U+D800 ~ U+DBFF 用于第一个代码单元，U+DC00 ~ U+DFFFF 用于第二个代码单元）。这样设计十分巧妙，我们可以从中迅速知道一个代码单元是一个字符的编码，还是一个辅助字符的第一部分或第二部分。如 𝕆 是八元数集的一个数学符号，码点为 U+1D546 ， 编码为两个代码单元 U+D835 和 U+DD46 。</p>
+<p>关于编码算法的具体描述见 <a href="https://tool.ietf.org/html/rfc2781">https://tool.ietf.org/html/rfc2781</a> 。</p>
+<p>在 Java 中，char 类型描述了 UTF-16 编码中的一个代码单元。</p>
+<p><strong>强烈建议不要在程序中使用 char 类型，除非确实需要处理 UTF-16 代码单元。最好将字符串作为抽象数据类型处理。</strong></p>
+<h5 id="2132-特殊转义字符">2.1.3.2 特殊转义字符</h5>
+<figure data-type="image" tabindex="3"><img src="https://waoap.github.io/post-images/1643002002805.png" alt="转义字符" loading="lazy"></figure>
+<h5 id="2133-char-类型的一般操作">2.1.3.3 char 类型的一般操作</h5>
+<p>char 数据类型可以转换成任意一种数值类型，反之亦然。</p>
+<p>其它见本文的 <strong>2.2.2</strong> 节，String 类型相关内容。</p>
+<h3 id="22-引用数据类型">2.2 引用数据类型</h3>
+<p>所谓引用数据类型就是对一个对象的引用，对象包括实例和数组两种。实际上，引用类型变量就是一个指针，只是 Java 语言里不再使用指针这个说法。</p>
+<h4 id="221-enum枚举类型">2.2.1 Enum（枚举）类型</h4>
+<p>有时候，变量的取值只在一个有限的集合内，就可以自定义枚举类型，形如：</p>
+<pre><code class="language-java">enum Size { SMALL, MEDIUM, LARGE EXTRA_LARGE };
+
+Size s = Size.SMALL;
+</code></pre>
+<p>上述代码中 Size 类型的变量只能存储这个类型声明中给定的某个枚举值，或者特殊值 null 。</p>
+<p><strong>TODO HERE... ...</strong></p>
+<h4 id="222-string字符串类型">2.2.2 String（字符串）类型</h4>
+<blockquote>
+<p>字符串是一个字符序列。</p>
+</blockquote>
+<p>String 类与 System 类和 Scanner 类一样，都是标准 Java 类库中预定义的类。</p>
+<p>String 不是基本类型，而是 <strong>引用类型（Reference Type）</strong> 。</p>
+<h5 id="2221-string-api">2.2.2.1 String API</h5>
+<figure data-type="image" tabindex="4"><img src="https://waoap.github.io/post-images/1650709908130.jpg" alt="String API" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://waoap.github.io/post-images/1650709920869.jpg" alt="String API" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://waoap.github.io/post-images/1650709930585.jpg" alt="String API" loading="lazy"></figure>
+<h5 id="2222-字符串长度">2.2.2.2 字符串长度</h5>
+<p><code>length</code> 方法返回 <strong>采用 UTF-16 编码来表示给定字符串所需要的代码单元数量</strong>。</p>
+<p>想得到字符串实际的字符长度，即码点数量，可以使用 <code>codePointCount</code> 方法：</p>
+<pre><code class="language-java">int cpCount = string.codePointCount(0, string.length - 1);
+</code></pre>
+<h5 id="2223-子串-代码点与代码单元">2.2.2.3 子串、代码点与代码单元</h5>
+<p><strong>子串：</strong></p>
+<figure data-type="image" tabindex="7"><img src="https://waoap.github.io/post-images/1643006724344.png" alt="substring" loading="lazy"></figure>
+<p>endIndex 是不想复制的第一个位置。</p>
+<p><code>substring</code> 方法获得的字串，其长度为 endIndex - beginIndex 。</p>
+<p><strong>代码点与代码单元：</strong></p>
+<p>调用 <code>charAt(index)</code> 方法返回位置 index 的代码单元。</p>
+<p>要想获得得到第 i 个码点，应该使用下列语句：</p>
+<pre><code class="language-java">int index = string.offsetByCodePoints(0, i); // 获取从 0 码点开始，i 个码点后的码点索引
+int cp = string.codePointAt(index); // 获取给定位置的代码点
+</code></pre>
+<p>如果想要遍历一个字符串，依次查看每一个码点，可以使用下列语句：</p>
+<pre><code class="language-java">int cp = string.codePointAt(i);
+if (Character.isSupplementaryCodePoint(cp)) i +=2 ;
+else i++;
+</code></pre>
+<p>反向遍历：</p>
+<pre><code class="language-java">i--;
+if (Character.isSurrogate(string.charAt(i))) i--;
+int cp = string.codePointAt(i);
+</code></pre>
+<p>或者使用 <code>codePoints</code> 方法，它会生成一个 int 值的“流”，每个 int 值对应一个码点。可以将它转换为一个数组，再完成遍历，如：</p>
+<pre><code class="language-java">int[] codePoints = str.codePoints().toArray();
+</code></pre>
+<p>反之，要把一个码点数组转换成一个字符串，可以使用构造器：</p>
+<pre><code class="language-java">String str = new String(codePoints, 0, codePoints.length);
+</code></pre>
+<h5 id="2224-拼接">2.2.2.4 拼接</h5>
+<p>与绝大多数程序设计语言一样，Java 支持使用 <code>+</code> 操作符连接（拼接）字符串。</p>
+<p>当一个字符串与一个非字符串的值进行拼接时，后者会转换成字符串（任何一个 Java 对象都可以转成字符串）。</p>
+<p>如果需要把多个字符串放在一起，用一个界定符分隔，可以使用静态 <code>join</code> 方法：</p>
+<pre><code class="language-java">String all = String.join(&quot; &quot;, &quot;S&quot;, &quot;M&quot;, &quot;L&quot;, &quot;XL&quot;); // -&gt; &quot;S / M / L / XL&quot;
+</code></pre>
+<p>在 Java 11 中，还提供了一个 <code>repeat</code> 方法：</p>
+<pre><code class="language-java">String repeated = &quot;Java&quot;.repeat(3); // -&gt; &quot;JavaJavaJava&quot;
+</code></pre>
+<h5 id="2225-不可变字符串">2.2.2.5 不可变字符串</h5>
+<p>String 类没有提供修改字符串中某个字符的方法。想要修改字符串的内容，需要截取需要保留下来的子串，添加需要修改的字符，如：</p>
+<pre><code class="language-java">String greeting = &quot;Hello&quot;;
+greeting = greeting.substring(0, 3) + &quot;p!&quot;; // &quot;Help!&quot;
+</code></pre>
+<p>由于不能修改 Java 字符串中的单个字符，所以在 Java 文档中将 String 类对象称为是 <strong>不可变的（Immutable）</strong>。</p>
+<p>这样做的确会降低修改字符串的效率，但这有一个优点：编译器可以让字符串共享。</p>
+<p>各种字符串字面值存放在公共的存储池—— <strong>字符常量池</strong> 中。复制一个字符串变量，原始的字符串变量与复制的字符串变量指向相同的字符串字面值（ Java 中的 String 是引用类型变量）。</p>
+<h5 id="2226-字符串比较">2.2.2.6 字符串比较</h5>
+<p><code>==</code> 运算符只能检测两个 String 对象指向（或者说引用）的是否为同一个对象。</p>
+<p>当我们需要比较 String 对象是否相等时，应使用如下方法：</p>
+<figure data-type="image" tabindex="8"><img src="https://waoap.github.io/post-images/1643005814828.png" alt="字符串比较" loading="lazy"></figure>
+<h5 id="2227-string-的正则表达">2.2.2.7 String 的正则表达</h5>
+<h6 id="22271-预定义字符类">2.2.2.7.1 预定义字符类</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">.</td>
+<td style="text-align:left">任何字符（与行结束符可能匹配，也可能不匹配）</td>
+</tr>
+<tr>
+<td style="text-align:center">\d</td>
+<td style="text-align:left">数字：[0-9]</td>
+</tr>
+<tr>
+<td style="text-align:center">\D</td>
+<td style="text-align:left">非数字：[^0-9]</td>
+</tr>
+<tr>
+<td style="text-align:center">\s</td>
+<td style="text-align:left">空白字符：[ \t\n\x0B\f\r]</td>
+</tr>
+<tr>
+<td style="text-align:center">\S</td>
+<td style="text-align:left">非空白字符：[^\s]</td>
+</tr>
+<tr>
+<td style="text-align:center">\w</td>
+<td style="text-align:left">单词字符：[a-zA-Z_0-9]</td>
+</tr>
+<tr>
+<td style="text-align:center">\W</td>
+<td style="text-align:left">非单词字符：[^\w]</td>
+</tr>
+<tr>
+<td style="text-align:center">\</td>
+<td style="text-align:left">转义字符，比如“\”匹配“\”</td>
+</tr>
+</tbody>
+</table>
+<h6 id="22272-数量词">2.2.2.7.2 数量词</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:left">等价于 {0, }</br>匹配 0 ~ ∞ 个 在它之前的字符，如“zo*”能匹配“z”以及“zoooo”等；“.*”能匹配任意字符。</td>
+</tr>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:left">等价于 {1,}</br>匹配前面的子表达式 1 ~ ∞ 次，如“9+”能匹配“9”以及“99999”等。</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td style="text-align:left">等价于 {0,1}</br>匹配前面的子表达式 0/1 次，如“does”能匹配“do”或“does”中的“do”。此元字符还有另外一个作用，就是 <strong>表示非贪婪模式匹配</strong> 。</td>
+</tr>
+<tr>
+<td style="text-align:center">{n}</td>
+<td style="text-align:left">匹配前面的子表达式确定的 n 次，如“e{2}”能匹配“seed”中的“ee”。</td>
+</tr>
+<tr>
+<td style="text-align:center">{n,}</td>
+<td style="text-align:left">匹配前面的子表达式至少 n 次，如“e{2,}”能匹配“seeed”和“seeeeed”中的“eee”以及“eeeee”</td>
+</tr>
+<tr>
+<td style="text-align:center">{n,m}</td>
+<td style="text-align:left">匹配前面的子表达式至少 n 次，至多 m 次，如“e{1,3}”能匹配“seeeeed”中的前三个“e”。</td>
+</tr>
+</tbody>
+</table>
+<h6 id="22273-边界匹配符号">2.2.2.7.3 边界匹配符号</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">^</td>
+<td style="text-align:left">行的开头</td>
+</tr>
+<tr>
+<td style="text-align:center">$</td>
+<td style="text-align:left">行的结尾</td>
+</tr>
+<tr>
+<td style="text-align:center">\b</td>
+<td style="text-align:left">单词边界</td>
+</tr>
+<tr>
+<td style="text-align:center">\B</td>
+<td style="text-align:left">非单词边界</td>
+</tr>
+<tr>
+<td style="text-align:center">\A</td>
+<td style="text-align:left">输入的开头</td>
+</tr>
+<tr>
+<td style="text-align:center">\G</td>
+<td style="text-align:left">上一个匹配的结尾</td>
+</tr>
+<tr>
+<td style="text-align:center">\z</td>
+<td style="text-align:left">输入的结尾</td>
+</tr>
+<tr>
+<td style="text-align:center">\Z</td>
+<td style="text-align:left">输入的结尾，仅用于最后的结束符（如果有的话）</td>
+</tr>
+</tbody>
+</table>
+<h6 id="22274-与">2.2.2.7.4 [] 与 ()</h6>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">[]——或</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">[]</td>
+<td style="text-align:left">匹配括号中的任何一个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">[abc]</td>
+<td style="text-align:left">匹配“a”“b”“c”（简单类）</td>
+</tr>
+<tr>
+<td style="text-align:center">[^abc]</td>
+<td style="text-align:left">匹配非“a”“b”“c”（否定）</td>
+</tr>
+<tr>
+<td style="text-align:center">[a-zA-Z]</td>
+<td style="text-align:left">匹配 “a”<sub>“z”和“A”</sub>“Z”，包括两端（范围）</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">()——与</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">()</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="223-null-引用">2.2.3 null 引用</h4>
+<p>引用类型中有一种特殊的类型—— <strong>null 类型（Null Type，空类型）</strong> ，空类型就是 <code>null</code> 值的类型，这种类型没有名称。因而不可能声明一个 null 类型的变量或者转换到 null 类型。空引用（<code>null</code> 值）是 null 类型变量唯一的值。空引用能且只能被转换成引用类型，不能转换成基本类型，因此 <strong>不要把一个 null 值赋给基本数据类型的变量</strong> 。</p>
+<p><code>null</code> 值应用在一个方法上时，会抛出一个 NullPointerException 异常。</p>
+<pre><code class="language-java">LocalDate birthday = null;
+String s = birthday.toString(); // NullPointerException
+</code></pre>
+<p>这是一个很严重的错误，类似“索引越界”异常。</p>
+<p>定义一个类时，我们最好清楚地知道哪些字段可能为 <code>null</code> （基本类型的变量不可能为 <code>null</code> ，只有引用类型才可能）。</p>
+<p>对于可能为 <code>null</code> 的字段有如下两种解决办法：</p>
+<ol>
+<li>
+<p>“宽容型”方法</p>
+<p>把参数转换为一个适当的非 <code>null</code> 值：</p>
+<pre><code class="language-java">if (n == null) name = &quot;unknown&quot;; else name = n;
+</code></pre>
+<p>在 Java 9 之后，Objects 类对此提供了一个很方便的方法：</p>
+<pre><code class="language-java">name = Objects.requireNonNullElse(n, &quot;unknown&quot;);
+</code></pre>
+</li>
+<li>
+<p>“严格型”方法</p>
+<p>拒绝 null 参数：</p>
+<pre><code class="language-java">Objects.requireNonNull(n, &quot;The name cannot be null!&quot;);
+name = n;
+</code></pre>
+<p>在这种情况下，如果 n 为 null 值，则会产生 NullPointerException 异常。</p>
+<p>这个做法看上去好像不太有用，但实际上有两个好处：</p>
+<ol>
+<li>
+<p>异常报告会提供这个问题的描述</p>
+</li>
+<li>
+<p>异常报告能准确地指出问题的位置，否则 NullPointerException 异常可能会产生于其它位置，导致很难追踪到问题</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="3-类型转换">3. 类型转换</h2>
+<h3 id="31-数值类型之间的转换">3.1 数值类型之间的转换</h3>
+<figure data-type="image" tabindex="9"><img src="https://waoap.github.io/post-images/1650610951133.jpg" alt="数值类型之间的合法转换" loading="lazy"></figure>
+<p>实线箭头表示无信息丢失的转换，虚线箭头表示可能有精度损失的转换。</p>
+<p>当用一个二元运算符连接两个值时，先要将两个操作数转换为同一类型，然后再进行计算：</p>
+<ol>
+<li>
+<p>如果两个操作数中有一个是 double 类型，另一个操作数就会转为 double 类型</p>
+</li>
+<li>
+<p>否则，如果其中一个操作数是 float 类型，另一个操作数就会转为 float 类型</p>
+</li>
+<li>
+<p>否则，如果其中一个操作数是 long 类型，另一个操作数就会转为 long 类型</p>
+</li>
+<li>
+<p><strong>否则，两个操作数都将被转为 int 类型</strong></p>
+</li>
+</ol>
+<h3 id="32-强制类型转换">3.2 强制类型转换</h3>
+<p>形如：</p>
+<pre><code class="language-java">double x = 9.97;
+int nx = (int) x;
+</code></pre>
+<p>不要在 boolean 类型与任何数值类型之间进行强制类型转换，如需使用，可以使用条件表达式。如：</p>
+<pre><code class="language-java">boolean done = false;
+int statusCode = done ? 1 : 0;
+</code></pre>
+</div>
+          <!-- Share to Twitter, Weibo, Telegram -->
+          <div class="flex items-center">
+            <div class="mr-4 flex items-center">
+              <i class="ri-share-forward-line text-gray-500"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToTwitter"
+            >
+              <i class="ri-twitter-line"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToWeibo"
+            >
+              <i class="ri-weibo-line"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToTelegram"
+            >
+              <i class="ri-telegram-line"></i>
+            </div>
+          </div>
+        </div>
+
+         
+        <div id="gitalk-container"></div>
+            <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  <p>
+      闽IPC备
+      <a href="https://beian.miit.gov.cn/" target="_blank">2022008424</a>
+      号
+    </p>
+    <p>
+      Powered by
+      <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+</footer>
+
+      </div>
+
+      <!-- TOC Container -->
+      <div
+        class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight"
+        @click="showToc = true"
+      >
+        <i class="ri-file-list-line"></i>
+      </div>
+
+      <div
+        class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast"
+        :class="{ '-mr-64': !showToc }"
+      >
+        <div class="flex mb-4 justify-end">
+          <div
+            class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast"
+            @click="showToc = false"
+          >
+            <i class="ri-close-line text-lg"></i>
+          </div>
+        </div>
+        <div class="post-toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F">1. 变量与常量</a>
+<ul>
+<li><a href="#11-%E5%8F%98%E9%87%8F">1.1 变量</a>
+<ul>
+<li><a href="#111-%E5%A3%B0%E6%98%8E%E5%8F%98%E9%87%8F">1.1.1 声明变量</a></li>
+<li><a href="#112-%E5%8F%98%E9%87%8F%E5%88%9D%E5%A7%8B%E5%8C%96">1.1.2 变量初始化</a></li>
+<li><a href="#113-%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F">1.1.3 变量的作用域</a></li>
+<li><a href="#114-%E5%8F%98%E9%87%8F%E5%AD%98%E5%82%A8%E7%9A%84%E4%BD%8D%E7%BD%AE">1.1.4 变量存储的位置</a></li>
+</ul>
+</li>
+<li><a href="#12-%E5%B8%B8%E9%87%8F">1.2 常量</a></li>
+<li><a href="#13-%E4%B8%80%E4%BA%9B%E6%9C%AF%E8%AF%AD">1.3 一些术语</a></li>
+</ul>
+</li>
+<li><a href="#2-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2. 数据类型</a>
+<ul>
+<li><a href="#21-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2.1 基本数据类型</a>
+<ul>
+<li><a href="#211-%E6%95%B0%E5%80%BC%E5%9E%8B">2.1.1 数值型</a>
+<ul>
+<li><a href="#2111-%E6%95%B4%E5%9E%8B">2.1.1.1 整型</a></li>
+<li><a href="#2112-%E6%B5%AE%E7%82%B9%E7%B1%BB%E5%9E%8B">2.1.1.2 浮点类型</a></li>
+</ul>
+</li>
+<li><a href="#212-%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B">2.1.2 布尔类型</a></li>
+<li><a href="#213-char-%E7%B1%BB%E5%9E%8B">2.1.3 char 类型</a>
+<ul>
+<li><a href="#2131-char-%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%BC%96%E7%A0%81%E4%B8%8E-unicode">2.1.3.1 char 类型的编码与 Unicode</a></li>
+<li><a href="#2132-%E7%89%B9%E6%AE%8A%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6">2.1.3.2 特殊转义字符</a></li>
+<li><a href="#2133-char-%E7%B1%BB%E5%9E%8B%E7%9A%84%E4%B8%80%E8%88%AC%E6%93%8D%E4%BD%9C">2.1.3.3 char 类型的一般操作</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#22-%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">2.2 引用数据类型</a>
+<ul>
+<li><a href="#221-enum%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9E%8B">2.2.1 Enum（枚举）类型</a></li>
+<li><a href="#222-string%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B">2.2.2 String（字符串）类型</a>
+<ul>
+<li><a href="#2221-string-api">2.2.2.1 String API</a></li>
+<li><a href="#2222-%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6">2.2.2.2 字符串长度</a></li>
+<li><a href="#2223-%E5%AD%90%E4%B8%B2-%E4%BB%A3%E7%A0%81%E7%82%B9%E4%B8%8E%E4%BB%A3%E7%A0%81%E5%8D%95%E5%85%83">2.2.2.3 子串、代码点与代码单元</a></li>
+<li><a href="#2224-%E6%8B%BC%E6%8E%A5">2.2.2.4 拼接</a></li>
+<li><a href="#2225-%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AD%97%E7%AC%A6%E4%B8%B2">2.2.2.5 不可变字符串</a></li>
+<li><a href="#2226-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83">2.2.2.6 字符串比较</a></li>
+<li><a href="#2227-string-%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE">2.2.2.7 String 的正则表达</a>
+<ul>
+<li><a href="#22271-%E9%A2%84%E5%AE%9A%E4%B9%89%E5%AD%97%E7%AC%A6%E7%B1%BB">2.2.2.7.1 预定义字符类</a></li>
+<li><a href="#22272-%E6%95%B0%E9%87%8F%E8%AF%8D">2.2.2.7.2 数量词</a></li>
+<li><a href="#22273-%E8%BE%B9%E7%95%8C%E5%8C%B9%E9%85%8D%E7%AC%A6%E5%8F%B7">2.2.2.7.3 边界匹配符号</a></li>
+<li><a href="#22274-%E4%B8%8E">2.2.2.7.4 [] 与 ()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#223-null-%E5%BC%95%E7%94%A8">2.2.3 null 引用</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#3-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2">3. 类型转换</a>
+<ul>
+<li><a href="#31-%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2">3.1 数值类型之间的转换</a></li>
+<li><a href="#32-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2">3.2 强制类型转换</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+      </div>
+
+      <!-- Back to top -->
+      <div
+        class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200"
+        @click="backToUp"
+        v-show="scrolled"
+      >
+        <i class="ri-arrow-up-line"></i>
+      </div>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe.
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg"></div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter"></div>
+        <button
+          class="pswp__button pswp__button--close"
+          title="Close (Esc)"
+        ></button>
+        <button
+          class="pswp__button pswp__button--fs"
+          title="Toggle fullscreen"
+        ></button>
+        <button
+          class="pswp__button pswp__button--zoom"
+          title="Zoom in/out"
+        ></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button
+        class="pswp__button pswp__button--arrow--left"
+        title="Previous (arrow left)"
+      ></button>
+      <button
+        class="pswp__button pswp__button--arrow--right"
+        title="Next (arrow right)"
+      ></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://fastly.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://waoap.github.io/media/scripts/main.js"></script>
+
+    <!-- Code Highlight -->
+    
+    <script src="https://waoap.github.io/media/prism.js"></script>
+    <script>
+      Prism.highlightAll();
+    </script>
+    
+
+    <script src="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+    <script>
+      //拿到预览框架，也就是上面的html代码
+      var pswpElement = document.querySelectorAll(".pswp")[0];
+      //定义图片数组变量
+      var imgitems;
+      /**
+       * 用于显示预览界面
+       * @param index 图片数组下标
+       */
+      function viewImg(index) {
+        //其它选项这里不做过多阐述，详情见官网
+        var pswpoptions = {
+          index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+          bgOpacity: 0.7, // 背景透明度，0-1
+          maxSpreadZoom: 3, // 缩放级别，不要太大
+        };
+        //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+        var gallery = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          imgitems,
+          pswpoptions
+        );
+        gallery.init();
+      }
+      /**
+       * 用于添加图片点击事件
+       * @param img 图片元素
+       * @param index 所属下标（在imgitems中的位置）
+       */
+      function addImgClick(img, index) {
+        img.onclick = function () {
+          viewImg(index);
+        };
+      }
+      /**
+       * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+       * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+       * 异步加载图片可在图片元素创建完成后调用此方法
+       */
+      function initImg() {
+        //重置图片数组
+        imgitems = [];
+        //查找class:markdown 下的所有img元素并遍历
+        var imgs = document.querySelectorAll(".markdown img");
+        for (var i = 0; i < imgs.length; i++) {
+          var img = imgs[i];
+          //本站相册初始为loading图片，真实图片放在data-src
+          var ds = img.getAttribute("data-src");
+          //创建image对象，用于获取图片宽高
+          var imgtemp = new Image();
+          //判断是否存在data-src
+          if (ds != null && ds.length > 0) {
+            imgtemp.src = ds;
+          } else {
+            imgtemp.src = img.src;
+          }
+          //判断是否存在缓存
+          if (imgtemp.complete) {
+            var imgobj = {
+              src: imgtemp.src,
+              w: imgtemp.width,
+              h: imgtemp.height,
+            };
+            imgitems[i] = imgobj;
+            addImgClick(img, i);
+          } else {
+            console.log("进来了2");
+            imgtemp.index = i;
+            imgtemp.img = img;
+            imgtemp.onload = function () {
+              var imgobj = {
+                src: this.src,
+                w: this.width,
+                h: this.height,
+              };
+              //不要使用push，因为onload前后顺序会不同
+              imgitems[this.index] = imgobj;
+              //添加点击事件
+              addImgClick(this.img, this.index);
+            };
+          }
+        }
+      }
+      //初始化
+      initImg();
+    </script>
+       <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+<script
+  type="application/javascript"
+  src="https://unpkg.com/gitalk/dist/gitalk.min.js"
+></script>
+
+<script type="application/javascript">
+  var gitalk = new Gitalk({
+    clientID: "2974cb002d2e01718b94",
+    clientSecret: "b9fa60d5b695830fc2f640a2f62c6f6552e7be81",
+    repo: "waoap.github.io",
+    owner: "Waoap",
+    admin: ["Waoap"],
+    id: location.pathname.substring(0, 49), // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+  });
+
+  gitalk.render("gitalk-container");
+</script>
+  
+  </body>
+</html>

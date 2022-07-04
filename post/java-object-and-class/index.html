@@ -1,0 +1,861 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Java 对象和类 -
+    Waoap&#39;s Blog</title>
+<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico" />
+<link
+  href="https://fastly.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://fastly.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://waoap.github.io/media/css/tailwind.css"
+/>
+<link rel="stylesheet" href="https://waoap.github.io/styles/main.css" />
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  title="Java 对象和类 -
+    Waoap&#39;s Blog - Atom Feed"
+  href="https://waoap.github.io/atom.xml"
+/>
+
+
+
+    <meta name="description" content="
+
+类的概念
+
+
+对象的概念
+
+
+识别类
+
+
+类之间的关系
+
+
+创建、初始化对象
+
+
+修改器与访问器方法（setter and getter）
+
+
+可见性修饰符（访问控制符）
+
+
+静态字段、方法
+
+
+向方法传递对象参数、从方法中返回对象
+
+..." />
+    <meta
+      property="og:title"
+      content="Java 对象和类 - Waoap&#39;s Blog"
+    />
+    <meta property="og:description" content="
+
+类的概念
+
+
+对象的概念
+
+
+识别类
+
+
+类之间的关系
+
+
+创建、初始化对象
+
+
+修改器与访问器方法（setter and getter）
+
+
+可见性修饰符（访问控制符）
+
+
+静态字段、方法
+
+
+向方法传递对象参数、从方法中返回对象
+
+..." />
+    <meta property="og:type" content="articles" />
+    <meta property="og:url" content="https://waoap.github.io/post/java-object-and-class/" />
+    <meta
+      property="og:image"
+      content="https://waoap.github.io/post-images/java-object-and-class.png"
+    />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="1200" />
+    <meta
+      name="twitter:title"
+      content="Java 对象和类 - Waoap&#39;s Blog"
+    />
+    <meta name="twitter:description" content="
+
+类的概念
+
+
+对象的概念
+
+
+识别类
+
+
+类之间的关系
+
+
+创建、初始化对象
+
+
+修改器与访问器方法（setter and getter）
+
+
+可见性修饰符（访问控制符）
+
+
+静态字段、方法
+
+
+向方法传递对象参数、从方法中返回对象
+
+..." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://waoap.github.io/post/java-object-and-class/" />
+
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"
+    />
+
+    
+    <link
+      rel="stylesheet"
+      href="https://waoap.github.io/media/css/prism-synthwave84.css"
+    />
+     
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css"
+    />
+    
+  </head>
+
+  <body>
+    <div class="antialiased flex flex-col min-h-screen" id="app">
+      <a
+        href="https://waoap.github.io"
+        class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft"
+      >
+        Waoap&#39;s Blog
+      </a>
+      <div class="max-w-4xl w-full mx-auto">
+        <div
+          class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8"
+        >
+          <h1
+            class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700"
+          >
+            Java 对象和类
+          </h1>
+          
+          <img
+            src="https://waoap.github.io/post-images/java-object-and-class.png"
+            alt="Java 对象和类"
+            class="block w-full mb-8"
+          />
+          
+          <div class="mb-8 flex flex-wrap">
+            <div class="text-gray-400 text-sm mr-4">
+              2022-02-01 · 15 min read
+            </div>
+            
+            <a
+              href="https://waoap.github.io/tag/iPo_IRy54/"
+              class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2"
+            >
+              <i class="ri-hashtag"></i>
+              Java
+            </a>
+            
+          </div>
+          <div class="markdown mb-8" v-pre><ol>
+<li>
+<p>类的概念</p>
+</li>
+<li>
+<p>对象的概念</p>
+</li>
+<li>
+<p>识别类</p>
+</li>
+<li>
+<p>类之间的关系</p>
+</li>
+<li>
+<p>创建、初始化对象</p>
+</li>
+<li>
+<p>修改器与访问器方法（setter and getter）</p>
+</li>
+<li>
+<p>可见性修饰符（访问控制符）</p>
+</li>
+<li>
+<p>静态字段、方法</p>
+</li>
+<li>
+<p>向方法传递对象参数、从方法中返回对象</p>
+</li>
+<li>
+<p>对象数组</p>
+</li>
+<li>
+<p>不可变对象和类</p>
+</li>
+<li>
+<p>this、super 关键字</p>
+</li>
+</ol>
+<!-- more -->
+<h2 id="1-类的概念">1. 类的概念</h2>
+<blockquote>
+<p><strong>类（class）</strong> 是构造对象的模板或蓝图，我们可将类想象成制作小甜饼的模具，将对象想象为小甜饼，它定义了 <strong>对象的字段（实例字段）是什么</strong> 以及 <strong>对象的方法（实例方法）是做什么的</strong> ，即对象的 <strong>状态</strong> 和 <strong>行为</strong> 。</p>
+</blockquote>
+<p>由类 <strong>构造（construct）</strong> 对象的过程称为创建类的 <strong>实例（instance）</strong> ，即 <strong>实例化一个对象</strong> 。</p>
+<p>复杂的应用程序需要许多 <strong>主力类（workhorse class）</strong> ，通常，这些类没有 main 方法，却有自己的实例字段和实例方法。</p>
+<p>想要构建一个完整的程序，会结合使用多个类，<strong>其中只会有一个主类</strong> 。</p>
+<p>在 Java 中，最简单的类定义形式为：</p>
+<pre><code class="language-java">class ClassName {
+    dataField1
+    dataField2
+    . . .
+    constructor1
+    constructor2
+    . . .
+    method1
+    method2
+    . . .
+}
+</code></pre>
+<h2 id="2-对象的概念">2. 对象的概念</h2>
+<p>现实世界中，<strong>任一个可以明确标识的物体</strong> 都可以看作是一个 <strong>对象</strong> 。</p>
+<p>对象有三个主要特征：</p>
+<ol>
+<li>
+<p>对象的 <strong>行为（behavior）</strong> ——可以对对象完成哪些操作，或者可以对对象应用哪些方法？</p>
+<p>对象的行为，亦称动作，Java 中指类中用于实现某功能等的 <strong>方法</strong></p>
+</li>
+<li>
+<p>对象的 <strong>状态（state）</strong> ——当调用那些方法时，对象会如何响应？</p>
+<p>对象的状态，亦称特征或属性，Java 中指类中用于描述特征、属性等的 <strong>实例字段</strong></p>
+</li>
+<li>
+<p>对象的 <strong>标识（identity）</strong> ——如何区分具有相同行为与状态的不同对象？</p>
+<p>对象的标识，亦称身份，每个对象都有一个唯一的标识，以区分具有相同行为和状态的不同对象</p>
+</li>
+</ol>
+<p><strong>封装（encapsulation，有时称为字段隐藏）</strong> 是处理对象的一个重要概念。从形式上看，封装就是将数据和行为组合在一个包中，并对对象的使用者隐藏具体的实现方式。</p>
+<p>对象中的数据（即非静态的变量、非常值常量）称为 <strong>实例字段（instance field）或 实例数据域（instance data field）</strong> ，操作数据的过程称为 <strong>方法（method）</strong> 。作为一个类的实例，特定对象都有一组特定的实例字段。这些值的集合就是这个对象的当前 <strong>状态（state）</strong> 。无论何时，只要在对象上调用一个方法，它的状态就有可能发生改变。</p>
+<p>实现封装的关键在于，<strong>绝对不能让其它类中的方法直接访问本类的实例字段</strong> 。程序只能通过对象的方法来与实例字段进行交互。</p>
+<p>封装给对象赋予了“黑盒”特征，能提高代码的重用性和可靠性。这意味着一个类可以完全改变它的内部实现，只要依旧使用同样的方法来实现同样的功能，就不会影响到其它对象。</p>
+<h2 id="3-识别类">3. 识别类</h2>
+<p>传统的面向过程编程中，我们必须从顶部的 main 方法开始编写程序，而在面向对象编程中，没有所谓的“顶部”。学习面向对象的初学者因此常常会感到无从下手。<strong>我们应首先从识别类开始，然后再为各个类添加方法。</strong></p>
+<p>识别类的一个诀窍是在分析问题的过程中 <strong>寻找名词</strong> ，而方法则是操作、指向这些名词的 <strong>动词</strong> 。</p>
+<p>例如，在订单处理系统中，有这样一些名词：</p>
+<ol>
+<li>
+<p>商品（Item）</p>
+</li>
+<li>
+<p>订单（Order）</p>
+</li>
+<li>
+<p>送货地址（Shipping address）</p>
+</li>
+<li>
+<p>付款（Payment）</p>
+</li>
+<li>
+<p>账户（Account）</p>
+</li>
+</ol>
+<p>从这些名词，我们就可以找到类 Item 、Order 等。</p>
+<p>接下来找动词。商品被添加到订单中，订单会有发货和取消，另外还可以对订单完成付款。</p>
+<p>对于每个动词，如“添加”、“发货”、“取消”以及“完成付款”，我们都要识别出 <strong>负责完成相应动作的对象</strong> 。例如，当一个新的商品添加到订单中时，那个订单对象就是负责完成这个行为的对象，<strong>也就是说 add 应该是 Order 类的一个方法，它需要一个 Item 对象作为参数。</strong></p>
+<p>当然，这只是一种经验法则。</p>
+<h2 id="4-类之间的关系">4. 类之间的关系</h2>
+<p>在类之间，最常见的关系有</p>
+<ol>
+<li>
+<p>依赖（“use-a”）</p>
+</li>
+<li>
+<p>聚合（“has-a”）</p>
+</li>
+<li>
+<p>继承（“is-a”）</p>
+</li>
+</ol>
+<p><strong>依赖（dependence）</strong> ，即“use-a”关系，是一种最明显、最常见的关系。例如 Order 类使用 Account 类是因为 Order 对象需要访问 Account 对象查看用户账户的信用状态。但是 Item 类不依赖于 Account 类，因为 Item 对象不需要考虑用户账户的问题。因此，<strong>如果一个类的方法使用或操作另一个类的对象，我们就说这个类依赖于另一个类。</strong></p>
+<p>在程序设计时，我们应尽可能地将相互依赖的类减至最少。这里的关键点是，如果类 A 不知道类 B 的存在，它就不会受类 B 的任何改变的影响，这意味着 B 的改变不会导致 A 产生任何 bug 。用软件工程的术语来说，<strong>我们应尽可能地减少类之间的耦合。</strong></p>
+<p><strong>聚合（aggregation）</strong>，即“has-a”关系。例如，一个 Order 对象包含了一些 Item 对象。<strong>包含（聚合）关系意味着类 A 的对象包含类 B 的对象。</strong></p>
+<p><strong>继承（inheritance）</strong> ，即“is-a”关系，表示一个更特殊的类与一个更一般的类之间的关系。例如，RushOrder 类由 Order 类继承而来的。在更特殊的 RushOrder 类中包含了一些用于优先处理的特殊方法，还提供了一个计算运费的不同方法；而其它的方法，如添加商品、生成账单等都是从 Order 类继承来的。一般而言，如果类 A 扩展类 B ，类 A 不但包含从类 B 继承的方法，还会有一些额外的功能。</p>
+<h2 id="5-创建-初始化对象">5. 创建、初始化对象</h2>
+<p>想要使用对象，首先必须构造对象，并指定其初始状态，然后对对象应用方法。</p>
+<p>在 Java 程序设计中，要使用 <strong>构造器（constructor，或称构造方法）</strong> 构造新实例（或工厂方法，见<a href="https://waoap.github.io/post/java-object-and-class/#94-%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95">此处</a>）。</p>
+<h3 id="51-构造对象类的构造方法">5.1 构造对象——类的构造方法</h3>
+<ol>
+<li>
+<p>构造方法必须 <strong>和所在类同名</strong></p>
+</li>
+<li>
+<p>每个类可以有 <strong>一个及以上</strong> 的构造方法</p>
+</li>
+<li>
+<p>构造方法没有，也不可以有 <strong>返回值类型</strong>，它返回的值应是它所构造的对象的引用</p>
+</li>
+<li>
+<p>构造方法是在创建一个对象使用 new 操作符来调用的，作用是初始化一个对象</p>
+</li>
+<li>
+<p>构造方法 <strong>也是方法</strong> ，也具有方法的一些特性，如可以重载等</p>
+</li>
+</ol>
+<p>Java 构造方法的工作方式与 C++ 一样，但是要记住，所有的 Java 对象都是在 <strong>堆（heap）</strong> 中构造的，构造方法总是结合 new 操作符一起使用。</p>
+<pre><code class="language-c++">Employee number007(&quot;James Bond&quot;, 100000, 1950, 1, 1); // C++
+</code></pre>
+<p>这条语句在 C++ 中能够正常运行，但在 Java 中不行。</p>
+<h3 id="52-存储对象的引用对象变量与对象">5.2 存储对象的引用——对象变量与对象</h3>
+<p>使用如下代码来声明一个 <strong>对象变量</strong></p>
+<pre><code class="language-java">ClassName objectVariable;
+</code></pre>
+<p>使用构造方法来构造（实例化）对象，并为对象变量赋值</p>
+<pre><code class="language-java">objectVariable = new ClassName(arguments);
+</code></pre>
+<p>或者使用初始化语句</p>
+<pre><code class="language-java">ClassName objectVariable = new ClassName(arguments);
+</code></pre>
+<p>在 <strong>对象</strong> 与 <strong>对象变量</strong> 之间存在一个重要的区别，如下面的代码</p>
+<pre><code class="language-java">Date deadline;
+</code></pre>
+<p>定义了一个对象变量 deadline ，它可以引用 Date 类型的对象，但是它（变量 deadline ）<strong>不是一个对象</strong> ，而且实际上，它还没有引用任何对象，这个对象变量现在是空的，即 <strong>存储着空引用（null）</strong> 。现在在这个变量上使用任何 Date 类的方法都会产生编译错误。</p>
+<p>在使用对象变量 deadline 之前，必须先为它赋值。我们有两个选择，一个是初始化它，让它引用一个新构造的对象</p>
+<pre><code class="language-java">deadline = new Date();
+</code></pre>
+<p>一个是设置这个变量，让它引用一个已有的对象</p>
+<pre><code class="language-java">deadline = birthday;
+</code></pre>
+<p><strong>要认识到重要的一点：对象变量并没有实际包含一个对象，它只是引用一个对象。</strong></p>
+<p>很多人错误地认为 Java 中的对象变量就相当于 C++ 中的引用，然而，在 C++ 中没有 null 引用，而且引用也不能赋值。可以把 Java 中的对象变量看作类似于 C++ 的对象指针，如</p>
+<pre><code class="language-java">Date birthday; // Java
+</code></pre>
+<p>实际上等同于</p>
+<pre><code class="language-c++">Date* birthday; // C++
+</code></pre>
+<p>一旦理解了这一点，很多问题就迎刃而解了。</p>
+<p>当然，<code>Date*</code> 指针只有使用 new 操作符调用才会初始化，就这一点而言，C++ 与 Java 的语法几乎是一样的。</p>
+<pre><code class="language-c++">Date* birthday = new Date(); // C++
+</code></pre>
+<p>如果把一个变量赋值给另一个变量，两个变量就指向同一个日期对象，即它们是同一个对象的指针。</p>
+<p>Java 中的 null 引用对应于 C++ 中的 NULL 指针。</p>
+<p>所有的 Java 对象都存储在堆中。</p>
+<p>当一个 <strong>对象</strong> 包含一个 <strong>对象变量</strong> 时，它只是包含着指向某个堆对象的指针，<strong>即包含着指向某个对象的引用</strong> 。</p>
+<p>在使用构造方法创建一个对象之后，它的数据和方法可以使用 <strong>点操作符（ .）</strong> 来访问和调用，该操作符也称为 <strong>对象成员访问操作符 (object member access operator）</strong> 。</p>
+<ol>
+<li>
+<p><code>objectVariable.field</code> ：引用对象的字段</p>
+</li>
+<li>
+<p><code>objectVariable.method(arguments)</code> ：调用对象的方法</p>
+</li>
+</ol>
+<h3 id="53-初始化数据字段">5.3 初始化数据字段</h3>
+<ol>
+<li>
+<p>在构造方法中设置值</p>
+</li>
+<li>
+<p>在声明中赋值</p>
+</li>
+<li>
+<p>初始化块</p>
+</li>
+</ol>
+<h4 id="531-在构造方法中设置值">5.3.1 在构造方法中设置值</h4>
+<p>略。</p>
+<h4 id="532-在声明中赋值">5.3.2 在声明中赋值</h4>
+<p><strong>TODO . . .</strong></p>
+<h4 id="533-初始化块">5.3.3 初始化块</h4>
+<p>如：</p>
+<pre><code class="language-java">class Employee {
+    private static int nextId;
+
+    private int id;
+    private String name;
+    private double salary;
+
+    {
+        id = nextId;
+        nextId++;
+    }
+
+    . . .
+}
+</code></pre>
+<p>初始化块中的代码会在构造对象之前就执行，也即 <strong>当构造对象的时候，先执行类中初始化块中的代码，才执行构造方法的主体</strong> 。</p>
+<p>可以先在初始化块中设置字段的值，即使这些字段在它的后面才被声明，这是合法的。但是，为了避免循环定义，初始化块不可以读取在后面初始化的字段。<strong>建议将初始化块放在字段声明之后</strong> 。</p>
+<p>需要注意的是，不同于普通初始化块会在对象构造时执行，声明为静态的初始化块会在类第一次加载的时候执行，如：</p>
+<pre><code class="language-java">static {
+    var generator = new Random();
+    nextId = generator.nextInt(10_000);
+}
+</code></pre>
+<h2 id="6-修改器与访问器方法setter-and-getter">6. 修改器与访问器方法（setter and getter）</h2>
+<p><strong>修改器方法（mutator method）</strong> 和 <strong>访问器方法（accessor method）</strong> ，用于修改和访问对象的字段。</p>
+<h2 id="7-可见性修饰符访问控制符">7. 可见性修饰符（访问控制符）</h2>
+<p>见<a href="https://waoap.github.io/post/java-method/#11-%E4%BF%AE%E9%A5%B0%E7%AC%A6">此处</a>。</p>
+<h2 id="8-静态字段-方法">8. 静态字段、方法</h2>
+<h3 id="81-静态的定义">8.1 静态的定义</h3>
+<p>在一些面向对象程序设计语言中，静态字段被称为 <strong>类字段</strong> ， 术语 <strong>静态</strong> 只是沿用了 C++ 的叫法，<strong>并无实际意义</strong> 。</p>
+<h3 id="82-静态字段">8.2 静态字段</h3>
+<p>如果将一个字段定义为静态，则每个类中只有一个这样的字段。而对于非静态的实例字段，每个对象都有自己的一个副本。</p>
+<p>一个类中的静态字段被所有由它构造出来的对象所共享。</p>
+<h3 id="83-静态方法">8.3 静态方法</h3>
+<p>静态方法是不在对象上执行的方法，它也 <strong>没有隐式参数</strong> 。</p>
+<p><strong>可以使用对象来调用静态方法，它是合法的。但是这种写法很容易造成混淆，因为这个方法的结果和调用它的对象实际并没有关系。</strong></p>
+<p>实例方法可以调用实例方法和静态方法，以及访问实例字段或者静态字段；</p>
+<p>静态方法可以调用静态方法以及访问静态字段，不能调用实例方法或者访问实例字段，因为静态方法和静态字段不属于某个特定的对象。</p>
+<p>静态成员和实例成员的关系总结在下图中：</p>
+<figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/%E9%9D%99%E6%80%81%E6%88%90%E5%91%98%E5%92%8C%E5%AE%9E%E4%BE%8B%E6%88%90%E5%91%98%E7%9A%84%E5%85%B3%E7%B3%BB.png" alt="静态成员和实例成员的关系" loading="lazy"></figure>
+<p><strong>如：</strong></p>
+<pre><code class="language-java">// 错误样例
+public class A {
+    int i = 5;
+    static int k = 2;
+
+    public static void main(String[] args) {
+        int j = i; // 错误，因为 i 是一个实例变量
+        m1(); // 错误，因为 m1() 是一个实例方法
+    }
+
+    public void m1() {
+        i = i + k + m2(i, k); // 正确，因为实例方法可以调用类中的所有方法和变量
+    }
+
+    public static int m2(int i, int j) {
+        return (int)(Math.pow(i, j));
+    }
+}
+
+// 正确样例
+public class A {
+    int i = 5;
+    static int k = 2;
+
+    public static void main(String[] args) {
+        A a = new A(); // 实例化了一个 A 对象
+        int j = a.i; // 正确，通过实例化的对象访问实例变量
+        a.m1(); // 正确，通过实例化的对象访问实例方法
+    }
+
+    public void m1() {
+        i = i + k + m2(i, k);
+    }
+
+    public static int m2(int i, int j) {
+        return (int)(Math.pow(i, j));
+    }
+}
+</code></pre>
+<p><strong>设计指南：</strong></p>
+<p><strong>如何判断一个变量或方法应该是实例的还是静态的？</strong> 如果一个变量或方法依赖于类的某个具体实例，那就应该将它定义为实例变量或实例方法。如果一个变量或方法不依赖于类的某个具体实例，就应该将它定义为静态变量或静态方法。</p>
+<h3 id="84-工厂方法">8.4 工厂方法</h3>
+<p>静态方法还有另一种常见的用途。类似 LocalDate 和 NumberFormat 的类使用 <strong>静态工厂方法（factory method）</strong> 来构造对象，如：</p>
+<pre><code class="language-java">NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance();
+NumberFormat percentFormatter = NumberFormat.getPercentInstance();
+double x =0.1;
+System.out.println(currencyFormatter.format(x)); // -&gt; $0.10
+System.out.println(percentFormatter.format(x)); // -&gt; 10%
+</code></pre>
+<p>为什么 NumberFormat 类不利用构造方法完成这些操作呢？主要原因有两个：</p>
+<ol>
+<li>
+<p>无法命名构造方法。构造方法的名字必须与类名相同。但是，这里希望有两个不同的名字，分别得到货币实例和百分比实例。</p>
+</li>
+<li>
+<p>使用构造方法时，无法改变所构造对象的类型，而工厂方法实际上将返回 DecimalFormat 类的对象，这是 NumberFormat 的一个子类。</p>
+</li>
+</ol>
+<h3 id="85-main-方法">8.5 main 方法</h3>
+<p>每个类可以有一个 main 方法。这是常用于对类进行单元测试的一个技巧，如可以在 Employee 类中添加一个 main 方法：</p>
+<pre><code class="language-java">class Employee {
+    public Employee() {
+        . . .
+    }
+
+    .  .  .
+
+    public static void main(String[] args) {
+        // Do some unit test here.
+    }
+}
+</code></pre>
+<p>如果想要独立测试 Employee 类，只需要执行命令 <code>java Employee</code> 。</p>
+<p>如果 Employee 类是一个更大型应用程序的一部分，就可以如此执行命令 <code>java Application</code> ，并且 Employee 类的 main 方法不会被执行。</p>
+<h2 id="9-向方法传递对象参数-从方法中返回对象">9. 向方法传递对象参数、从方法中返回对象</h2>
+<p>给方法传递一个对象同传递数组一样，实际是将对象的引用传递给方法。</p>
+<p>从返回中返回对象亦然。</p>
+<p>格式样例：</p>
+<pre><code class="language-java">public static ClassName x(ClassName mClass) {}
+</code></pre>
+<h2 id="10-对象数组">10. 对象数组</h2>
+<p>类似于基本类型数组，<strong>对对象数组的操作</strong> 相当于是 <strong>对基本类型数组的操作</strong> 与 <strong>对对象的操作</strong> 之结合，故略。</p>
+<h2 id="11-不可变对象和类">11. 不可变对象和类</h2>
+<p>要使一个类成为不可变的，它必须满足下面的要求：</p>
+<ul>
+<li>
+<p>所有字段都是私有的</p>
+</li>
+<li>
+<p>没有修改器方法</p>
+</li>
+<li>
+<p>没有一个返回指向可变字段的引用的访问器方法</p>
+</li>
+</ul>
+<h2 id="12-this-super-关键字">12. this、super 关键字</h2>
+<h3 id="121-this">12.1 this</h3>
+<p>this 关键字是指向调用对象的引用名，可以用 this 关键字引用调用对象的实例成员（实例字段和实例方法）。</p>
+<figure data-type="image" tabindex="2"><img src="https://waoap.github.io/post-images/this%E5%85%B3%E9%94%AE%E5%AD%971.png" alt="this 关键字1" loading="lazy"></figure>
+<p>例如，在变量的 set 方法中，经常将变量名用作参数名，在这种情况下，这个变量在 set 方法中被隐藏<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。为了给被隐藏的变量设置新值，需要在方法中引用隐藏的变量名。隐藏的静态变量可以简单地通过 <code>ClassName.varName</code> 的方式引用，隐藏的实例变量就需要使用关键字 this 来引用。</p>
+<figure data-type="image" tabindex="3"><img src="https://waoap.github.io/post-images/this%E5%85%B3%E9%94%AE%E5%AD%972.png" alt="this 关键字2" loading="lazy"></figure>
+<p>关键字 this 可以用于调用调用者的类的其它构造方法。</p>
+<figure data-type="image" tabindex="4"><img src="https://waoap.github.io/post-images/this%E5%85%B3%E9%94%AE%E5%AD%973.png" alt="this 关键字3" loading="lazy"></figure>
+<h3 id="122-super">12.2 super</h3>
+<p>相对于 this 是指向调用对象，super 则是 <strong>指向调用对象的父类</strong> 的引用名。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>见 <a href="https://waoap.github.io/post/java-data-type/#113-%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F">Java 数据结构</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div>
+          <!-- Share to Twitter, Weibo, Telegram -->
+          <div class="flex items-center">
+            <div class="mr-4 flex items-center">
+              <i class="ri-share-forward-line text-gray-500"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToTwitter"
+            >
+              <i class="ri-twitter-line"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToWeibo"
+            >
+              <i class="ri-weibo-line"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToTelegram"
+            >
+              <i class="ri-telegram-line"></i>
+            </div>
+          </div>
+        </div>
+
+         
+        <div id="gitalk-container"></div>
+            <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  <p>
+      闽IPC备
+      <a href="https://beian.miit.gov.cn/" target="_blank">2022008424</a>
+      号
+    </p>
+    <p>
+      Powered by
+      <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+</footer>
+
+      </div>
+
+      <!-- TOC Container -->
+      <div
+        class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight"
+        @click="showToc = true"
+      >
+        <i class="ri-file-list-line"></i>
+      </div>
+
+      <div
+        class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast"
+        :class="{ '-mr-64': !showToc }"
+      >
+        <div class="flex mb-4 justify-end">
+          <div
+            class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast"
+            @click="showToc = false"
+          >
+            <i class="ri-close-line text-lg"></i>
+          </div>
+        </div>
+        <div class="post-toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1-%E7%B1%BB%E7%9A%84%E6%A6%82%E5%BF%B5">1. 类的概念</a></li>
+<li><a href="#2-%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%A6%82%E5%BF%B5">2. 对象的概念</a></li>
+<li><a href="#3-%E8%AF%86%E5%88%AB%E7%B1%BB">3. 识别类</a></li>
+<li><a href="#4-%E7%B1%BB%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB">4. 类之间的关系</a></li>
+<li><a href="#5-%E5%88%9B%E5%BB%BA-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AF%B9%E8%B1%A1">5. 创建、初始化对象</a>
+<ul>
+<li><a href="#51-%E6%9E%84%E9%80%A0%E5%AF%B9%E8%B1%A1%E7%B1%BB%E7%9A%84%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95">5.1 构造对象——类的构造方法</a></li>
+<li><a href="#52-%E5%AD%98%E5%82%A8%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%BC%95%E7%94%A8%E5%AF%B9%E8%B1%A1%E5%8F%98%E9%87%8F%E4%B8%8E%E5%AF%B9%E8%B1%A1">5.2 存储对象的引用——对象变量与对象</a></li>
+<li><a href="#53-%E5%88%9D%E5%A7%8B%E5%8C%96%E6%95%B0%E6%8D%AE%E5%AD%97%E6%AE%B5">5.3 初始化数据字段</a>
+<ul>
+<li><a href="#531-%E5%9C%A8%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%80%BC">5.3.1 在构造方法中设置值</a></li>
+<li><a href="#532-%E5%9C%A8%E5%A3%B0%E6%98%8E%E4%B8%AD%E8%B5%8B%E5%80%BC">5.3.2 在声明中赋值</a></li>
+<li><a href="#533-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%9D%97">5.3.3 初始化块</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#6-%E4%BF%AE%E6%94%B9%E5%99%A8%E4%B8%8E%E8%AE%BF%E9%97%AE%E5%99%A8%E6%96%B9%E6%B3%95setter-and-getter">6. 修改器与访问器方法（setter and getter）</a></li>
+<li><a href="#7-%E5%8F%AF%E8%A7%81%E6%80%A7%E4%BF%AE%E9%A5%B0%E7%AC%A6%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E7%AC%A6">7. 可见性修饰符（访问控制符）</a></li>
+<li><a href="#8-%E9%9D%99%E6%80%81%E5%AD%97%E6%AE%B5-%E6%96%B9%E6%B3%95">8. 静态字段、方法</a>
+<ul>
+<li><a href="#81-%E9%9D%99%E6%80%81%E7%9A%84%E5%AE%9A%E4%B9%89">8.1 静态的定义</a></li>
+<li><a href="#82-%E9%9D%99%E6%80%81%E5%AD%97%E6%AE%B5">8.2 静态字段</a></li>
+<li><a href="#83-%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95">8.3 静态方法</a></li>
+<li><a href="#84-%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95">8.4 工厂方法</a></li>
+<li><a href="#85-main-%E6%96%B9%E6%B3%95">8.5 main 方法</a></li>
+</ul>
+</li>
+<li><a href="#9-%E5%90%91%E6%96%B9%E6%B3%95%E4%BC%A0%E9%80%92%E5%AF%B9%E8%B1%A1%E5%8F%82%E6%95%B0-%E4%BB%8E%E6%96%B9%E6%B3%95%E4%B8%AD%E8%BF%94%E5%9B%9E%E5%AF%B9%E8%B1%A1">9. 向方法传递对象参数、从方法中返回对象</a></li>
+<li><a href="#10-%E5%AF%B9%E8%B1%A1%E6%95%B0%E7%BB%84">10. 对象数组</a></li>
+<li><a href="#11-%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB">11. 不可变对象和类</a></li>
+<li><a href="#12-this-super-%E5%85%B3%E9%94%AE%E5%AD%97">12. this、super 关键字</a>
+<ul>
+<li><a href="#121-this">12.1 this</a></li>
+<li><a href="#122-super">12.2 super</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+      </div>
+
+      <!-- Back to top -->
+      <div
+        class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200"
+        @click="backToUp"
+        v-show="scrolled"
+      >
+        <i class="ri-arrow-up-line"></i>
+      </div>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe.
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg"></div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter"></div>
+        <button
+          class="pswp__button pswp__button--close"
+          title="Close (Esc)"
+        ></button>
+        <button
+          class="pswp__button pswp__button--fs"
+          title="Toggle fullscreen"
+        ></button>
+        <button
+          class="pswp__button pswp__button--zoom"
+          title="Zoom in/out"
+        ></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button
+        class="pswp__button pswp__button--arrow--left"
+        title="Previous (arrow left)"
+      ></button>
+      <button
+        class="pswp__button pswp__button--arrow--right"
+        title="Next (arrow right)"
+      ></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://fastly.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://waoap.github.io/media/scripts/main.js"></script>
+
+    <!-- Code Highlight -->
+    
+    <script src="https://waoap.github.io/media/prism.js"></script>
+    <script>
+      Prism.highlightAll();
+    </script>
+    
+
+    <script src="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+    <script>
+      //拿到预览框架，也就是上面的html代码
+      var pswpElement = document.querySelectorAll(".pswp")[0];
+      //定义图片数组变量
+      var imgitems;
+      /**
+       * 用于显示预览界面
+       * @param index 图片数组下标
+       */
+      function viewImg(index) {
+        //其它选项这里不做过多阐述，详情见官网
+        var pswpoptions = {
+          index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+          bgOpacity: 0.7, // 背景透明度，0-1
+          maxSpreadZoom: 3, // 缩放级别，不要太大
+        };
+        //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+        var gallery = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          imgitems,
+          pswpoptions
+        );
+        gallery.init();
+      }
+      /**
+       * 用于添加图片点击事件
+       * @param img 图片元素
+       * @param index 所属下标（在imgitems中的位置）
+       */
+      function addImgClick(img, index) {
+        img.onclick = function () {
+          viewImg(index);
+        };
+      }
+      /**
+       * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+       * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+       * 异步加载图片可在图片元素创建完成后调用此方法
+       */
+      function initImg() {
+        //重置图片数组
+        imgitems = [];
+        //查找class:markdown 下的所有img元素并遍历
+        var imgs = document.querySelectorAll(".markdown img");
+        for (var i = 0; i < imgs.length; i++) {
+          var img = imgs[i];
+          //本站相册初始为loading图片，真实图片放在data-src
+          var ds = img.getAttribute("data-src");
+          //创建image对象，用于获取图片宽高
+          var imgtemp = new Image();
+          //判断是否存在data-src
+          if (ds != null && ds.length > 0) {
+            imgtemp.src = ds;
+          } else {
+            imgtemp.src = img.src;
+          }
+          //判断是否存在缓存
+          if (imgtemp.complete) {
+            var imgobj = {
+              src: imgtemp.src,
+              w: imgtemp.width,
+              h: imgtemp.height,
+            };
+            imgitems[i] = imgobj;
+            addImgClick(img, i);
+          } else {
+            console.log("进来了2");
+            imgtemp.index = i;
+            imgtemp.img = img;
+            imgtemp.onload = function () {
+              var imgobj = {
+                src: this.src,
+                w: this.width,
+                h: this.height,
+              };
+              //不要使用push，因为onload前后顺序会不同
+              imgitems[this.index] = imgobj;
+              //添加点击事件
+              addImgClick(this.img, this.index);
+            };
+          }
+        }
+      }
+      //初始化
+      initImg();
+    </script>
+       <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+<script
+  type="application/javascript"
+  src="https://unpkg.com/gitalk/dist/gitalk.min.js"
+></script>
+
+<script type="application/javascript">
+  var gitalk = new Gitalk({
+    clientID: "2974cb002d2e01718b94",
+    clientSecret: "b9fa60d5b695830fc2f640a2f62c6f6552e7be81",
+    repo: "waoap.github.io",
+    owner: "Waoap",
+    admin: ["Waoap"],
+    id: location.pathname.substring(0, 49), // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+  });
+
+  gitalk.render("gitalk-container");
+</script>
+  
+  </body>
+</html>

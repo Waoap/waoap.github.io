@@ -1,0 +1,650 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Java 方法 -
+    Waoap&#39;s Blog</title>
+<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico" />
+<link
+  href="https://fastly.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://fastly.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://waoap.github.io/media/css/tailwind.css"
+/>
+<link rel="stylesheet" href="https://waoap.github.io/styles/main.css" />
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  title="Java 方法 -
+    Waoap&#39;s Blog - Atom Feed"
+  href="https://waoap.github.io/atom.xml"
+/>
+
+
+
+    <meta name="description" content="
+
+方法的定义
+
+
+方法的调用
+
+
+方法的返回值
+
+
+方法参数的传递方式
+
+
+模块化代码的概念
+
+
+重载方法
+
+
+方法抽象和逐步求精
+
+
+
+1. 方法的定义
+
+在 C++ 中，通常在类的外面定义方法：
+void Employee::rais..." />
+    <meta
+      property="og:title"
+      content="Java 方法 - Waoap&#39;s Blog"
+    />
+    <meta property="og:description" content="
+
+方法的定义
+
+
+方法的调用
+
+
+方法的返回值
+
+
+方法参数的传递方式
+
+
+模块化代码的概念
+
+
+重载方法
+
+
+方法抽象和逐步求精
+
+
+
+1. 方法的定义
+
+在 C++ 中，通常在类的外面定义方法：
+void Employee::rais..." />
+    <meta property="og:type" content="articles" />
+    <meta property="og:url" content="https://waoap.github.io/post/java-method/" />
+    <meta
+      property="og:image"
+      content="https://waoap.github.io/post-images/java-method.png"
+    />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="1200" />
+    <meta
+      name="twitter:title"
+      content="Java 方法 - Waoap&#39;s Blog"
+    />
+    <meta name="twitter:description" content="
+
+方法的定义
+
+
+方法的调用
+
+
+方法的返回值
+
+
+方法参数的传递方式
+
+
+模块化代码的概念
+
+
+重载方法
+
+
+方法抽象和逐步求精
+
+
+
+1. 方法的定义
+
+在 C++ 中，通常在类的外面定义方法：
+void Employee::rais..." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://waoap.github.io/post/java-method/" />
+
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"
+    />
+
+    
+    <link
+      rel="stylesheet"
+      href="https://waoap.github.io/media/css/prism-synthwave84.css"
+    />
+     
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css"
+    />
+    
+  </head>
+
+  <body>
+    <div class="antialiased flex flex-col min-h-screen" id="app">
+      <a
+        href="https://waoap.github.io"
+        class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft"
+      >
+        Waoap&#39;s Blog
+      </a>
+      <div class="max-w-4xl w-full mx-auto">
+        <div
+          class="shadow-box bg-white dark:bg-gray-600 rounded-lg pt-32 md:pt-64 px-4 md:px-8 pb-8 animated fadeIn mb-8"
+        >
+          <h1
+            class="text-5xl font-semibold leading-normal pb-8 mb-8 border-b-8 border-gray-700"
+          >
+            Java 方法
+          </h1>
+          
+          <img
+            src="https://waoap.github.io/post-images/java-method.png"
+            alt="Java 方法"
+            class="block w-full mb-8"
+          />
+          
+          <div class="mb-8 flex flex-wrap">
+            <div class="text-gray-400 text-sm mr-4">
+              2022-01-29 · 9 min read
+            </div>
+            
+            <a
+              href="https://waoap.github.io/tag/iPo_IRy54/"
+              class="text-gray-700 text-sm border-b-2 border-dotted border-gray-200 hover:border-gray-600 transition-all duration-100 inline-flex mr-2"
+            >
+              <i class="ri-hashtag"></i>
+              Java
+            </a>
+            
+          </div>
+          <div class="markdown mb-8" v-pre><ol>
+<li>
+<p>方法的定义</p>
+</li>
+<li>
+<p>方法的调用</p>
+</li>
+<li>
+<p>方法的返回值</p>
+</li>
+<li>
+<p>方法参数的传递方式</p>
+</li>
+<li>
+<p>模块化代码的概念</p>
+</li>
+<li>
+<p>重载方法</p>
+</li>
+<li>
+<p>方法抽象和逐步求精</p>
+</li>
+</ol>
+<!-- more -->
+<h2 id="1-方法的定义">1. 方法的定义</h2>
+<figure data-type="image" tabindex="1"><img src="https://waoap.github.io/post-images/%E6%96%B9%E6%B3%95.png" alt="方法" loading="lazy"></figure>
+<p>在 C++ 中，通常在类的外面定义方法：</p>
+<pre><code class="language-c++">void Employee::raiseSalary(double byPercent) // C++, not Java
+{
+    . . .
+}
+</code></pre>
+<p>如果在类的内部定义方法，这个方法将自动成为 <strong>内联（inline）</strong> 方法。</p>
+<pre><code class="language-c++">class Employee
+{
+    . . .
+    int getName() { return name; } // inline in C++
+}
+</code></pre>
+<p>在 Java 中，所有的方法都必须在类的内部定义，但并不代表它们是内联方法。是否将某个方法设置为内联方法是 Java 虚拟机的任务。即时编译器会监视那些 <strong>简短、经常调用而且没有被覆盖的</strong> 方法调用，并进行优化。</p>
+<h3 id="11-修饰符">1.1 修饰符</h3>
+<p><strong>访问控制修饰符：</strong></p>
+<ol>
+<li>
+<p><code>public</code> : 对所有类可见。</p>
+<p>使用对象：类、接口、字段、方法</p>
+</li>
+<li>
+<p><code>default</code> (默认、缺省，即什么也不写时）: 在同一包内可见，不使用任何修饰符。</p>
+<p>使用对象：类（外部类和内部类）、接口、字段、方法</p>
+</li>
+<li>
+<p><code>protected</code> : 对同一包内的类和所有子类可见。</p>
+<p>使用对象：内部类、字段、方法</p>
+<p><strong>不能修饰外部类</strong></p>
+</li>
+<li>
+<p><code>private</code> : 在同一类内可见。</p>
+<p>使用对象：内部类、字段、方法</p>
+<p><strong>不能修饰外部类</strong></p>
+</li>
+</ol>
+<p><strong>非访问控制修饰符：</strong></p>
+<ol>
+<li>
+<p><code>static</code> ：</p>
+<p>修饰符，可修饰 <strong>字段、方法</strong> ，表示这个 <strong>字段、方法</strong> 是 <strong>与对象无关的、仅与类有关的</strong> 。</p>
+</li>
+<li>
+<p><code>final</code> ：</p>
+<p>修饰符，可修饰 <strong>类、变量、方法</strong> ，表示这个 <strong>类不能被继承</strong> ，或这个 <strong>方法不能被继承类重写</strong> ，或这个 <strong>变量只能被赋值一次（此时变量就转变成非常值常量）</strong></p>
+</li>
+<li>
+<p><code>abstract</code> ：</p>
+<p>修饰符，可修饰 <strong>类、方法</strong> ，表示这个 <strong>类是抽象类，不能用于构造对象</strong> ，或这个 <strong>方法是抽象方法，需要由继承类来实现</strong></p>
+</li>
+<li>
+<p><code>synchronized</code> 、<code>volatile</code> ：</p>
+<p>修饰符，主要用于 <strong>线程的编程</strong></p>
+</li>
+<li>
+<p><code>strictfp</code> ：</p>
+<p>修饰符，可修饰 <strong>方法等<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></strong> ，表示 <strong>启用严格的浮点数计算模式</strong></p>
+</li>
+</ol>
+<h3 id="12-参数">1.2 参数</h3>
+<p>定义在方法头中的变量称为 <strong>形式参数（formal parameter）</strong> 或者简称为 <strong>形参（parameter）</strong> ，相当于占位符。当调用方法时，就给参数传递一个值，这个值称为 <strong>实际参数（actual parameter）</strong> 或 <strong>实参（argument）</strong> 。</p>
+<p><strong>参数列表（parameter list）</strong> 指明方法中参数的类型、顺序和个数。方法名和参数列表一起构成 <strong>方法签名（method signature）</strong> 。</p>
+<p>参数是可选的，也就是说，方法可以不包含参数。</p>
+<h2 id="2-方法的调用">2. 方法的调用</h2>
+<p>每当调用一个方法时，系统会创建一个 <strong>激活记录（也称为活动框架）</strong> ，用于存储该方法中的参数和变量。激活记录被置于一个称为 <strong>调用栈</strong> 的内存区域中。调用堆栈也称为执行堆栈、运行时堆栈，或者一个机器堆栈，通常简称为 <strong>栈</strong> 。</p>
+<p>当一个方法调用另一个方法时，调用者的激活记录保持不变，创建一个新的激活记录用于被调用的新方法。当一个方法结束运行返回到调用者时，其相应的激活记录也被释放。</p>
+<p>调用栈以 <strong>后进先出</strong> 的方式来保存激活记录。</p>
+<p>在调用方法时，实际上会给方法传入两种 <strong>实际参数</strong> ：<strong>隐式（implicit）参数</strong> 和 <strong>显式（explicit）参数</strong> 。</p>
+<p><strong>隐式参数是出现在方法前的对象，即方法的调用者；显式参数是出现在方法名后括号中的值，即方法的实参。</strong></p>
+<h2 id="3-方法的返回值">3. 方法的返回值</h2>
+<p>空方法不返回值，因而 return 语句对其而言 <strong>不是必须的</strong> 。</p>
+<h2 id="4-方法参数的传递方式">4. 方法参数的传递方式</h2>
+<blockquote>
+<p>Java 调用方法时是通过传值的方式将实参传给形参的，即 <strong>按值调用（call by value）</strong> 。</p>
+</blockquote>
+<p><strong>按值调用（call by value）</strong> 表示方法接收的是调用者提供的值，而 <strong>按引用调用（call by reference）</strong> 表示方法接收的是调用者提供的 <strong>变量地址</strong> 。**</p>
+<p><strong>按……调用（call by）</strong> 是一个标准的计算机科学术语，用来描述各种程序设计语言中方法参数的传递方式（事实上，以前还有 <strong>按名调用（call by name）</strong> ，不过这种传递方式已经成为历史）。</p>
+<p>实参必须与方法签名中定义的形参在次序上和数量上匹配，在类型上兼容。类型兼容指 <strong>不需要经过显示的类型转换</strong> ，实参的类型就能与形参匹配。</p>
+<p>实参与形参有着相互独立的内存空间，实参存储于 <strong>调用方法</strong> 所在的栈内，形参存储于 <strong>被调用方法</strong> 所在的栈内。</p>
+<p>所谓的传值，其过程实质上是在栈内新建一个被调用方法的激活记录，在其中声明该方法的形参，而后将传入的实参的值一一赋给对应的形参。因而 <strong>在方法内对形参进行操作，并不会改变方法外的实参。</strong></p>
+<p>需要注意的是，给方法传入引用类型的变量后，对形参指向的对象进行操作，似乎也会改变实参指向的对象的状态，但实际上，由于 Java 使用按值调用的传参方式，形参和实参存储的值是相同的，<strong>是指向同一个对象的引用</strong> ，因而对形参指向的对象进行操作，也会改变实参指向的对象的状态。对传入引用类型变量参数的情况来说，改变形参的值不会改变实参的值应表现在 <strong>为形参赋值指向其它对象的引用，不会导致实参也被赋值为同样的引用</strong> 。</p>
+<h2 id="5-模块化代码的概念">5. 模块化代码的概念</h2>
+<blockquote>
+<p>模块化代码使得代码易于维护和调试，并且使得代码可以被重用。</p>
+</blockquote>
+<p>方法可以用来模块化代码，以提高程序的质量。</p>
+<h2 id="6-重载方法">6. 重载方法</h2>
+<blockquote>
+<p>重载方法允许我们使用同样的名字来定义不同方法，只要它们的参数列表是不同的。</p>
+</blockquote>
+<p>重载的方法必须具有不同的参数列表，不能基于不同修饰符或返回值类型来重载方法。</p>
+<p>由于 Java 会对方法的参数进行 <strong>隐式的类型转换</strong> ，有时调用一个方法就会有两个或更多可能的匹配，而编译器无法确定哪个是最精确的匹配，这被称为 <strong>歧义调用（ambiguous invocation）</strong> 。</p>
+<p>歧义调用会产生编译错误，如：</p>
+<pre><code class="language-java">public class AmbiguousOverloading {
+    public static void main (String[] args) {
+        System.out.println(max(1, 2));
+    }
+
+    public static double max (int num1, double num2) {
+        if (num1 &gt; num2)
+            return num1;
+        else
+            return num2;
+    }
+
+    public static double max (double num1, int num2) {
+        if (num1 &gt; num2)
+            return num1;
+        else
+            return num2;
+    }
+}
+</code></pre>
+<p><code>max(int, double)</code> 和 <code>max(double, int)</code> 都是可以匹配调用 <code>max(1, 2)</code> 的方法。由于两个方法谁也不比谁精确，所以这个调用是有歧义的，它会导致编译错误。</p>
+<h2 id="7-方法抽象和逐步求精">7. 方法抽象和逐步求精</h2>
+<blockquote>
+<p>开发软件的关键在于应用抽象的概念。</p>
+</blockquote>
+<p><strong>方法抽象（method abstraction）</strong> 是通过将方法的使用和它的实现分离来实现的。用户可以使用该方法，而无需知道方法是如何实现的。方法的实现细节封装在方法内，对使用该方法的用户来说是隐藏的。这称为 <strong>信息隐藏（information hiding）</strong> 或 <strong>封装（encapsulation）</strong> 。如果决定改变方法的实现，但只要不改变方法签名，用户的程序就不受影响。</p>
+<figure data-type="image" tabindex="2"><img src="https://waoap.github.io/post-images/%E6%96%B9%E6%B3%95%E6%8A%BD%E8%B1%A1.png" alt="方法抽象" loading="lazy"></figure>
+<p>方法抽象的概念可以应用于程序的开发过程中。当编写一个大程序时，可以使用 <strong>分治（divid-and-conquer）</strong> 策略，也称为 <strong>逐步求精（stepwise refinement）</strong> , 将大问题分解成子问题。子问题又分解成更小、更容易处理的问题。</p>
+<h3 id="71-自顶向下和自底向上的实现">7.1 自顶向下和自底向上的实现</h3>
+<p>通常，一个子问题对应于实现中的一个方法——当然，可能某些子问题太简单，以至于都不需要方法来实现。我们需要决定哪些模块要用方法实现，而哪些模块要与其他方法结合完成。这种决策应该基于所做的选择是否使整个程序更易读。因而可以采用 “自顶向下” 或 “自底向上” 的办法。</p>
+<p><strong>自顶向下办法</strong> 是自上而下，每次实现结构图中的一个方法。待实现的方法可以 <strong>存根方法（stub）</strong> 代替，存根方法是方法的一个简单但不完整的版本（即指只有方法头而还未实现的方法）。使存根方法可以快速地构建程序的框架。</p>
+<p><strong>自底向上办法</strong> 是自下而上，每次实现结构图中的一个方法，对每个实现的方法都写一个称为 <strong>驱动程序（driver）</strong> 的测试程序进行测试。</p>
+<p>自顶向下和自底向上都是不错的办法：它们都是逐步地实现方法，这有助于分离程序设计错误，使调试变得容易。这两种办法可以一起使用。</p>
+<h3 id="72-逐步求精的优势">7.2 逐步求精的优势</h3>
+<ol>
+<li>
+<p>使程序结构清晰，易于阅读和理解</p>
+</li>
+<li>
+<p>减少代码冗余</p>
+</li>
+<li>
+<p>易于开发、调试和测试</p>
+</li>
+<li>
+<p>方便团队合作</p>
+</li>
+</ol>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>待完善。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div>
+          <!-- Share to Twitter, Weibo, Telegram -->
+          <div class="flex items-center">
+            <div class="mr-4 flex items-center">
+              <i class="ri-share-forward-line text-gray-500"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-blue-500 hover:bg-blue-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToTwitter"
+            >
+              <i class="ri-twitter-line"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-red-500 hover:bg-red-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToWeibo"
+            >
+              <i class="ri-weibo-line"></i>
+            </div>
+            <div
+              class="px-4 cursor-pointer text-indigo-500 hover:bg-indigo-100 dark:hover:bg-gray-600 inline-flex"
+              @click="shareToTelegram"
+            >
+              <i class="ri-telegram-line"></i>
+            </div>
+          </div>
+        </div>
+
+         
+        <div id="gitalk-container"></div>
+            <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  <p>
+      闽IPC备
+      <a href="https://beian.miit.gov.cn/" target="_blank">2022008424</a>
+      号
+    </p>
+    <p>
+      Powered by
+      <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+</footer>
+
+      </div>
+
+      <!-- TOC Container -->
+      <div
+        class="fixed right-0 bottom-0 mb-16 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white dark:bg-gray-500 dark:text-gray-200 hover:shadow-lg transition-all animated fadeInRight"
+        @click="showToc = true"
+      >
+        <i class="ri-file-list-line"></i>
+      </div>
+
+      <div
+        class="fixed right-0 top-0 bottom-0 overflow-y-auto w-64 bg-white dark:bg-gray-800 p-4 border-l border-gray-100 dark:border-gray-600 z-10 transition-fast"
+        :class="{ '-mr-64': !showToc }"
+      >
+        <div class="flex mb-4 justify-end">
+          <div
+            class="w-8 h-8 inline-flex justify-center items-center rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast"
+            @click="showToc = false"
+          >
+            <i class="ri-close-line text-lg"></i>
+          </div>
+        </div>
+        <div class="post-toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1-%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9A%E4%B9%89">1. 方法的定义</a>
+<ul>
+<li><a href="#11-%E4%BF%AE%E9%A5%B0%E7%AC%A6">1.1 修饰符</a></li>
+<li><a href="#12-%E5%8F%82%E6%95%B0">1.2 参数</a></li>
+</ul>
+</li>
+<li><a href="#2-%E6%96%B9%E6%B3%95%E7%9A%84%E8%B0%83%E7%94%A8">2. 方法的调用</a></li>
+<li><a href="#3-%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC">3. 方法的返回值</a></li>
+<li><a href="#4-%E6%96%B9%E6%B3%95%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E9%80%92%E6%96%B9%E5%BC%8F">4. 方法参数的传递方式</a></li>
+<li><a href="#5-%E6%A8%A1%E5%9D%97%E5%8C%96%E4%BB%A3%E7%A0%81%E7%9A%84%E6%A6%82%E5%BF%B5">5. 模块化代码的概念</a></li>
+<li><a href="#6-%E9%87%8D%E8%BD%BD%E6%96%B9%E6%B3%95">6. 重载方法</a></li>
+<li><a href="#7-%E6%96%B9%E6%B3%95%E6%8A%BD%E8%B1%A1%E5%92%8C%E9%80%90%E6%AD%A5%E6%B1%82%E7%B2%BE">7. 方法抽象和逐步求精</a>
+<ul>
+<li><a href="#71-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E5%92%8C%E8%87%AA%E5%BA%95%E5%90%91%E4%B8%8A%E7%9A%84%E5%AE%9E%E7%8E%B0">7.1 自顶向下和自底向上的实现</a></li>
+<li><a href="#72-%E9%80%90%E6%AD%A5%E6%B1%82%E7%B2%BE%E7%9A%84%E4%BC%98%E5%8A%BF">7.2 逐步求精的优势</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+      </div>
+
+      <!-- Back to top -->
+      <div
+        class="fixed right-0 bottom-0 mb-4 mr-4 shadow w-8 h-8 rounded-full flex justify-center items-center z-10 cursor-pointer bg-white hover:shadow-lg transition-all dark:bg-gray-500 dark:text-gray-200"
+        @click="backToUp"
+        v-show="scrolled"
+      >
+        <i class="ri-arrow-up-line"></i>
+      </div>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Background of PhotoSwipe.
+        It's a separate element as animating opacity is faster than rgba(). -->
+  <div class="pswp__bg"></div>
+  <!-- Slides wrapper with overflow:hidden. -->
+  <div class="pswp__scroll-wrap">
+    <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <!--  Controls are self-explanatory. Order can be changed. -->
+        <div class="pswp__counter"></div>
+        <button
+          class="pswp__button pswp__button--close"
+          title="Close (Esc)"
+        ></button>
+        <button
+          class="pswp__button pswp__button--fs"
+          title="Toggle fullscreen"
+        ></button>
+        <button
+          class="pswp__button pswp__button--zoom"
+          title="Zoom in/out"
+        ></button>
+        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        <!-- element will get class pswp__preloader--active when preloader is running -->
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button
+        class="pswp__button pswp__button--arrow--left"
+        title="Previous (arrow left)"
+      ></button>
+      <button
+        class="pswp__button pswp__button--arrow--right"
+        title="Next (arrow right)"
+      ></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://fastly.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://waoap.github.io/media/scripts/main.js"></script>
+
+    <!-- Code Highlight -->
+    
+    <script src="https://waoap.github.io/media/prism.js"></script>
+    <script>
+      Prism.highlightAll();
+    </script>
+    
+
+    <script src="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+    <script>
+      //拿到预览框架，也就是上面的html代码
+      var pswpElement = document.querySelectorAll(".pswp")[0];
+      //定义图片数组变量
+      var imgitems;
+      /**
+       * 用于显示预览界面
+       * @param index 图片数组下标
+       */
+      function viewImg(index) {
+        //其它选项这里不做过多阐述，详情见官网
+        var pswpoptions = {
+          index: parseInt(index, 10), // 开始幻灯片索引。0是第一张幻灯片。必须是整数，而不是字符串。
+          bgOpacity: 0.7, // 背景透明度，0-1
+          maxSpreadZoom: 3, // 缩放级别，不要太大
+        };
+        //初始化并打开PhotoSwipe，pswpElement对应上面预览框架，PhotoSwipeUI_Default为皮肤，imgitems为图片数组，pswpoptions为选项
+        var gallery = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          imgitems,
+          pswpoptions
+        );
+        gallery.init();
+      }
+      /**
+       * 用于添加图片点击事件
+       * @param img 图片元素
+       * @param index 所属下标（在imgitems中的位置）
+       */
+      function addImgClick(img, index) {
+        img.onclick = function () {
+          viewImg(index);
+        };
+      }
+      /**
+       * 轮询所有图片，获取src、width、height等数据，加入imgitems，并给图片元素添加事件
+       * 最好在onload中执行该方法，本站因放在最底部，所以直接初始化
+       * 异步加载图片可在图片元素创建完成后调用此方法
+       */
+      function initImg() {
+        //重置图片数组
+        imgitems = [];
+        //查找class:markdown 下的所有img元素并遍历
+        var imgs = document.querySelectorAll(".markdown img");
+        for (var i = 0; i < imgs.length; i++) {
+          var img = imgs[i];
+          //本站相册初始为loading图片，真实图片放在data-src
+          var ds = img.getAttribute("data-src");
+          //创建image对象，用于获取图片宽高
+          var imgtemp = new Image();
+          //判断是否存在data-src
+          if (ds != null && ds.length > 0) {
+            imgtemp.src = ds;
+          } else {
+            imgtemp.src = img.src;
+          }
+          //判断是否存在缓存
+          if (imgtemp.complete) {
+            var imgobj = {
+              src: imgtemp.src,
+              w: imgtemp.width,
+              h: imgtemp.height,
+            };
+            imgitems[i] = imgobj;
+            addImgClick(img, i);
+          } else {
+            console.log("进来了2");
+            imgtemp.index = i;
+            imgtemp.img = img;
+            imgtemp.onload = function () {
+              var imgobj = {
+                src: this.src,
+                w: this.width,
+                h: this.height,
+              };
+              //不要使用push，因为onload前后顺序会不同
+              imgitems[this.index] = imgobj;
+              //添加点击事件
+              addImgClick(this.img, this.index);
+            };
+          }
+        }
+      }
+      //初始化
+      initImg();
+    </script>
+       <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+<script
+  type="application/javascript"
+  src="https://unpkg.com/gitalk/dist/gitalk.min.js"
+></script>
+
+<script type="application/javascript">
+  var gitalk = new Gitalk({
+    clientID: "2974cb002d2e01718b94",
+    clientSecret: "b9fa60d5b695830fc2f640a2f62c6f6552e7be81",
+    repo: "waoap.github.io",
+    owner: "Waoap",
+    admin: ["Waoap"],
+    id: location.pathname.substring(0, 49), // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+  });
+
+  gitalk.render("gitalk-container");
+</script>
+  
+  </body>
+</html>

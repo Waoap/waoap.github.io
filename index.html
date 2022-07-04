@@ -1,0 +1,637 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Waoap&#39;s Blog</title>
+<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico" />
+<link
+  href="https://fastly.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://fastly.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://waoap.github.io/media/css/tailwind.css"
+/>
+<link rel="stylesheet" href="https://waoap.github.io/styles/main.css" />
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  title="Waoap&#39;s Blog - Atom Feed"
+  href="https://waoap.github.io/atom.xml"
+/>
+
+
+
+    <meta name="description" content="书当快意辄阅尽，客莫可人不期来。" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+  </head>
+  <body>
+    <div class="antialiased flex flex-col min-h-screen" id="app">
+      <div
+  class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300"
+  :class="{ 'scroll': scrolled }"
+>
+  <div class="flex justify-end px-4">
+    <div
+      class="w-8 h-8 flex justify-center items-center rounded-full md:hidden"
+      @click="showMenu = !showMenu"
+    >
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
+  </div>
+  <nav
+    class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block"
+    :class="`${ showMenu ? 'block' : 'hidden' }`"
+  >
+    
+    <a
+      href="/"
+      target=""
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      首页
+    </a>
+    
+    <a
+      href="/archives"
+      target=""
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      归档
+    </a>
+    
+    <a
+      href="/tags"
+      target=""
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      标签
+    </a>
+    
+    <a
+      href="/post/about"
+      target=""
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      关于
+    </a>
+    
+    <a
+      href="https://waoap.github.io/atom.xml"
+      target="_blank"
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      RSS
+    </a>
+  </nav>
+</div>
+
+
+      <div
+        class="max-w-4xl w-full mx-auto "
+      >
+         <header
+  class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn"
+>
+  <div class="flex-1 order-2 md:order-1 md:pr-16">
+    <div class="text-4xl font-bold text-center md:text-left">
+      Waoap&#39;s Blog
+    </div>
+    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
+      书当快意辄阅尽，客莫可人不期来。
+    </div>
+    
+    <div class="mt-8 text-center md:text-left">
+      <a
+        href="/post/about"
+        arget="_blank"
+        class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
+        >LET&#39;S CODING!</a
+      >
+    </div>
+     
+    <div class="mt-8 flex items-center">
+         
+      <div
+        class="relative mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 transition-fast dark:hover:bg-gray-600 wechat"
+      >
+        <i class="ri-wechat-line"></i>
+        <img
+          src="\media\images\custom-wechat.jpg"
+          alt=""
+          class="absolute left-0 w-32"
+          style="max-width: initial; top: 100%"
+        />
+      </div>
+          
+      <a
+        href="mailto:shabbyacc@qq.com"
+        target="_blank"
+        class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast"
+      >
+        <i class="ri-mail-line"></i>
+      </a>
+          
+      <a
+        href="https://github.com/Waoap"
+        target="_blank"
+        class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast"
+      >
+        <i class="ri-github-line"></i>
+      </a>
+                  
+      <a
+        href="https://t.me/Waoapx"
+        target="_blank"
+        class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast"
+      >
+        <i class="ri-telegram-line"></i>
+      </a>
+                
+      <a
+        href="https://qm.qq.com/cgi-bin/qm/qr?k=rCquwuFudNV4hkev3AMTDf6BxxCAWr3i&amp;noverify=0"
+        target="_blank"
+        class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast"
+      >
+        <i class="ri-qq-line"></i>
+      </a>
+        
+    </div>
+    
+  </div>
+  <div
+    class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted"
+  >
+    <img
+      class="rounded-full object-cover"
+      src="https://waoap.github.io/images/avatar.png?v=1656907058907"
+      alt="Waoap&#39;s Blog"
+      width="100%"
+      height="100%"
+    />
+  </div>
+</header>
+ 
+
+        <div
+          class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0"
+        >
+          
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <i
+    class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"
+  ></i>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/mature-and-immature/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        成熟与不成熟
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-07-04</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>成硕果之熟，成实木之熟，成活水之熟，是为成我之熟。</p>
+
+    </div>
+    <a href="https://waoap.github.io/post/mature-and-immature/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/mature-and-immature.png"
+    alt="成熟与不成熟"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/some-algorithm-tips/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        一些算法小技巧
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-05-17</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <ol>
+<li>浮点数以及 BigDecimal 对象的整数部分、小数部分提取</li>
+</ol>
+
+    </div>
+    <a href="https://waoap.github.io/post/some-algorithm-tips/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/some-algorithm-tips.png"
+    alt="一些算法小技巧"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/common-java-function-list/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Java 常用类及其方法快查
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-03-13</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>快来一起偷懒~</p>
+<ol>
+<li>
+<p>Math</p>
+</li>
+<li>
+<p>BigInteger 和 BigDecimal</p>
+</li>
+<li>
+<p>Arrays</p>
+</li>
+</ol>
+
+    </div>
+    <a href="https://waoap.github.io/post/common-java-function-list/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/common-java-function-list.png"
+    alt="Java 常用类及其方法快查"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/java-event/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Java 事件驱动
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-02-20</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>1、</p>
+
+    </div>
+    <a href="https://waoap.github.io/post/java-event/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/java-event.png"
+    alt="Java 事件驱动"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/java-gui/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Java GUI
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-02-20</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>1、</p>
+
+    </div>
+    <a href="https://waoap.github.io/post/java-gui/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/java-gui.png"
+    alt="Java GUI"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/java-io-file/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Java IO 流
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-02-20</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>1、</p>
+
+    </div>
+    <a href="https://waoap.github.io/post/java-io-file/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/java-io-file.png"
+    alt="Java IO 流"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/java-exception/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Java 异常处理
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-02-20</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>1、异常的概念</p>
+<p>2、异常处理概述</p>
+<p>3、异常类型</p>
+<p>4、finally 子句</p>
+<p>5、何时使用异常</p>
+<p>6、重新抛出异常</p>
+<p>7、链式异常</p>
+<p>8、创建自定义异常类</p>
+
+    </div>
+    <a href="https://waoap.github.io/post/java-exception/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/java-exception.png"
+    alt="Java 异常处理"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/cfw-config/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Clash for Windows（CFW）配置
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-02-16</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>CFW 的配置备份</p>
+<ol>
+<li>
+<p>Mixin</p>
+</li>
+<li>
+<p>Parser</p>
+</li>
+</ol>
+
+    </div>
+    <a href="https://waoap.github.io/post/cfw-config/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/cfw-config.jpg"
+    alt="Clash for Windows（CFW）配置"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/java-oop/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Java 面向对象
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-02-08</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <ol>
+<li>
+<p>包</p>
+</li>
+<li>
+<p>导入类</p>
+</li>
+<li>
+<p>继承</p>
+</li>
+<li>
+<p>重写（Override）、重载（Overload）</p>
+</li>
+<li>
+<p>多态</p>
+</li>
+<li>
+<p>抽象</p>
+</li>
+<li>
+<p>封装</p>
+</li>
+<li>
+<p>接口</p>
+</li>
+<li>
+<p>枚举</p>
+</li>
+</ol>
+
+    </div>
+    <a href="https://waoap.github.io/post/java-oop/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/java-oop.png"
+    alt="Java 面向对象"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/java-object-and-class/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Java 对象和类
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-02-01</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <ol>
+<li>
+<p>类的概念</p>
+</li>
+<li>
+<p>对象的概念</p>
+</li>
+<li>
+<p>识别类</p>
+</li>
+<li>
+<p>类之间的关系</p>
+</li>
+<li>
+<p>创建、初始化对象</p>
+</li>
+<li>
+<p>修改器与访问器方法（setter and getter）</p>
+</li>
+<li>
+<p>可见性修饰符（访问控制符）</p>
+</li>
+<li>
+<p>静态字段、方法</p>
+</li>
+<li>
+<p>向方法传递对象参数、从方法中返回对象</p>
+</li>
+<li>
+<p>对象数组</p>
+</li>
+<li>
+<p>不可变对象和类</p>
+</li>
+<li>
+<p>this、super 关键字</p>
+</li>
+</ol>
+
+    </div>
+    <a href="https://waoap.github.io/post/java-object-and-class/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/java-object-and-class.png"
+    alt="Java 对象和类"
+  />
+  
+</div>
+
+
+        </div>
+
+        
+<div class="my-4 flex justify-between px-4 md:px-0">
+   
+  <a href="https://waoap.github.io/page/2" class="btn btn-white">
+    下一页
+    <i class="ri-arrow-right-line ml-4"></i>
+  </a>
+  
+</div>
+
+ <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  <p>
+      闽IPC备
+      <a href="https://beian.miit.gov.cn/" target="_blank">2022008424</a>
+      号
+    </p>
+    <p>
+      Powered by
+      <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+</footer>
+
+      </div>
+    </div>
+    <script src="https://fastly.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://waoap.github.io/media/scripts/main.js"></script>
+  </body>
+  
+</html>

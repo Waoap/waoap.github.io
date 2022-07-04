@@ -1,0 +1,261 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Waoap&#39;s Blog</title>
+<link rel="shortcut icon" href="https://waoap.github.io/favicon.ico" />
+<link
+  href="https://fastly.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://fastly.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://waoap.github.io/media/css/tailwind.css"
+/>
+<link rel="stylesheet" href="https://waoap.github.io/styles/main.css" />
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  title="Waoap&#39;s Blog - Atom Feed"
+  href="https://waoap.github.io/atom.xml"
+/>
+
+
+
+    <meta name="description" content="书当快意辄阅尽，客莫可人不期来。" />
+  </head>
+  <body>
+    <div class="antialiased flex flex-col min-h-screen" id="app">
+      <div
+  class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300"
+  :class="{ 'scroll': scrolled }"
+>
+  <div class="flex justify-end px-4">
+    <div
+      class="w-8 h-8 flex justify-center items-center rounded-full md:hidden"
+      @click="showMenu = !showMenu"
+    >
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
+  </div>
+  <nav
+    class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block"
+    :class="`${ showMenu ? 'block' : 'hidden' }`"
+  >
+    
+    <a
+      href="/"
+      target=""
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      首页
+    </a>
+    
+    <a
+      href="/archives"
+      target=""
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      归档
+    </a>
+    
+    <a
+      href="/tags"
+      target=""
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      标签
+    </a>
+    
+    <a
+      href="/post/about"
+      target=""
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      关于
+    </a>
+    
+    <a
+      href="https://waoap.github.io/atom.xml"
+      target="_blank"
+      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200"
+    >
+      RSS
+    </a>
+  </nav>
+</div>
+
+
+      <div class="max-w-4xl w-full mx-auto pt-32">
+        <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
+          <i class="ri-hashtag"></i>
+          Tools
+        </h1>
+        <div
+          class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0"
+        >
+          
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/cfw-config/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Clash for Windows（CFW）配置
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-02-16</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>CFW 的配置备份</p>
+<ol>
+<li>
+<p>Mixin</p>
+</li>
+<li>
+<p>Parser</p>
+</li>
+</ol>
+
+    </div>
+    <a href="https://waoap.github.io/post/cfw-config/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/cfw-config.jpg"
+    alt="Clash for Windows（CFW）配置"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/colc/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        代码统计工具
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2022-01-16</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>利用 Github 上的开源项目 <a href="https://github.com/AlDanial/cloc">colc</a>，配合自制的 colc 启动器，以实现在终端输入 <code>colc</code> 后自动统计指定目录下的代码总行数。</p>
+
+    </div>
+    <a href="https://waoap.github.io/post/colc/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/colc.png"
+    alt="代码统计工具"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/vim/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Vim
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2021-12-26</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>Vim，程序员的优质伴侣，一种丢掉鼠标的生活方式 💕。</p>
+
+    </div>
+    <a href="https://waoap.github.io/post/vim/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/vim.png"
+    alt="Vim"
+  />
+  
+</div>
+
+<div
+  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn"
+>
+  
+  <div class="flex-1 order-2 md:order-1">
+    <h2 class="text-2xl font-semibold mb-4">
+      <a
+        href="https://waoap.github.io/post/hello-gridea/"
+        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100"
+      >
+        Hello Gridea
+      </a>
+    </h2>
+    <div class="mb-4 text-xs text-gray-500">2021-12-25</div>
+    <div class="mb-4 text-gray-500 dark:text-gray-300">
+      <p>✍️ <strong>Gridea</strong>， 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意！</p>
+
+    </div>
+    <a href="https://waoap.github.io/post/hello-gridea/" class="btn">
+      Read more
+    </a>
+  </div>
+  
+  <img
+    class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32"
+    loading="lazy"
+    src="https://waoap.github.io/post-images/hello-gridea.png"
+    alt="Hello Gridea"
+  />
+  
+</div>
+
+
+        </div>
+
+        
+ <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  <p>
+      闽IPC备
+      <a href="https://beian.miit.gov.cn/" target="_blank">2022008424</a>
+      号
+    </p>
+    <p>
+      Powered by
+      <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </p>
+</footer>
+
+      </div>
+    </div>
+    <script src="https://fastly.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://waoap.github.io/media/scripts/main.js"></script>
+  </body>
+</html>
